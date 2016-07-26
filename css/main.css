@@ -9,7 +9,7 @@ form {
     font-family: "Yantramanav";
     font-style: italic;
     font-weight: bold;
-    color: black;
+    color: #E66855;
     font-size: 20px;
     margin-bottom: 0px; }
   form input {
@@ -18,8 +18,8 @@ form {
     margin-left: 0px;
     margin-top: 5px;
     width: 100%;
-    background-color: #768E98;
-    color: white;
+    background-color: white;
+    color: #768E98;
     border: none;
     border-radius: 2px; }
   form .btn-primary {

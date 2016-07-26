@@ -6,6 +6,7 @@ $mellow:#FFF2D8;
 $orangred:#ED926B;
 
 @import 'signUp';
+@import 'user';
 
 body {
 	background-color:darken($mellow,15);
