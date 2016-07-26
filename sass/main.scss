@@ -1,0 +1,18 @@
+$background: #CFC9C9;
+$title:#FF1A31;
+$dark-blue:#768E98;
+$teal:#8AB6B7;
+
+body {
+	background-color:$background;
+}
+
+h1.mainTitle {
+	color:$title;
+	border-bottom:4px solid $dark-blue;
+}
+
+p {
+	color:$teal;
+	font-size:40px;
+}
