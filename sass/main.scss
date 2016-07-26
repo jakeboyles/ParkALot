@@ -5,6 +5,8 @@ $teal:#8AB6B7;
 $mellow:#FFF2D8;
 $orangred:#ED926B;
 
+@import 'signUp';
+
 body {
 	background-color:darken($mellow,15);
 }
@@ -38,16 +40,28 @@ p {
 			border-radius:5px;
 			margin-top: 50px;
 		}
-		button{
+		a{
 			background-color:$teal;
 			color:white;
-			font-family: "Sahitya";
-			font-size: 23px;
+			display: block;
+			margin:auto;
 			width:90%;
-			height: 40px;
+			height: 45px;
 			border:none;
-			margin-top: 20px;
-
+			margin-top: 10px;
+			h2{
+				display: inline-block;
+				margin:auto;
+				font-size: 23px;
+				font-family: "Sahitya";
+			}
+			i{
+				font-size: 25px;
+			}	
 		}
+		.btn:hover{
+					background-color:$title;
+					color:white;
+			}
 	}
 }

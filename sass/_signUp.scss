@@ -1,0 +1,35 @@
+h2{
+	font-family: "Sahitya";
+	color:$title;
+}
+
+form{
+	display:block;
+	margin:auto;
+	label{
+		h4{
+			font-family: "Yantramanav";
+			font-style: italic;
+			font-weight: bold;
+			color:black;
+			font-size:20px;
+			margin-bottom: 0px;
+		}
+	}
+	input{
+		display: block;
+		margin:auto;
+		margin-left:0px;
+		margin-top: 5px;
+		width:100%;
+		background-color: $dark-blue;
+		color:white;
+		border:none;
+		border-radius:2px;
+	}
+	.btn-primary {
+		margin-top: 20px;
+		margin-bottom: 20px;
+		background-color:$teal;
+	}
+}
