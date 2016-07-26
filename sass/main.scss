@@ -1,10 +1,12 @@
-$background: #CFC9C9;
-$title:#FF1A31;
+$background: #C7EBD3;
+$title:#E66855;
 $dark-blue:#768E98;
 $teal:#8AB6B7;
+$mellow:#FFF2D8;
+$orangred:#ED926B;
 
 body {
-	background-color:$background;
+	background-color:darken($mellow,15);
 }
 
 h1.mainTitle {
@@ -15,8 +17,9 @@ h1.mainTitle {
 }
 
 p {
-	color:$teal;
-	font-size:40px;
+	color:$title;
+	font-size:14px;
+	font-family: "Yantramanav";
 }
 
 .nav {
@@ -25,21 +28,25 @@ p {
 	li{
 		text-align: center;
 		img {
-			
+
 		}
 		input {
 			width:90%;
+			height:30px;
 			color:$title;
 			text-align: center;
+			border-radius:5px;
+			margin-top: 50px;
 		}
 		button{
-			background-color:$dark-blue;
+			background-color:$teal;
 			color:white;
 			font-family: "Sahitya";
 			font-size: 23px;
 			width:90%;
+			height: 40px;
 			border:none;
-			margin-top: 5px;
+			margin-top: 20px;
 
 		}
 	}
