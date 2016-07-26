@@ -1,16 +1,22 @@
 <div class="container">
 	<h2>Sign-Up Here!</h2>
-	<form>
+	<form ng-submit="controller.submit()">
+		 <label for="firstName"><h4>First Name</h4></label>
+		<input type="text" id="firstName" placeholder="First Name" ng-model="controller.form.firstName" required>
+
+		 <label for="lastName"><h4>Last Name</h4></label>
+		<input type="text" id="lastName" placeholder="Last Name" ng-model="controller.form.lastName" required>
+
 	  <label for="username"><h4>Username</h4></label>
-		<input type="text" id="username" placeholder="Username" required>
+		<input type="text" id="username" placeholder="Username" ng-model="controller.form.email" required>
 
 	  <label for="password"><h4>Password</h4></label>
-		<input type="text" id="password" placeholder="One Uppercase, One Alt Character" required>
+		<input type="text" id="password" placeholder="One Uppercase, One Alt Character" ng-model="controller.form.password" required>
 
 		<input type="text" name="confirm" placeholder="Confirm" required>
 
 	  <label for="city"><h4>City</h4></label>
-		<input type="text" id="city" placeholder="e.g. Cincinnati" required>
+		<input type="text" id="city" placeholder="e.g. Cincinnati" required ng-model="controller.form.city">
 
 	  <label for="price"><h4>Price Range</h4></label>
 		<input type="text" id="price" placeholder="e.g. $2-$10">

@@ -5,8 +5,8 @@ angular.module('parkalot', ['ui.router', 'backand'])
 .config(function($stateProvider, $urlRouterProvider, $locationProvider, BackandProvider){
 
 	BackandProvider.setAppName('parkalot');
-    BackandProvider.setSignUpToken('');
-    BackandProvider.setAnonymousToken('');
+    BackandProvider.setSignUpToken('c2202bad-6a79-484a-b8f4-4a6d761dd92e');
+    BackandProvider.setAnonymousToken('0b04c545-f965-47e0-8c5e-bfca64b423b7');
 
 	$urlRouterProvider.otherwise("/");
 	$stateProvider

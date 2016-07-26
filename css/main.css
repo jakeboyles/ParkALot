@@ -31,13 +31,23 @@ img.icon {
   width: 130px; }
 
 body {
-  background-color: #ffd98c; }
+  background: url("http://65.media.tumblr.com/tumblr_l5om70KlO21qcht8qo1_1280.jpg");
+  background-repeat: no-repeat; }
+
+.container {
+  padding: 30px;
+  display: block;
+  margin: auto;
+  margin-top: 40px;
+  border-radius: 5px;
+  background-color: rgba(255, 217, 140, 0.8); }
 
 h1.mainTitle {
   color: #E66855;
   border-bottom: 4px solid #768E98;
   font-family: "Sahitya";
-  font-size: 56px; }
+  font-size: 56px;
+  margin-top: -15px; }
 
 p {
   color: #E66855;
@@ -46,7 +56,7 @@ p {
 
 .nav {
   list-style: none;
-  margin-top: 30px; }
+  margin-top: 10px; }
   .nav li {
     text-align: center; }
     .nav li input {
@@ -75,3 +85,5 @@ p {
     .nav li .btn:hover {
       background-color: #E66855;
       color: white; }
+      .nav li .btn:hover a {
+        color: white; }
