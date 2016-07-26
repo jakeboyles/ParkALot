@@ -3,8 +3,28 @@ body {
 
 h1.mainTitle {
   color: #FF1A31;
-  border-bottom: 4px solid #768E98; }
+  border-bottom: 4px solid #768E98;
+  font-family: "Sahitya";
+  font-size: 56px; }
 
 p {
   color: #8AB6B7;
   font-size: 40px; }
+
+.nav {
+  list-style: none;
+  margin-top: 30px; }
+  .nav li {
+    text-align: center; }
+    .nav li input {
+      width: 90%;
+      color: #FF1A31;
+      text-align: center; }
+    .nav li button {
+      background-color: #768E98;
+      color: white;
+      font-family: "Sahitya";
+      font-size: 23px;
+      width: 90%;
+      border: none;
+      margin-top: 5px; }

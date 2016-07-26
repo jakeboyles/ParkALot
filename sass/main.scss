@@ -10,9 +10,37 @@ body {
 h1.mainTitle {
 	color:$title;
 	border-bottom:4px solid $dark-blue;
+	font-family: "Sahitya";
+	font-size:56px;
 }
 
 p {
 	color:$teal;
 	font-size:40px;
+}
+
+.nav {
+	list-style:none;
+	margin-top: 30px;
+	li{
+		text-align: center;
+		img {
+			
+		}
+		input {
+			width:90%;
+			color:$title;
+			text-align: center;
+		}
+		button{
+			background-color:$dark-blue;
+			color:white;
+			font-family: "Sahitya";
+			font-size: 23px;
+			width:90%;
+			border:none;
+			margin-top: 5px;
+
+		}
+	}
 }
