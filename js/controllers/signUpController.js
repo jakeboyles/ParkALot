@@ -9,8 +9,10 @@ angular.module("parkalot").controller("signUpController", function(back) {
 		var createData = back.postData(vm.form);
 		
 		 createData.then(function(response){
+		 	back.saveUserInfo(response.data.__metadata.id);
+		 	back.saveToken(response.data.token);
 		 	console.log(response);
-		 	vm.form = ""; 
+		 	// vm.form = ""; 
 
 		})
        }

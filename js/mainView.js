@@ -59,7 +59,7 @@ angular.module('parkalot', ['ui.router', 'backand'])
 				controllerAs: 'controller',
 			},
 		},
-	});
+	})
 	.state('preference', {
 		url: '/preference',
 		views: {
