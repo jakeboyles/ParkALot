@@ -5,6 +5,7 @@
     .module('parkalot')
     .controller('userController', function($state, back) {
        var vm = this;
+
       
        var call = back.userGet(back.getToken());
 
@@ -13,6 +14,12 @@
        vm.user = data.data.data[0];
 
        });
+       
+       vm.logout = function(){
+        back.logout();
+        $state.go('home');
+       }
+
       
     });
 })();

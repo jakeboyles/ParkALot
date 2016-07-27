@@ -11,7 +11,7 @@ angular.module("parkalot").controller("signUpController", function($state,back) 
 		 createData.then(function(response){
 		 	back.saveUserInfo(response.data.__metadata.id);
 		 	back.saveToken(response.data.token);
-		 	console.log(response);
+		 	// console.log(response);
 		 	 $state.go('user');
 
 		})
