@@ -39,7 +39,25 @@
 		 				filter:loginArray,
 		 			}
 		 		});
-		 	}	
+		 	}
+
+		 	var userGet= function(data){
+		 		var tokenArray = [
+		 		{
+		 			"fieldName" : "token", 
+		 			"operator" : "equals",
+		 			"value" : data,
+		 		}]
+		 		var single = $http({
+		 			method: 'GET',
+		 			url: 'https://api.backand.com:443/1/objects/user',
+		 			params: {
+		 				filter:tokenArray,
+		 			}
+		 		});
+		 		return single;
+
+		 	}
 		 
 		 	//save id to local storage
 			 	var saveUserInfo = function(userid)
@@ -79,6 +97,7 @@
 		 		saveToken:saveToken,
 		 		getToken:getToken,
 		 		login:login,
+		 		userGet:userGet,
 		 	}
 	});
 })();

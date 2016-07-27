@@ -17,10 +17,11 @@
 
         loginProm.then(function(results){
           console.log(results);
-          if(results.data[0])
+          if(results.data.data[0])
           {
-            back.saveToken(results.data[0].token);
-            back.saveUserInfo(results.data[0].id);
+            console.log(results);
+            back.saveToken(results.data.data[0].token);
+            back.saveUserInfo(results.data.data[0].id);
             vm.showAlert = false;
             $state.go('user');
           }
