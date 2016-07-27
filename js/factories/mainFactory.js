@@ -11,7 +11,7 @@
 		 		return $http ({
   					method: 'POST',
   					data: data,
-  					url: 'https://api.backand.com:443/1/objects/users',
+  					url: 'https://api.backand.com:443/1/objects/user',
   					
 		 		});
 		 	}
@@ -34,7 +34,7 @@
 		 		{
 		 			method: 'GET',
 		 			data: data,
-		 			url:'https://api.backand.com:443/1/objects/users',
+		 			url:'https://api.backand.com:443/1/objects/user',
 		 			params: {
 		 				filter:loginArray,
 		 			}
