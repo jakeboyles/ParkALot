@@ -62,6 +62,13 @@
 			 		return localStorage.getItem('token');
 			 	}
 
+			//function for loging out of app
+			var logout = function(){
+				localStorage.removeItem('userID');
+				localStorage.removeItem('token');
+				return true;
+			} 	
+
 			//create random string for token to be returned
 			function randomString(length,charac) {
 				var results = '';
@@ -79,6 +86,7 @@
 		 		saveToken:saveToken,
 		 		getToken:getToken,
 		 		login:login,
+		 		logout:logout,
 		 	}
 	});
 })();

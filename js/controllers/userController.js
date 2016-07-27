@@ -6,6 +6,10 @@
     .controller('userController', function($state,back) {
        var vm = this;
        
+       vm.logout = function(){
+        back.logout();
+        $state.go('home');
+       }
       
     });
 })();
