@@ -1,4 +1,5 @@
 <div class="container">
+	<i class="fa fa-home" aria-hidden="true" ui-sref='home'></i>
 	<h2>Sign-Up Here!</h2>
 	<form ng-submit="controller.submit()">
 		 <label for="firstName"><h4>First Name</h4></label>
@@ -7,8 +8,8 @@
 		 <label for="lastName"><h4>Last Name</h4></label>
 		<input type="text" id="lastName" placeholder="Last Name" ng-model="controller.form.lastName" required>
 
-	  <label for="username"><h4>Username</h4></label>
-		<input type="text" id="username" placeholder="Username" ng-model="controller.form.email" required>
+	  <label for="email"><h4>Email</h4></label>
+		<input type="text" id="email" placeholder="Email" ng-model="controller.form.email" required>
 
 	  <label for="password"><h4>Password</h4></label>
 		<input type="text" id="password" placeholder="One Uppercase, One Alt Character" ng-model="controller.form.password" required>
