@@ -60,6 +60,16 @@ angular.module('parkalot', ['ui.router', 'backand'])
 			},
 		},
 	});
+	.state('preference', {
+		url: '/preference',
+		views: {
+			'main': {
+				templateUrl: '../views/preference.html',
+				controller: 'prefController',
+				controllerAs: 'controller',
+			},
+		},
+	});
 
 });
 	
