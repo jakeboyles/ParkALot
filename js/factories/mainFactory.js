@@ -6,36 +6,71 @@
 
 		 	function postData(data)
 		 	{
-		 		var going = $http ({
+				data.token = randomString(64, '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ');
+		 		
+		 		return $http ({
   					method: 'POST',
   					data: data,
   					url: 'https://api.backand.com:443/1/objects/users',
   					
 		 		});
-		 		return going;
 		 	}
 
-		 	//save to local storage
+		 	var login = function(data){
+		 		var loginArray = [
+		 		{
+		 			"fieldName" : "email",
+		 			"operator" : "equals",
+		 			"value" : data.email,
+		 		},
+		 		{
+		 			"fieldName" : "password",
+		 			"operator" : "equals",
+		 			"value" : data.password,
+		 		}
+		 		]
+
+		 		return $http (
+		 		{
+		 			method: 'GET',
+		 			data: data,
+		 			url:'https://api.backand.com:443/1/objects/users',
+		 			params: {
+		 				filter:loginArray,
+		 			}
+		 		});
+		 	}	
+		 
+		 	//save id to local storage
 			 	var saveUserInfo = function(userid)
 			 	{
 			 		localStorage.setItem('userID',userid);
 			 	}
-
-			 	var saveToken = function(token)
-			 	{
-			 		localStorage.setItem('token',token);
-			 	}
-
-		 	//get from local sotrage
+			//get id from local storage 	
 			 	var getUserInfo = function()
 			 	{
 			 		return localStorage.getItem('userID');
 			 	}
-
+			 //save token to local storage	
+			 	var saveToken = function(token)
+			 	{
+			 		localStorage.setItem('token',token);
+			 	}
+			//get token from local storage 	
 			 	var getToken = function()
 			 	{
 			 		return localStorage.getItem('token');
 			 	}
+
+			//create random string for token to be returned
+			function randomString(length,charac) {
+				var results = '';
+
+				for(var i = length; i > 0; --i) results += charac[Math.floor(Math.random() * charac.length)];
+
+				return results;
+			} 	
+
 
 		 	return {
 		 		postData:postData,
@@ -43,6 +78,7 @@
 		 		getUserInfo:getUserInfo,
 		 		saveToken:saveToken,
 		 		getToken:getToken,
+		 		login:login,
 		 	}
 	});
 })();

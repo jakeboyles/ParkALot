@@ -9,20 +9,20 @@
 
        if(back.getToken() !== null)
        {
-        // $state.go('admin');
+        $state.go('user');
        }
 
        vm.submit = function(){
-        var loginPromise = back.login(vm.form);
+        var loginProm = back.login(vm.form);
 
-        loginPromise.then(function(results){
+        loginProm.then(function(results){
           console.log(results);
-          if(results.data.data[0])
+          if(results.data[0])
           {
-            back.saveToken(results.data.data[0].token);
-            back.saveUserId(results.data.data[0].id);
+            back.saveToken(results.data[0].token);
+            back.saveUserInfo(results.data[0].id);
             vm.showAlert = false;
-            // $state.go('admin');
+            $state.go('user');
           }
           else
           {
