@@ -33,3 +33,13 @@ form{
 		background-color:$teal;
 	}
 }
+
+i.fa.homeIcon {
+	color:white;
+	font-size:38px;
+	float:right;
+	&:hover {
+		cursor:pointer;
+		color:$dark-blue;
+	}
+}

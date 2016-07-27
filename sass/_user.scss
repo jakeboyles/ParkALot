@@ -13,12 +13,39 @@ ul{
 
 .btn-primary {
 	display:block;
-	margin:auto;
+	margin:0 auto;
 	height:40px;
 	margin-top: 10px;
-	h2{
-		font-size: 23px;
-		display: inline-block;
-		margin:auto;
+	background-color:$dark-blue;
+	border:none;
+	&:hover {
+		background-color:$orangred;
+		h2{
+			color:white;
+		}
+			i {
+				color:white;
+			}
+	}
+
+		h2{
+			font-size: 23px;
+			display: inline-block;
+			margin:auto;
+			color:$orangred;
+		}
+
+		i {
+			color:$orangred;
+		}
+}
+
+i.fa.homeIcon {
+	color:white;
+	font-size:38px;
+	float:right;
+	&:hover {
+		cursor:pointer;
+		color:$dark-blue;
 	}
 }

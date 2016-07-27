@@ -6,7 +6,7 @@ $mellow:#FFF2D8;
 $orangred:#ED926B;
 
 @import 'signUp';
-// @import 'user';
+@import 'user';
 @import 'images';
 @import 'map';
 @import 'user';
@@ -56,8 +56,8 @@ p {
 			margin-top: 50px;
 		}
 		a{
-			background-color:$teal;
-			color:white;
+			background-color:$dark-blue;
+			color:$orangred;
 			display: block;
 			margin:auto;
 			width:90%;
@@ -69,17 +69,19 @@ p {
 				margin:auto;
 				font-size: 23px;
 				font-family: "Sahitya";
+				color:$orangred;
 			}
 			i{
 				font-size: 25px;
 			}	
 		}
 		.btn:hover{
-					background-color:$title;
+					background-color:$orangred;
 					color:white;
-					a{
+					h2{
 						color:white;
 					}
+					
 			}
 	}
 }

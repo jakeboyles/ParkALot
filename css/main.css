@@ -27,6 +27,53 @@ form {
     margin-bottom: 20px;
     background-color: #8AB6B7; }
 
+i.fa.homeIcon {
+  color: white;
+  font-size: 38px;
+  float: right; }
+  i.fa.homeIcon:hover {
+    cursor: pointer;
+    color: #768E98; }
+
+h2 {
+  font-size: 36px; }
+
+ul {
+  list-style: none; }
+  ul li {
+    display: block;
+    margin: auto;
+    margin-left: 0px; }
+
+.btn-primary {
+  display: block;
+  margin: 0 auto;
+  height: 40px;
+  margin-top: 10px;
+  background-color: #768E98;
+  border: none; }
+  .btn-primary:hover {
+    background-color: #ED926B; }
+    .btn-primary:hover h2 {
+      color: white; }
+    .btn-primary:hover i {
+      color: white; }
+  .btn-primary h2 {
+    font-size: 23px;
+    display: inline-block;
+    margin: auto;
+    color: #ED926B; }
+  .btn-primary i {
+    color: #ED926B; }
+
+i.fa.homeIcon {
+  color: white;
+  font-size: 38px;
+  float: right; }
+  i.fa.homeIcon:hover {
+    cursor: pointer;
+    color: #768E98; }
+
 img.icon {
   width: 130px; }
 
@@ -46,13 +93,32 @@ ul {
 
 .btn-primary {
   display: block;
-  margin: auto;
+  margin: 0 auto;
   height: 40px;
-  margin-top: 10px; }
+  margin-top: 10px;
+  background-color: #768E98;
+  border: none; }
+  .btn-primary:hover {
+    background-color: #ED926B; }
+    .btn-primary:hover h2 {
+      color: white; }
+    .btn-primary:hover i {
+      color: white; }
   .btn-primary h2 {
     font-size: 23px;
     display: inline-block;
-    margin: auto; }
+    margin: auto;
+    color: #ED926B; }
+  .btn-primary i {
+    color: #ED926B; }
+
+i.fa.homeIcon {
+  color: white;
+  font-size: 38px;
+  float: right; }
+  i.fa.homeIcon:hover {
+    cursor: pointer;
+    color: #768E98; }
 
 body {
   background: url("http://65.media.tumblr.com/tumblr_l5om70KlO21qcht8qo1_1280.jpg");
@@ -90,8 +156,8 @@ p {
       border-radius: 5px;
       margin-top: 50px; }
     .nav li a {
-      background-color: #8AB6B7;
-      color: white;
+      background-color: #768E98;
+      color: #ED926B;
       display: block;
       margin: auto;
       width: 90%;
@@ -102,11 +168,12 @@ p {
         display: inline-block;
         margin: auto;
         font-size: 23px;
-        font-family: "Sahitya"; }
+        font-family: "Sahitya";
+        color: #ED926B; }
       .nav li a i {
         font-size: 25px; }
     .nav li .btn:hover {
-      background-color: #E66855;
+      background-color: #ED926B;
       color: white; }
-      .nav li .btn:hover a {
+      .nav li .btn:hover h2 {
         color: white; }
