@@ -34,6 +34,26 @@ img.icon {
   height: 180px;
   width: auto; }
 
+h2 {
+  font-size: 36px; }
+
+ul {
+  list-style: none; }
+  ul li {
+    display: block;
+    margin: auto;
+    margin-left: 0px; }
+
+.btn-primary {
+  display: block;
+  margin: auto;
+  height: 40px;
+  margin-top: 10px; }
+  .btn-primary h2 {
+    font-size: 23px;
+    display: inline-block;
+    margin: auto; }
+
 body {
   background: url("http://65.media.tumblr.com/tumblr_l5om70KlO21qcht8qo1_1280.jpg");
   background-repeat: no-repeat; }
