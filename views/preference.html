@@ -1,0 +1,27 @@
+<div class="container">
+<table>
+	<tr>
+		<th><h3>Item</h3></th>
+		<th><h3>Preference</h3></th>
+	</tr>
+	<tr>
+		<td><h4>Price</h4></td>
+		<td><p>{{user.price}}</p></td>
+	</tr>
+	<tr>
+		<td><h4>Distance</h4></td>
+		<td><p>{{user.distance}}</p></td>
+	</tr>
+	<tr ng-repeat="query in data.queries">
+		<td></td>
+		<td>{{user.query}}</td>
+	</tr>
+</table>
+
+<form ng-submit="">
+	<input type="submit" name="save" value="Save">
+</form>
+
+<a class="btn btn-primary" href="#/user">Back</a>
+
+</div>
