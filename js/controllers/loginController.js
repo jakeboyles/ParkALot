@@ -7,9 +7,9 @@
        var vm = this;
        vm.showAlert = false;
 
-       if(API.getToken() !== null)
+       if(back.getToken() !== null)
        {
-        $state.go('admin');
+        // $state.go('admin');
        }
 
        vm.submit = function(){
@@ -19,10 +19,10 @@
           console.log(results);
           if(results.data.data[0])
           {
-            API.saveToken(results.data.data[0].token);
-            API.saveUserId(results.data.data[0].id);
+            back.saveToken(results.data.data[0].token);
+            back.saveUserId(results.data.data[0].id);
             vm.showAlert = false;
-            $state.go('admin');
+            // $state.go('admin');
           }
           else
           {
