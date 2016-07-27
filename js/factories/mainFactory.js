@@ -40,7 +40,7 @@
 		 			}
 		 		});
 		 	}
-
+		 	//get user by id in localstorage
 		 	var userGet= function(data){
 		 		var tokenArray = [
 		 		{
@@ -57,6 +57,15 @@
 		 		});
 		 		return single;
 
+		 	}
+		 	//edit user information
+		 	var editUser = function(data){
+		 		
+		 		var edit = $http({
+		 			method: 'PUT',
+		 			url:'https://api.backand.com:443/1/objects/user/' + id,
+		 		});
+		 		return edit;
 		 	}
 		 
 		 	//save id to local storage
@@ -106,6 +115,7 @@
 		 		login:login,
 		 		userGet:userGet,
 		 		logout:logout,
+		 		editUser:editUser,
 
 		 	}
 	});
