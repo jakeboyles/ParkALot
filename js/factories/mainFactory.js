@@ -16,6 +16,31 @@
 		 		});
 		 	}
 
+		 	var login = function(data){
+		 		var loginArray = [
+		 		{
+		 			"fieldName" : "email",
+		 			"operator" : "equals",
+		 			"value" : data.email,
+		 		},
+		 		{
+		 			"fieldName" : "password",
+		 			"operator" : "equals",
+		 			"value" : data.password,
+		 		}
+		 		]
+
+		 		return $http (
+		 		{
+		 			method: 'GET',
+		 			data: data,
+		 			url:'https://api.backand.com:443/1/objects/users',
+		 			params: {
+		 				filter:loginArray,
+		 			}
+		 		});
+		 	}	
+		 
 		 	//save id to local storage
 			 	var saveUserInfo = function(userid)
 			 	{
@@ -46,12 +71,14 @@
 				return results;
 			} 	
 
+
 		 	return {
 		 		postData:postData,
 		 		saveUserInfo:saveUserInfo,
 		 		getUserInfo:getUserInfo,
 		 		saveToken:saveToken,
 		 		getToken:getToken,
+		 		login:login,
 		 	}
 	});
 })();
