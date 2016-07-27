@@ -59,11 +59,12 @@
 
 		 	}
 		 	//edit user information
-		 	var editUser = function(data){
+		 	var editUser = function(data, id){
 		 		
 		 		var edit = $http({
 		 			method: 'PUT',
-		 			url:'https://api.backand.com:443/1/objects/user/' + id,
+		 			data:data,
+		 			url: Backand.getApiUrl() + '/1/objects/user/' + id,
 		 		});
 		 		return edit;
 		 	}

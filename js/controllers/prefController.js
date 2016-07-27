@@ -16,10 +16,12 @@
 
 
       vm.submit = function(){
-        var edit = back.editUser(vm.form);
+
+        var edit = back.editUser(vm.preference, vm.preference.id);
 
         edit.then(function(response){
           console.log(response);
+          $state.go('user');
         })
       }
 
