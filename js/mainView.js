@@ -51,7 +51,7 @@ angular.module('parkalot', ['ui.router', 'backand'])
 		},
 	})
 	.state('map', {
-		url: '/map/:searchquery',
+		url: '/map',
 		views: {
 			'main': {
 				templateUrl: '../views/map.html',
@@ -59,7 +59,7 @@ angular.module('parkalot', ['ui.router', 'backand'])
 				controllerAs: 'controller',
 			},
 		},
-	});
+	})
 	.state('preference', {
 		url: '/preference',
 		views: {

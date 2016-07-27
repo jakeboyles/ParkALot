@@ -30,6 +30,10 @@ form {
 img.icon {
   width: 130px; }
 
+#mapid {
+  height: 180px;
+  width: auto; }
+
 body {
   background: url("http://65.media.tumblr.com/tumblr_l5om70KlO21qcht8qo1_1280.jpg");
   background-repeat: no-repeat; }
