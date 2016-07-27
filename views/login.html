@@ -1,8 +1,13 @@
 <div class="container">
 	<h2>Welcome Back!</h2>
-	<form>
-		<input type="text" name="username" placeholder="Username">
-		<input type="text" name="password" placeholder="Password">
+
+	<div ng-show="controller.showAlert" class="alert alert-warning alert-dismissible" role="alert">
+	<p>Incorrect Information</p>
+	</div>
+
+	<form ng-submit="controller.submit()">
+		<input type="text" name="username" placeholder="Username" ng-model="controller.form.email">
+		<input type="text" name="password" placeholder="Password" ng-model="controller.form.password">
 		<input class="btn btn-primary" type="submit" name="login" placeholder="Login">
 	</form>
 
