@@ -78,8 +78,17 @@ img.icon {
   width: 130px; }
 
 #mapid {
-  height: 180px;
+  height: 350px;
   width: auto; }
+
+.container {
+  padding: 10px; }
+  .container i {
+    font-size: 43px;
+    float: right; }
+  .container .info ul {
+    list-style: none;
+    padding: 0px; }
 
 h2 {
   font-size: 36px; }
