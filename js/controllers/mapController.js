@@ -16,13 +16,20 @@
     	accessToken: 'pk.eyJ1IjoiamNrbnVldmVuIiwiYSI6ImNpcjUxcXJ2eTAxbzNmbm5yMW1naGE3NWoifQ.YhmcfQV-iBNW-rj3XLNzaw#15/39.1025/-84.5197'
 		}).addTo(mymap);
       
-    
-        var search = API.postSearch(API.data);
+    	vm.sumbit = function(data){
 
-        search.then(function(results){
-          console.log(results);
+    		alert('You did it');
+
+    		var search = API.postSearch(vm.form);
+
+        	search.then(function(results){
+         	 console.log(results);
         })
-  
+
+
+    	}
+        
+          
 
     });
 })();
