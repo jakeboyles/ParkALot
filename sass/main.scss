@@ -85,3 +85,54 @@ p {
 			}
 	}
 }
+
+.menu {
+	position: relative;
+	display:  inline-block;
+	width: 30px;
+	height: 30px;
+	margin: 25px;
+}
+.menu span {
+	margin: 0 auto;
+	position: relative;
+	top: 12px;
+}
+.menu span:before, .menu span:after {
+	position: absolute;
+	content: '';
+}
+.menu span, .menu span:before, .menu span:after {
+	width: 30px;
+	height: 6px;
+	background-color: #000;
+	display: block;
+}
+.menu span:before {
+	margin-top: -12px;
+}
+.menu span:after {
+	margin-top: 12px;
+}
+
+.mobile span {
+	-webkit-transition: 0.2s ease 0s; transition: 0.2s ease 0s;
+}
+.mobile span:before, .mobile span:after {
+	-webkit-transition-property: margin, opacity; transition-property: margin, opacity;
+	-webkit-transition-duration: 0.2s, 0s; transition-duration: 0.2s, 0s;
+	-webkit-transition-delay: 0.2s; transition-delay: 0.2s;
+}
+.mobile:hover span {
+	width: 16px;
+	height: 16px;
+	margin-top: -5px;
+	-webkit-border-radius: 50%; border-radius: 50%;
+	-webkit-transition-delay: 0.2s; transition-delay: 0.2s;
+}
+.mobile:hover span:before, .mobile:hover span:after {
+	margin-top: 0px;
+	opacity: 0;
+	-webkit-transition-delay: 0s, 0.2s; transition-delay: 0s, 0.2s;
+}
+
