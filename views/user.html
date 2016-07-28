@@ -1,16 +1,14 @@
 <div class="container">
 
 <i class="fa homeIcon fa-home" aria-hidden="true" ui-sref='home'></i>
-<h2>{{controller.firstName}}{{controller.lastName}}</h2>
-
 
 <h2>{{controller.user.firstName}} {{controller.user.lastName}}</h2>
 
 <ul>
 	<li>{{controller.user.price}}</li>
 	<li>{{controller.user.distance}}</li>
-	<li>{{controller.user.query}}</li>
-	<li>{{controller.user.likes}}</li>
+	<li>{{controller.user.favorite}}</li>
+
 	<li><a class="btn btn-primary" href="#/preference">Set Preferences</a></li>
 </ul>
 
