@@ -130,8 +130,9 @@ i.fa.homeIcon {
     color: #768E98; }
 
 body {
-  background: url("http://65.media.tumblr.com/tumblr_l5om70KlO21qcht8qo1_1280.jpg");
-  background-repeat: no-repeat; }
+  background: url("../images/background.png");
+  background-position: center;
+  background-size: 900px 850px; }
 
 .container {
   padding: 30px;
