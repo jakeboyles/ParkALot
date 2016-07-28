@@ -6,8 +6,14 @@
 
 			var postSearch = function(data){
 
+				var data = {
+					search: data.search,
+					distance: data.distance,
+					price: data.price,
+				}
 				var search = $http({
 					method: 'POST',
+					data:data,
 					url: ' https://paringapiproxy.herokuapp.com/get_locations'
 				});
 				return search;

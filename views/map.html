@@ -3,6 +3,8 @@
 <div class="container">
 	<i class="fa fa-home" aria-hidden="true" ui-sref='home'></i>
 
+	<h3>{{controller.test}}</h3>
+
 	<!-- 
 
 	 <script src="https://npmcdn.com/leaflet@1.0.0-rc.2/dist/leaflet.js"></script>
@@ -20,10 +22,14 @@
 			<li><p>Lot Blah</p></li>
 		</ul>
 
-		<form ng-submit="controller.submit()">
-			<input type="text" name="search" placeholder="Address" ng-model="controller.form.address">
-			<input class="btn btn-primary" type="submit" name="query" placeholder="Find">
+		<div class="col-xs-8 wrapper">
+		<form ng-submit="controller.go()">
+			<input type="text" name="search" placeholder="Address" ng-model="controller.form.search">
+			<input type="text" name="taco" placeholder="Distance" ng-model="controller.form.distance">
+			<input type="text" name="burrito" placeholder="Price" ng-model="controller.form.price">
+			<input class="btn btn-primary" value="FIND" type="submit" name="query">
 		</form>
+		</div>
 
 	</div>
 
