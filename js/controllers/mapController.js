@@ -3,7 +3,7 @@
     
     angular
     .module('parkalot')
-    .controller('mapController', function($state,back) {
+    .controller('mapController', function($state,back,API) {
        var vm = this;
 
       var mymap = L.map('mapid').setView([39.1031, -84.5120], 13);
@@ -16,6 +16,13 @@
     	accessToken: 'pk.eyJ1IjoiamNrbnVldmVuIiwiYSI6ImNpcjUxcXJ2eTAxbzNmbm5yMW1naGE3NWoifQ.YhmcfQV-iBNW-rj3XLNzaw#15/39.1025/-84.5197'
 		}).addTo(mymap);
       
-      
+    
+        var search = API.postSearch(API.data);
+
+        search.then(function(results){
+          console.log(results);
+        })
+  
+
     });
 })();
