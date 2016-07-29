@@ -130,9 +130,8 @@ i.fa.homeIcon {
     color: #768E98; }
 
 body {
-  background: url("../images/background.png");
-  background-position: center;
-  background-size: 900px 850px; }
+  background: url("../images/mapIcon.png");
+  background-size: 800px 850px; }
 
 .container {
   padding: 30px;
