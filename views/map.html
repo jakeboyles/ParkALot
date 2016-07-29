@@ -2,34 +2,27 @@
 
 <div class="container">
 	<i class="fa fa-home" aria-hidden="true" ui-sref='home'></i>
-
-	<h3>{{controller.test}}</h3>
-
-	<!-- 
-
+	
 	 <script src="https://npmcdn.com/leaflet@1.0.0-rc.2/dist/leaflet.js"></script>
 
 	 <script>
 	 	var mymap = L.map('mapid').setView([39.1031, -0.09], 13);
 
        
-	 </script> -->
+	 </script>
 
 	<div class="col-xs-12 info">
-		<ul>
-			<li><h3>Destination</h3> <p>Example Address: Cincinnati, OH, 45123</p></li>
-			<li><h3>Lot Locations</h3></li>
-			<li><p>Lot Blah</p></li>
-		</ul>
-
-		<div class="col-xs-8 wrapper">
 		<form ng-submit="controller.go()">
+			
+			<h3 class="mapDestination">Your Destination</h3>
 			<input type="text" name="search" placeholder="Address" ng-model="controller.form.search">
+			<input class="btn btn-primary" value="FIND" type="submit" name="query">
+			<h3 class="mapResults">Lot Locations</h3>
 			<input type="text" name="taco" placeholder="Distance" ng-model="controller.form.distance">
 			<input type="text" name="burrito" placeholder="Price" ng-model="controller.form.price">
-			<input class="btn btn-primary" value="FIND" type="submit" name="query">
+			
 		</form>
-		</div>
+	
 
 	</div>
 
