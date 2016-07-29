@@ -17,11 +17,17 @@
 			<h3 class="mapDestination">Your Destination</h3>
 			<input type="text" name="search" placeholder="Address" ng-model="controller.form.search">
 			<input class="btn btn-primary" value="FIND" type="submit" name="query">
-			<h3 class="mapResults">Lot Locations</h3>
-			<input type="text" name="taco" placeholder="Distance" ng-model="controller.form.distance">
-			<input type="text" name="burrito" placeholder="Price" ng-model="controller.form.price">
-			
 		</form>
+
+		<h3 class="mapResults">Lot Locations</h3>
+		<div class="lotInfo" ng-repeat="info in controller.get_locations">
+			<p class="lotNameMap">Lot Name: {{info.location_name}}</p>
+			<p class="lotAddressMap">Address: {{info.address}}{{info.state}}{{info.zip}}</p>
+			<p class="lotPrice">Price: {{info.price_formatted}}</p>
+			<p class="lotDistance">Distance: {{info.distance}}</p>
+			<p class="lotSpace">Available Spots: {{info.available_spots}}</p>
+		</div>	
+		
 	
 
 	</div>

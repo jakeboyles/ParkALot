@@ -15,20 +15,15 @@
     	accessToken: 'pk.eyJ1IjoiamNrbnVldmVuIiwiYSI6ImNpcjUxcXJ2eTAxbzNmbm5yMW1naGE3NWoifQ.YhmcfQV-iBNW-rj3XLNzaw#15/39.1025/-84.5197'
 		}).addTo(mymap);
 
-		vm.test = "TEST";
       vm.go = function(){
 
     		var search = API.postSearch(vm.form);
 
         	search.then(function(results){
          	 console.log(results);
+           vm.get_locations = results.data.parking_listings;
         	})
-
-
-    	}
-      
-    
-        
+    	}    
 
     });
 })();
