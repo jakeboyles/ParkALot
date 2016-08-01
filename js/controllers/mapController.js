@@ -19,6 +19,8 @@
     	// .bindPopup('351 E 7th St Cincinnati, OH 45202')
     	// .openPopup();
 
+      var popup = L.popup();
+
       vm.go = function(){
 
     		var search = API.postSearch(vm.form);
