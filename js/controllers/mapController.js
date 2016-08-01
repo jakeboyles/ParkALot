@@ -15,6 +15,10 @@
     	accessToken: 'pk.eyJ1IjoiamNrbnVldmVuIiwiYSI6ImNpcjUxcXJ2eTAxbzNmbm5yMW1naGE3NWoifQ.YhmcfQV-iBNW-rj3XLNzaw#15/39.1025/-84.5197'
 		}).addTo(mymap);
 
+      L.marker([39.104405,-84.50781]).addTo(mymap)
+    	.bindPopup('351 E 7th St Cincinnati, OH 45202')
+    	.openPopup();
+
       vm.go = function(){
 
     		var search = API.postSearch(vm.form);
