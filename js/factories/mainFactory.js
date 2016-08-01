@@ -3,6 +3,20 @@
 	angular
 		.module('parkalot').factory('back', function($http,Backand) {
 
+			function searchParking(lat,lng)
+			{
+				return $http ({
+  					method: 'GET',
+  					url: 'https://api.backand.com:443/1/objects/Parking',
+  					params: {
+  						filter: {
+  							"q":{
+  								"Location": {"$withinFeet" : [[lat, lng],500]}
+  							}
+  						}
+  					}
+				});
+			}
 
 		 	function postData(data)
 		 	{
@@ -117,6 +131,7 @@
 		 		userGet:userGet,
 		 		logout:logout,
 		 		editUser:editUser,
+		 		searchParking:searchParking,
 
 		 	}
 	});
