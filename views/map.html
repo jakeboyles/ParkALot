@@ -20,7 +20,7 @@
 		</form>
 
 		<h3 class="mapResults">Lot Locations</h3>
-		<div class="lotInfo" ng-repeat="info in controller.get_locations" ng-repeat="info in controller.Parking">
+		<div class="lotInfo" ng-repeat="info in controller.get_locations">
 			<p class="lotNameMap">Lot Name: {{info.location_name}}</p>
 			<p class="lotAddressMap">Address: {{info.address}}{{info.state}}{{info.zip}}</p>
 			<p class="lotPrice">Price: {{info.price_formatted}}</p>

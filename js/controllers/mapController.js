@@ -54,8 +54,8 @@
            		
            		taco.forEach(function(location){
            			
-                 L.marker([location.Location[0], location.Location[1]]).addTo(mymap)
-           			.bindPopup('<p>'+location.address+'</p>');
+                 L.marker([location.Location[0], location.Location[1]], {icon: carPin}).addTo(mymap)
+           			.bindPopup('<h5>'+location.title+'</h5>'+'<br>'+'<p>'+location.address+'</p>');
            		})
 
            		})
