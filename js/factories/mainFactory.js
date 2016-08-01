@@ -117,6 +117,7 @@
 		 		userGet:userGet,
 		 		logout:logout,
 		 		editUser:editUser,
+		 		
 
 		 	}
 	});

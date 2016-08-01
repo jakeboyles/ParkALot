@@ -34,9 +34,15 @@
            		var lat = results.data.lat;
            		var lng = results.data.lng;
 
+              var carPin = L.icon({
+                iconUrl: 'images/mapCarPin.png',
+
+                iconSize: [48, 52],
+              })
+
            		vm.get_locations.forEach(function(location){
            			console.log(location);
-           			L.marker([location.lat, location.lng]).addTo(mymap)
+           			L.marker([location.lat, location.lng], {icon: carPin}).addTo(mymap)
            			.bindPopup('<p>'+location.location_name+'</p>');
            		})
 
@@ -49,3 +55,5 @@
 
     });
 })();
+
+
