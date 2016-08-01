@@ -26,7 +26,6 @@
     		var search = API.postSearch(vm.form);
 
         	search.then(function(results){
-         	 console.log(results);
            		vm.get_locations = results.data.parking_listings;
 
            		vm.destination = results.config.data;
@@ -41,12 +40,25 @@
               })
 
            		vm.get_locations.forEach(function(location){
+
            			console.log(location);
            			L.marker([location.lat, location.lng], {icon: carPin}).addTo(mymap)
            			.bindPopup('<p>'+location.location_name+'</p>');
            		})
 
+           		var backAdd = back.searchParking(lat,lng);
 
+           		backAdd.then(function(results){
+           			console.log(results);
+           			var taco = results.data.data;
+           		
+           		taco.forEach(function(location){
+           			
+                 L.marker([location.Location[0], location.Location[1]]).addTo(mymap)
+           			.bindPopup('<p>'+location.address+'</p>');
+           		})
+
+           		})
 
            		L.marker([lat, lng]).addTo(mymap)
     				.bindPopup('<p>' +vm.destination.search+'</p>')
