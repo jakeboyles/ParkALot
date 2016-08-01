@@ -63,6 +63,8 @@
            		L.marker([lat, lng]).addTo(mymap)
     				.bindPopup('<p>' +vm.destination.search+'</p>')
         	})
+
+           
     	}    
 
     });

@@ -18,6 +18,9 @@ angular.module('parkalot', ['ui.router', 'backand'])
 				//controller: 'homeController',
 				//controllerAs: 'controller',
 			},
+			'mobileMenu': {
+		        templateUrl: '../views/partials/mobileMenu.html',
+		      },
 		},
 	})
 	.state('signUp', {
@@ -28,6 +31,9 @@ angular.module('parkalot', ['ui.router', 'backand'])
 				controller: 'signUpController',
 				controllerAs: 'controller',
 			},
+			'mobileMenu': {
+		        templateUrl: '../views/partials/mobileMenu.html',
+		      },
 		},
 	})
 	.state('login', {
@@ -38,6 +44,9 @@ angular.module('parkalot', ['ui.router', 'backand'])
 				controller: 'loginController',
 				controllerAs: 'controller',
 			},
+			'mobileMenu': {
+		        templateUrl: '../views/partials/mobileMenu.html',
+		      },
 		},
 	})
 	.state('user', {
@@ -48,6 +57,9 @@ angular.module('parkalot', ['ui.router', 'backand'])
 				controller: 'userController',
 				controllerAs: 'controller',
 			},
+			'mobileMenu': {
+		        templateUrl: '../views/partials/mobileMenu.html',
+		      },
 		},
 	})
 	.state('map', {
@@ -58,6 +70,9 @@ angular.module('parkalot', ['ui.router', 'backand'])
 				controller: 'mapController',
 				controllerAs: 'controller',
 			},
+			'mobileMenu': {
+		        templateUrl: '../views/partials/mobileMenu.html',
+		      },
 		},
 	})
 	.state('preference', {
@@ -68,6 +83,9 @@ angular.module('parkalot', ['ui.router', 'backand'])
 				controller: 'prefController',
 				controllerAs: 'controller',
 			},
+			'mobileMenu': {
+		        templateUrl: '../views/partials/mobileMenu.html',
+		      },
 		},
 	});
 

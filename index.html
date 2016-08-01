@@ -15,17 +15,10 @@
 <body>
 <div class="container-fluid">
 
-	<div class="menu mobile"><span></span></div>
-		<div id="menu">
-			<ul>
-    			<li><a ui-sref='home'>Home</a></li>
-    			<li><a ui-sref='login'>Login</a></li>
-				<li><a ui-sref='map'>View Map</a></li>
-				<li><a ui-sref='preference'>Preference</a></li>
-				<li><a ui-sref='user'>User</a></li>
-				<li><a ui-sref='signUp'>Register</a></li>
-			</ul>
-		</div>
+  <div class="mobile" ui-view="mobileMenu">
+                
+  </div> 
+
 
 	<main>
 		<div ui-view="main"></div>
@@ -46,6 +39,6 @@
 <script src="js/controllers/userController.js"></script>
 <script src="js/controllers/mapController.js"></script>
 <script src="js/controllers/prefController.js"></script>
-<script src="js/mobileMenu.js"></script>
+<script src="js/controllers/mobileMenuController.js"></script>
 </body>
 </html>
