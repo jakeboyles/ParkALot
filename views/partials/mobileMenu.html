@@ -1,4 +1,20 @@
-<a ng-init="navCollapse = true" ng-click="navCollapse = !navCollapse"><div class="menu mobile"><span></span></div></a>
+<nav class="navbar navbar-light bg-faded">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar" aria-controls="exCollapsingNavbar" aria-expanded="false" aria-label="Toggle navigation">
+    &#9776;
+  </button>
+  <div class="collapse" id="exCollapsingNavbar">
+    <div class="bg-inverse p-a-1">
+      <h4>Collapsed content</h4>
+      <span class="text-muted">Toggleable via the navbar brand.</span>
+    </div>
+  </div>
+</nav>
+
+
+<!-- <div 
+		<div class="navbar-header">
+			<i class="navbar-toggle fa fa-chevron-circle-down" aria-hidden="true" type="button" ng-init="navCollapsed = true" ng-click="navCollapsed = !navCollapsed"></i>
+		</div>
 	<div id="menu">
 		<ul class="mobileList">
     		<li><a ui-sref='home'>Home</a></li>
@@ -9,4 +25,5 @@
 			<li><a ui-sref='signUp'>Register</a></li>
 		</ul>
 	</div>
-	
+	</nav>
+</div>	 -->
