@@ -76,6 +76,17 @@ ul {
   .btn-primary i {
     color: #ED926B; }
 
+.logOut h2 {
+  display: block;
+  margin: auto;
+  margin-left: -50px; }
+
+.logOut i {
+  display: block;
+  margin: auto;
+  margin-top: -33px;
+  margin-right: 42px; }
+
 i.fa.homeIcon {
   color: white;
   font-size: 38px;
@@ -140,6 +151,17 @@ ul {
     color: #ED926B; }
   .btn-primary i {
     color: #ED926B; }
+
+.logOut h2 {
+  display: block;
+  margin: auto;
+  margin-left: -50px; }
+
+.logOut i {
+  display: block;
+  margin: auto;
+  margin-top: -33px;
+  margin-right: 42px; }
 
 i.fa.homeIcon {
   color: white;
