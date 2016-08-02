@@ -100,7 +100,8 @@ img.icon {
 
 #mapid {
   height: 350px;
-  width: auto; }
+  width: auto;
+  border: 5px solid #E66855; }
 
 .container {
   padding: 10px; }
