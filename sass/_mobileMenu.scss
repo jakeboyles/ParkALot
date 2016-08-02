@@ -1,0 +1,19 @@
+.mobileIcon{ 
+    &:hover {
+      cursor:pointer;
+      .bar{
+        &:nth-child(2){
+        transform:translateX(10px);
+        cursor:pointer;
+        }
+      } 
+    }  
+}
+
+span {
+  width:40px;
+  height:6px;
+  display:block;
+  background-color:$dark-blue;
+  margin:4px;
+}

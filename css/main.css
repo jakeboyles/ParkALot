@@ -100,6 +100,19 @@ img.icon {
     list-style: none;
     padding: 0px; }
 
+.mobileIcon:hover {
+  cursor: pointer; }
+  .mobileIcon:hover .bar:nth-child(2) {
+    transform: translateX(10px);
+    cursor: pointer; }
+
+span {
+  width: 40px;
+  height: 6px;
+  display: block;
+  background-color: #768E98;
+  margin: 4px; }
+
 h2 {
   font-size: 36px; }
 
