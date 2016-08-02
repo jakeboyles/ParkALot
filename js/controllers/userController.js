@@ -20,6 +20,11 @@
         $state.go('home');
        }
 
+      vm.go = function (){
+
+        $state.go('mapAddress', vm.form);
+   
+      }
       
     });
 })();
