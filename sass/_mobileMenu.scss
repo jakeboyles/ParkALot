@@ -3,7 +3,7 @@
       cursor:pointer;
       .bar{
         &:nth-child(2){
-        transform:translateX(10px);
+        transform:translateX(-10px);
         cursor:pointer;
         }
       } 
@@ -16,4 +16,10 @@ span {
   display:block;
   background-color:$dark-blue;
   margin:4px;
+}
+
+li.listItem {
+  text-decoration: none;
+  
+  display:inline;
 }

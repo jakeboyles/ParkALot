@@ -114,7 +114,7 @@ img.icon {
 .mobileIcon:hover {
   cursor: pointer; }
   .mobileIcon:hover .bar:nth-child(2) {
-    transform: translateX(10px);
+    transform: translateX(-10px);
     cursor: pointer; }
 
 span {
@@ -123,6 +123,10 @@ span {
   display: block;
   background-color: #768E98;
   margin: 4px; }
+
+li.listItem {
+  text-decoration: none;
+  display: inline; }
 
 h2 {
   font-size: 36px; }
@@ -192,8 +196,7 @@ body {
   padding: 30px;
   display: block;
   margin: auto;
-  border-radius: 5px;
-  background-color: rgba(255, 217, 140, 0.8); }
+  border-radius: 5px; }
 
 h1.mainTitle {
   color: #E66855;

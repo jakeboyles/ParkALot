@@ -1,16 +1,18 @@
-<div class="mobileIcon" ng-click="openMobileNav = !openMobileNav">
-	<span class="bar"></span>
-	<span class="bar"></span>
-	<span class="bar"></span>
-</div>
-
-	<div class="navMenu" ng-init="openMobileNav = false" ng-show="openMobileNav">
-		<ul class="menuList">
-			<li class="listItem"><a ui-sref='home'>Home</a></li>
-			<li class="listItem"><a ui-sref='login'>Login</a></li>
-			<li class="listItem"><a ui-sref='map'>View Map</a></li>
-			<li class="listItem"><a ui-sref='preference'>Preference</a></li>
-			<li class="listItem"><a ui-sref='signUp'>Register</a></li>
-			<li class="listItem"><a ui-sref='user'>User</a></li>
-		</ul>
+<div class="col-sm-3 col-md-hidden col-lg-hidden mobilePage">
+	<div class="mobileIcon" ng-click="openMobileNav = !openMobileNav">
+		<span class="bar"></span>
+		<span class="bar"></span>
+		<span class="bar"></span>
 	</div>
+
+		<div class="navMenu" ng-init="openMobileNav = false" ng-show="openMobileNav">
+			<ul class="menuList">
+				<li class="listItem"><a ui-sref='home'><i class="fa fa-home" aria-hidden="true"></i></a></li>
+				<li class="listItem"><a ui-sref='login'><i class="fa fa-sign-in" aria-hidden="true"></i></a></li>
+				<li class="listItem"><a ui-sref='map'><i class="fa fa-globe" aria-hidden="true"></i></a></li>
+				<li class="listItem"><a ui-sref='preference'><i class="fa fa-star-o" aria-hidden="true"></i></a></li>
+				<li class="listItem"><a ui-sref='signUp'><i class="fa fa-plus-circle" aria-hidden="true"></i></a></li>
+				<li class="listItem"><a ui-sref='user'><i class="fa fa-user" aria-hidden="true"></i></a></li>
+			</ul>
+		</div>
+</div>		
