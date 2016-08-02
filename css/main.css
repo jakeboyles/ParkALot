@@ -180,7 +180,8 @@ p {
         font-family: "Sahitya";
         color: #ED926B; }
       .nav li a i {
-        font-size: 25px; }
+        font-size: 25px;
+        float: none; }
     .nav li .btn:hover {
       background-color: #ED926B;
       color: white; }
