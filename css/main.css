@@ -39,15 +39,25 @@ h2 {
   font-size: 36px; }
 
 ul {
-  list-style: none; }
+  list-style: none;
+  width: auto;
+  padding-left: 0px; }
   ul li {
-    display: block;
-    margin: auto;
-    margin-left: 0px; }
+    display: inline-block;
+    margin-left: 0px;
+    width: 100%; }
+    ul li h3 {
+      font-size: 21px; }
+    ul li p {
+      font-size: 16px; }
+    ul li h3, ul li p {
+      margin: auto;
+      display: inline-block; }
 
 .btn-primary {
   display: block;
-  margin: 0 auto;
+  margin: auto;
+  width: 100%;
   height: 40px;
   margin-top: 10px;
   background-color: #768E98;
@@ -94,15 +104,25 @@ h2 {
   font-size: 36px; }
 
 ul {
-  list-style: none; }
+  list-style: none;
+  width: auto;
+  padding-left: 0px; }
   ul li {
-    display: block;
-    margin: auto;
-    margin-left: 0px; }
+    display: inline-block;
+    margin-left: 0px;
+    width: 100%; }
+    ul li h3 {
+      font-size: 21px; }
+    ul li p {
+      font-size: 16px; }
+    ul li h3, ul li p {
+      margin: auto;
+      display: inline-block; }
 
 .btn-primary {
   display: block;
-  margin: 0 auto;
+  margin: auto;
+  width: 100%;
   height: 40px;
   margin-top: 10px;
   background-color: #768E98;

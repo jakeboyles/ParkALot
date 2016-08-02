@@ -5,12 +5,12 @@
 <h2>{{controller.user.firstName}} {{controller.user.lastName}}</h2>
 
 <ul>
-	<li><h3>Price Range<h3>: {{controller.user.price}}</li>
-	<li><h3>Distance<h3>: {{controller.user.distance}}</li>
-	<li><h3>Favorite Location<h3>: {{controller.user.favorite}}</li>
-
-	<li><a class="btn btn-primary" href="#/preference">Set Preferences</a></li>
+	<li><h3>Price Range</h3><p>: ${{controller.user.price}}</p></li>
+	<li><h3>Distance</h3><p>: {{controller.user.distance}}</p></li>
+	<li><h3>Favorite Location</h3><p>{{controller.user.favorite}}</p></li>
 </ul>
+<a class="btn btn-primary" href="#/preference"><h2>Set Preferences</h2></a>
+
 
 <form ng-submit="controller.go()">
 	<input type="search" name="start" placeholder="Start a New Search by Address" ng-model="controller.form.search">
