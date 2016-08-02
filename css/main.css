@@ -1,6 +1,6 @@
 h2 {
   font-family: "Sahitya";
-  color: #E66855; }
+  color: #768E98; }
 
 form {
   display: block;
@@ -25,7 +25,7 @@ form {
   form .btn-primary {
     margin-top: 20px;
     margin-bottom: 20px;
-    background-color: #8AB6B7; }
+    background-color: #768E98; }
 
 i.fa.homeIcon {
   color: white;
@@ -75,6 +75,17 @@ ul {
     color: #ED926B; }
   .btn-primary i {
     color: #ED926B; }
+
+.logOut h2 {
+  display: block;
+  margin: auto;
+  margin-left: -50px; }
+
+.logOut i {
+  display: block;
+  margin: auto;
+  margin-top: -33px;
+  margin-right: 42px; }
 
 i.fa.homeIcon {
   color: white;
@@ -153,6 +164,17 @@ ul {
     color: #ED926B; }
   .btn-primary i {
     color: #ED926B; }
+
+.logOut h2 {
+  display: block;
+  margin: auto;
+  margin-left: -50px; }
+
+.logOut i {
+  display: block;
+  margin: auto;
+  margin-top: -33px;
+  margin-right: 42px; }
 
 i.fa.homeIcon {
   color: white;
