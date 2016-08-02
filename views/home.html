@@ -1,17 +1,26 @@
 <div class="container">
 	<ul class="nav">
 		<li><h1 class="mainTitle">Park-A-Lot</h1></li>
-		<li><p>Search through all of the parking spaces downtown to find the best spot!</p></li>
+		
+		<li>
+			<p>Search through all of the parking spaces downtown to find the best spot!</p>
+		</li>
+		
 		<li><img class="icon" src="images/iconTwo.png"></li>
 		
-		<li><input type="search" name="start" placeholder="Get Started"></li>
 		<li>
-		<a class="btn btn-primary" href="#/newuser"><h2>Sign Up</h2> <i class="fa fa-user-plus" aria-hidden="true"></i></a>
+		  <form ng-submit="controller.go()">
+		  	<input type="search" name="start" placeholder="Get Started">
+		  </form>
 		</li>
+
 		<li>
-		<a class="btn btn-primary" href="#/login"><h2>Login</h2> <i class="fa fa-sign-in" aria-hidden="true"></i></a>
+			<a class="btn btn-primary" href="#/newuser"><h2>Sign Up</h2> <i class="fa fa-user-plus" aria-hidden="true"></i></a>
 		</li>
+
 		<li>
+			<a class="btn btn-primary" href="#/login"><h2>Login</h2> <i class="fa fa-sign-in" aria-hidden="true"></i></a>
+		</li>
 	
 	</ul>
 

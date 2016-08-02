@@ -15,8 +15,8 @@ angular.module('parkalot', ['ui.router', 'backand'])
 		views: {
 			'main': {
 				templateUrl: '../views/home.html',
-				//controller: 'homeController',
-				//controllerAs: 'controller',
+				controller: 'homeController',
+				controllerAs: 'controller',
 			},
 			'mobileMenu': {
 		        templateUrl: '../views/partials/mobileMenu.html',
