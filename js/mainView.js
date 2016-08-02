@@ -75,6 +75,22 @@ angular.module('parkalot', ['ui.router', 'backand'])
 		      },
 		},
 	})
+	.state('mapAddress', {
+		url: '/map/:address',
+		params: {
+			search : null,
+		},
+		views: {
+			'main': {
+				templateUrl: '../views/map.html',
+				controller: 'mapController',
+				controllerAs: 'controller',
+			},
+			'mobileMenu': {
+		        templateUrl: '../views/partials/mobileMenu.html',
+		      },
+		},
+	})
 	.state('preference', {
 		url: '/preference',
 		views: {

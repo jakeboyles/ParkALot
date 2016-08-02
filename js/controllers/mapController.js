@@ -3,33 +3,13 @@
     
     angular
     .module('parkalot')
-    .controller('mapController', function($state,back,API) {
+    .controller('mapController', function($state,back,API, $stateParams) {
        var vm = this;
       var mymap = L.map('mapid').setView([39.1031, -84.5120], 14);
 
-      L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', 
-       {
-    	//attribution: '<a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, <a href="http://mapbox.com">Mapbox</a>',
-   		maxZoom: 18,
-    	id: 'jcknueven.0pa4k9a3',
-    	accessToken: 'pk.eyJ1IjoiamNrbnVldmVuIiwiYSI6ImNpcjUxcXJ2eTAxbzNmbm5yMW1naGE3NWoifQ.YhmcfQV-iBNW-rj3XLNzaw#15/39.1025/-84.5197'
-		}).addTo(mymap);
-
-      var carPin = L.icon({
-                iconUrl: 'images/mapCarPin.png',
-
-                iconSize: [48, 52],
-              })
-
-     //  L.marker([39.104405,-84.50781]).addTo(mymap)
-    	// .bindPopup('351 E 7th St Cincinnati, OH 45202')
-    	// .openPopup();
-
-      var popup = L.popup();
-
-      vm.go = function(){
-
-      	mymap.eachLayer(function(layer){
+      var createMap = function (address){
+    	
+    	mymap.eachLayer(function(layer){
       		mymap.removeLayer(layer);
       	});
 
@@ -41,7 +21,8 @@
     	accessToken: 'pk.eyJ1IjoiamNrbnVldmVuIiwiYSI6ImNpcjUxcXJ2eTAxbzNmbm5yMW1naGE3NWoifQ.YhmcfQV-iBNW-rj3XLNzaw#15/39.1025/-84.5197'
 		}).addTo(mymap);
 
-    		var search = API.postSearch(vm.form);
+    		var search = API.postSearch(address);
+
 
         	search.then(function(results){
 
@@ -66,7 +47,7 @@
            		var backAdd = back.searchParking(lat,lng);
 
            		backAdd.then(function(results){
-           			console.log(results);
+  
            			var taco = results.data.data;
            		
            			taco.forEach(function(location){
@@ -80,10 +61,42 @@
            		L.marker([lat, lng]).addTo(mymap)
     				.bindPopup('<p>' +vm.destination.search+'</p>')
         	})
+        	if (vm.form){
+        		vm.form.search = "";
+        	}
+        	
+    }
 
-        	vm.form.search = "";
-   
-    	}    
+      if ($stateParams.search !== ""){
+      	createMap($stateParams);
+      }
+
+      L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', 
+       {
+    	//attribution: '<a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, <a href="http://mapbox.com">Mapbox</a>',
+   		maxZoom: 18,
+    	id: 'jcknueven.0pa4k9a3',
+    	accessToken: 'pk.eyJ1IjoiamNrbnVldmVuIiwiYSI6ImNpcjUxcXJ2eTAxbzNmbm5yMW1naGE3NWoifQ.YhmcfQV-iBNW-rj3XLNzaw#15/39.1025/-84.5197'
+		}).addTo(mymap);
+
+      var carPin = L.icon({
+                iconUrl: 'images/mapCarPin.png',
+
+                iconSize: [48, 52],
+              })
+
+     //  L.marker([39.104405,-84.50781]).addTo(mymap)
+    	// .bindPopup('351 E 7th St Cincinnati, OH 45202')
+    	// .openPopup();
+
+      var popup = L.popup();
+
+      vm.go = function(){
+      	createMap(vm.form);
+
+    	} 
+
+       
 
     });
 })();

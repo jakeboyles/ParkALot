@@ -5,6 +5,7 @@
 		.factory('API', function($http) {
 
 			var postSearch = function(data){
+				console.log(data);
 
 				var data = {
 					search: data.search,
