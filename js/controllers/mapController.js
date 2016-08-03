@@ -9,7 +9,7 @@
       //setting the map with the area being Cincinnati
       var mymap = L.map('mapid').setView([39.1031, -84.5120], 14);
 
-      var getHome = function(){
+      vm.getHome = function(){
         if (navigator.geolocation) 
         {
         navigator.geolocation.getCurrentPosition(showPosition);
@@ -69,7 +69,7 @@
            			taco.forEach(function(location){
            			
                  	L.marker([location.Location[0], location.Location[1]], {icon: carPin}).addTo(mymap)
-           			.bindPopup('<h5>'+location.title+'</h5><br>'+'<a href="http://maps.google.com/?q='++'/'+location.address+'" target="_blank" ng-click="getHome()"><p>'+location.address+'</p></a>');
+           			.bindPopup('<h5>'+location.title+'</h5><br>'+'<a href="http://maps.google.com/?q='+location.address+'" target="_blank" ng-click="controller.getHome()"><p>'+location.address+'</p></a>');
            			})
 
            		});
