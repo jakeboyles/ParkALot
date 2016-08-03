@@ -26,6 +26,13 @@
 			<p class="lotSpace">Available Spots: {{info.available_spots}}</p>
 		</div>	
 		
+		<div class="lotInfoDos" ng-repeat="data in controller.taco">
+			<h4 class="lotNameMapDos">Lot Name: {{data.title}}</h4>
+			<p class="lotAddressMapDos">Address: {{data.address}}</p>
+			<p class="lotPriceDos">Price: {{data.price}}</p>
+			<p class="lotDistanceDos">Distance: {{data.distance}}</p>
+		</div>	
+		
 	
 
 	</div>
