@@ -10,7 +10,7 @@ $orangred:#ED926B;
 @import 'images';
 @import 'map';
 @import 'mobileMenu';
-// http://65.media.tumblr.com/tumblr_l5om70KlO21qcht8qo1_1280.jpg
+
 body {
 	background: url('../images/mapIconTwo.png');
 	background-position:center;
@@ -73,6 +73,9 @@ p.slogan{
 			height: 45px;
 			border:none;
 			margin-top: 10px;
+			  &:focus{
+       			outline:none;
+      			}
 			h2{
 				display: inline-block;
 				margin:auto;
