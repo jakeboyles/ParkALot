@@ -21,7 +21,7 @@
 
         edit.then(function(response){
           console.log(response);
-          $state.go('user');
+          $state.go('userPref');
         })
       }
 

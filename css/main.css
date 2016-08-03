@@ -35,65 +35,8 @@ i.fa.homeIcon {
     cursor: pointer;
     color: #768E98; }
 
-h2 {
-  font-size: 36px; }
-
-ul {
-  list-style: none;
-  width: auto;
-  padding-left: 0px; }
-  ul li {
-    display: inline-block;
-    margin-left: 0px;
-    width: 100%; }
-    ul li h3 {
-      font-size: 21px; }
-    ul li p {
-      font-size: 16px; }
-    ul li h3, ul li p {
-      margin: auto;
-      display: inline-block; }
-
-.btn-primary {
-  display: block;
-  margin: auto;
-  width: 100%;
-  height: 40px;
-  margin-top: 10px;
-  background-color: #768E98;
-  border: none; }
-  .btn-primary:hover {
-    background-color: #ED926B; }
-    .btn-primary:hover h2 {
-      color: white; }
-    .btn-primary:hover i {
-      color: white; }
-  .btn-primary h2 {
-    font-size: 23px;
-    display: inline-block;
-    margin: auto;
-    color: #ED926B; }
-  .btn-primary i {
-    color: #ED926B; }
-
-.logOut h2 {
-  display: block;
-  margin: auto;
-  margin-left: -50px; }
-
-.logOut i {
-  display: block;
-  margin: auto;
-  margin-top: -33px;
-  margin-right: 42px; }
-
-i.fa.homeIcon {
-  color: white;
-  font-size: 38px;
-  float: right; }
-  i.fa.homeIcon:hover {
-    cursor: pointer;
-    color: #768E98; }
+h2.userPrefName {
+  text-align: center; }
 
 img.icon {
   width: 130px;
@@ -141,67 +84,14 @@ ul li.listItem {
       color: #768E98; }
 
 h6.out {
-  display: block; }
-
-h2 {
-  font-size: 36px; }
-
-ul {
-  list-style: none;
-  width: auto;
-  padding-left: 0px; }
-  ul li {
-    display: inline-block;
-    margin-left: 0px;
-    width: 100%; }
-    ul li h3 {
-      font-size: 21px; }
-    ul li p {
-      font-size: 16px; }
-    ul li h3, ul li p {
-      margin: auto;
-      display: inline-block; }
-
-.btn-primary {
   display: block;
-  margin: auto;
-  width: 100%;
-  height: 40px;
-  margin-top: 10px;
-  background-color: #768E98;
-  border: none; }
-  .btn-primary:hover {
-    background-color: #ED926B; }
-    .btn-primary:hover h2 {
-      color: white; }
-    .btn-primary:hover i {
-      color: white; }
-  .btn-primary h2 {
-    font-size: 23px;
-    display: inline-block;
-    margin: auto;
-    color: #ED926B; }
-  .btn-primary i {
-    color: #ED926B; }
-
-.logOut h2 {
-  display: block;
-  margin: auto;
-  margin-left: -50px; }
-
-.logOut i {
-  display: block;
-  margin: auto;
-  margin-top: -33px;
-  margin-right: 42px; }
-
-i.fa.homeIcon {
-  color: white;
-  font-size: 38px;
-  float: right; }
-  i.fa.homeIcon:hover {
-    cursor: pointer;
-    color: #768E98; }
+  cursor: pointer;
+  color: #E66855;
+  text-decoration: none;
+  font-size: 12px;
+  font-family: "Yantramanav"; }
+  h6.out:hover {
+    text-decoration: none; }
 
 body {
   background: url("../images/mapIconTwo.png");
@@ -220,48 +110,48 @@ h1.mainTitle {
   border-bottom: 4px solid #768E98;
   font-family: "Sahitya";
   font-size: 56px;
-  margin-top: -25px; }
+  margin-top: -25px;
+  text-align: center; }
 
-p {
+p.slogan {
   color: #E66855;
   font-size: 14px;
-  font-family: "Yantramanav"; }
+  font-family: "Yantramanav";
+  text-align: center; }
 
 .nav {
   list-style: none;
   margin-top: 10px; }
-  .nav li {
-    text-align: center; }
-    .nav li input {
-      width: 90%;
-      height: 30px;
-      color: #E66855;
-      text-align: center;
-      border-radius: 5px;
-      margin-top: 50px; }
-    .nav li form input {
+  .nav input {
+    width: 90%;
+    height: 30px;
+    color: #E66855;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 50px; }
+  .nav form input {
+    margin: auto;
+    margin-top: 20px; }
+  .nav a {
+    background-color: #768E98;
+    color: #ffffff;
+    display: block;
+    margin: auto;
+    width: 90%;
+    height: 45px;
+    border: none;
+    margin-top: 10px; }
+    .nav a h2 {
+      display: inline-block;
       margin: auto;
-      margin-top: 20px; }
-    .nav li a {
-      background-color: #768E98;
-      color: #ED926B;
-      display: block;
-      margin: auto;
-      width: 90%;
-      height: 45px;
-      border: none;
-      margin-top: 10px; }
-      .nav li a h2 {
-        display: inline-block;
-        margin: auto;
-        font-size: 23px;
-        font-family: "Sahitya";
-        color: #ED926B; }
-      .nav li a i {
-        font-size: 25px;
-        float: none; }
-    .nav li .btn:hover {
-      background-color: #ED926B;
+      font-size: 23px;
+      font-family: "Sahitya";
+      color: #ffffff; }
+    .nav a i {
+      font-size: 25px;
+      float: none; }
+  .nav .btn:hover {
+    background-color: #93a6ae;
+    color: #ffffff; }
+    .nav .btn:hover h2 {
       color: white; }
-      .nav li .btn:hover h2 {
-        color: white; }
