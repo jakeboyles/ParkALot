@@ -1,6 +1,21 @@
-<div class="container">
+<div class="user col">
 
+	<!-- <ul class="nav na-tabs" role="tablist">
+		<li role="presentation" class="active"><a href="#user" aria-controls="user" role="tab" data-toggle="tab">User</a></li>
+		<li role="presentation" class="active"><a href="#preference" aria-controls="preference" role="tab" data-toggle="tab">Preference</a></li>
+	</ul>	
 
+	<div class="tab-content">
+		<div role="tabpanel" class="tab-pane fade in active" id="user"><ul>
+					<li><h3>Price Range</h3><p>: ${{controller.user.price}}</p></li>
+					<li><h3>Distance</h3><p>: {{controller.user.distance}}</p></li>
+					<li><h3>Favorite Location</h3><p>{{controller.user.favorite}}</p></li>
+				</ul>
+		</div>
+		<div role="tabpanel" class="tab-pane fade" id="preference">
+		</div>		
+
+	</div> -->	
 <h2>{{controller.user.firstName}} {{controller.user.lastName}}</h2>
 
 <ul>
@@ -15,5 +30,5 @@
 	<input type="search" name="start" placeholder="Start a New Search by Address" ng-model="controller.form.search">
 </form>
 
-<a class="btn btn-primary logOut" ng-click="controller.logout()"><h2>Log Out</h2> <i class="fa fa-sign-out" aria-hidden="true"></i></a>
+	<a class="btn btn-primary logOut" ng-click="controller.logout()"><h2>Log Out</h2> <i class="fa fa-sign-out" aria-hidden="true"></i></a>
 </div>

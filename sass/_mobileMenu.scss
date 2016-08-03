@@ -18,8 +18,21 @@ span {
   margin:4px;
 }
 
-li.listItem {
-  text-decoration: none;
+ul{
   
-  display:inline;
+  li.listItem {
+    text-decoration: none;
+    font-size: 30px;
+    display:inline; 
+    margin:1px;
+    .fa {
+      color:lighten($dark-blue,12);
+      background-color:#ffffff;
+      padding:8px;
+      border-radius: 2px;
+      &:hover{
+        color:$dark-blue;
+      }
+    }
+  }
 }

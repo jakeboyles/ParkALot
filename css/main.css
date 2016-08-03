@@ -96,7 +96,9 @@ i.fa.homeIcon {
     color: #768E98; }
 
 img.icon {
-  width: 130px; }
+  width: 130px;
+  margin: 0 auto;
+  display: block; }
 
 #mapid {
   height: 350px;
@@ -125,9 +127,18 @@ span {
   background-color: #768E98;
   margin: 4px; }
 
-li.listItem {
+ul li.listItem {
   text-decoration: none;
-  display: inline; }
+  font-size: 30px;
+  display: inline;
+  margin: 1px; }
+  ul li.listItem .fa {
+    color: #99abb2;
+    background-color: #ffffff;
+    padding: 8px;
+    border-radius: 2px; }
+    ul li.listItem .fa:hover {
+      color: #768E98; }
 
 h2 {
   font-size: 36px; }
@@ -190,14 +201,16 @@ i.fa.homeIcon {
     color: #768E98; }
 
 body {
-  background: url("../images/mapIcon.png");
+  background: url("../images/mapIconTwo.png");
+  background-position: center;
   background-size: 800px 850px; }
 
-.container {
+.col {
   padding: 30px;
   display: block;
   margin: auto;
-  border-radius: 5px; }
+  border-radius: 5px;
+  background-color: rgba(209, 209, 209, 0.8); }
 
 h1.mainTitle {
   color: #E66855;
