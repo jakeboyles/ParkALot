@@ -102,7 +102,7 @@ img.icon {
 
 #mapid {
   height: 350px;
-  width: auto;
+  width: 100%;
   border: 5px solid #E66855; }
 
 .container {

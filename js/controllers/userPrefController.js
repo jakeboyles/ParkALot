@@ -25,12 +25,6 @@
         })
       }
 
-       
-       vm.logout = function(){
-        back.logout();
-        $state.go('home');
-       }
-
        var call = back.userGet(back.getToken());
 
        call.then(function(data){

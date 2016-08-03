@@ -26,10 +26,10 @@
       }
 
        
-       vm.logout = function(){
-        back.logout();
-        $state.go('home');
-       }
+       // vm.logout = function(){
+       //  back.logout();
+       //  $state.go('home');
+       // }
 
       
     });
