@@ -55,21 +55,6 @@ angular.module('parkalot', ['ui.router', 'backand','ngMaterial'])
 		      },
 		},
 	})
-	.state('user', {
-		url: '/user/:userid',
-		views: {
-			'main': {
-				templateUrl: '../views/user.html',
-				controller: 'userController',
-				controllerAs: 'controller',
-			},
-			'mobileMenu': {
-		        templateUrl: '../views/partials/mobileMenu.html',
-		        controller: 'mobileMenuController',
-				controllerAs: 'controller',
-		      },
-		},
-	})
 	.state('map', {
 		url: '/map',
 		views: {
@@ -94,21 +79,6 @@ angular.module('parkalot', ['ui.router', 'backand','ngMaterial'])
 			'main': {
 				templateUrl: '../views/map.html',
 				controller: 'mapController',
-				controllerAs: 'controller',
-			},
-			'mobileMenu': {
-		        templateUrl: '../views/partials/mobileMenu.html',
-		        controller: 'mobileMenuController',
-				controllerAs: 'controller',
-		      },
-		},
-	})
-	.state('preference', {
-		url: '/preference',
-		views: {
-			'main': {
-				templateUrl: '../views/preference.html',
-				controller: 'prefController',
 				controllerAs: 'controller',
 			},
 			'mobileMenu': {

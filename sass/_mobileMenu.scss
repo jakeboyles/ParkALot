@@ -39,4 +39,13 @@ ul{
 
 h6.out {
   display:block;
+  cursor:pointer;
+  color:$title;
+  text-decoration:none;
+  //text-align:right;
+  font-size:12px;
+  font-family: "Yantramanav";
+  &:hover{
+    text-decoration:none;
+  }
 }

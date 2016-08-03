@@ -7,12 +7,15 @@ $orangred:#ED926B;
 
 @import 'signUp';
 @import 'userPref';
-@import 'user';
 @import 'images';
 @import 'map';
 @import 'mobileMenu';
+<<<<<<< HEAD
 @import 'user';
 
+=======
+// http://65.media.tumblr.com/tumblr_l5om70KlO21qcht8qo1_1280.jpg
+>>>>>>> 1aa864faed3d9b16fd9d7bca2db0f8320dd2c7f5
 body {
 	background: url('../images/mapIconTwo.png');
 	background-position:center;
@@ -35,19 +38,20 @@ h1.mainTitle {
 	font-family: "Sahitya";
 	font-size:56px;
 	margin-top:-25px;
+	text-align:center;
 }
 
-p {
+p.slogan{
 	color:$title;
 	font-size:14px;
 	font-family: "Yantramanav";
+	text-align:center;
+
 }
 
 .nav {
 	list-style:none;
 	margin-top: 10px;
-	li{
-		text-align: center;
 		img {
 
 		}
@@ -67,7 +71,7 @@ p {
 		}
 		a{
 			background-color:$dark-blue;
-			color:$orangred;
+			color:#ffffff;
 			display: block;
 			margin:auto;
 			width:90%;
@@ -79,7 +83,7 @@ p {
 				margin:auto;
 				font-size: 23px;
 				font-family: "Sahitya";
-				color:$orangred;
+				color:#ffffff;
 			}
 			i{
 				font-size: 25px;
@@ -87,14 +91,14 @@ p {
 			}	
 		}
 		.btn:hover{
-					background-color:$orangred;
-					color:white;
+					background-color:lighten($dark-blue,10);
+					color:#ffffff;
 					h2{
 						color:white;
 					}
 					
 			}
-	}
+	
 }
 
 
