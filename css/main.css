@@ -57,6 +57,10 @@ img.icon {
     list-style: none;
     padding: 0px; }
 
+
+.mobileIcon {
+  outline: none; }
+  
 .lotInfo {
   background-color: #8AB6B7;
   border-radius: 5px;
@@ -98,8 +102,7 @@ img.icon {
 .mobileIcon:hover {
   cursor: pointer; }
   .mobileIcon:hover .bar:nth-child(2) {
-    transform: translateX(-10px);
-    cursor: pointer; }
+    transform: translateX(-10px);}
 
 span {
   width: 40px;
@@ -111,15 +114,17 @@ span {
 ul li.listItem {
   text-decoration: none;
   font-size: 30px;
-  display: inline;
-  margin: 1px; }
+  display: inline; }
   ul li.listItem .fa {
     color: #99abb2;
-    background-color: #ffffff;
     padding: 8px;
-    border-radius: 2px; }
+    border-radius: 50px;
+    border: 2px solid ligthen(#768E98, 12); }
     ul li.listItem .fa:hover {
-      color: #768E98; }
+      color: #768E98;
+      border: 2px solid #768E98; }
+  ul li.listItem a:focus {
+    outline: none; }
 
 h6.out {
   display: block;
@@ -179,6 +184,8 @@ p.slogan {
     height: 45px;
     border: none;
     margin-top: 10px; }
+    .nav a:focus {
+      outline: none; }
     .nav a h2 {
       display: inline-block;
       margin: auto;

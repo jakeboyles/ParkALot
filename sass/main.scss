@@ -10,6 +10,10 @@ $orangred:#ED926B;
 @import 'images';
 @import 'map';
 @import 'mobileMenu';
+<<<<<<< HEAD
+=======
+@import 'user';
+>>>>>>> 47146078c56fe1fa0dd513fb9ed8be92dfd5a5bf
 
 body {
 	background: url('../images/mapIconTwo.png');
@@ -73,6 +77,9 @@ p.slogan{
 			height: 45px;
 			border:none;
 			margin-top: 10px;
+			  &:focus{
+       			outline:none;
+      			}
 			h2{
 				display: inline-block;
 				margin:auto;

@@ -36,13 +36,19 @@
        vm.logout = function(){
         back.logout();
         $state.go('home');
+          if(back.saveToken() !== null)
+         {
+          $state.go('login');
+         }
        }
+
 
       vm.go = function (){
 
         $state.go('mapAddress', vm.form);
    
       }
+
 
       
     });
