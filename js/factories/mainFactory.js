@@ -1,4 +1,4 @@
-(function () {
+ (function () {
 	'use strict';
 	angular
 		.module('parkalot').factory('back', function($http,Backand) {

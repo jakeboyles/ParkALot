@@ -10,6 +10,7 @@
 	        back.logout();
 	        $state.go('home');
 	    }
+
 	});
 })();
 			

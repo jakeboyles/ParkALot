@@ -36,7 +36,12 @@ i.fa.homeIcon {
     color: #768E98; }
 
 h2.userPrefName {
-  text-align: center; }
+  text-align: center;
+  font-size: 40px; }
+
+._md {
+  background: none;
+  border-radius: 2px; }
 
 img.icon {
   width: 130px;
@@ -57,10 +62,6 @@ img.icon {
     list-style: none;
     padding: 0px; }
 
-
-.mobileIcon {
-  outline: none; }
-  
 .lotInfo {
   background-color: #8AB6B7;
   border-radius: 5px;
@@ -84,12 +85,15 @@ img.icon {
   padding-top: 1px;
   border-radius: 5px; }
 
-.mobileIcon:hover {
-  cursor: pointer; }
-  .mobileIcon:hover .bar:nth-child(2) {
-    transform: translateX(-10px);}
+.mobileIcon {
+  outline: none; }
+  .mobileIcon:hover {
+    cursor: pointer; }
+    .mobileIcon:hover .bar:nth-child(2) {
+      transform: translateX(-10px);
+      cursor: pointer; }
 
-span {
+span.bar {
   width: 40px;
   height: 6px;
   display: block;
@@ -130,6 +134,7 @@ body {
   padding: 30px;
   display: block;
   margin: auto;
+  margin-top: 40px;
   border-radius: 5px;
   background-color: rgba(209, 209, 209, 0.8); }
 

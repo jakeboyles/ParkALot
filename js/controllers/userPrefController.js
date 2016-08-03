@@ -6,6 +6,11 @@
     .controller('userPrefController', function($state, back) {
        var vm = this;
 
+       if(back.getToken() === null)
+       {
+        $state.go('login');
+       }
+
       var call = back.userGet(back.getToken());
 
        call.then(function(data){
@@ -36,12 +41,7 @@
        vm.logout = function(){
         back.logout();
         $state.go('home');
-          if(back.saveToken() !== null)
-         {
-          $state.go('login');
-         }
        }
-
 
       vm.go = function (){
 

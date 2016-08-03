@@ -10,7 +10,7 @@ $orangred:#ED926B;
 @import 'images';
 @import 'map';
 @import 'mobileMenu';
-@import 'user';
+
 
 body {
 	background: url('../images/mapIconTwo.png');
@@ -20,10 +20,11 @@ body {
 }
 
 .col{
+
 	padding:30px;
 	display:block;
 	margin:auto;
-	//margin-top:20px;
+	margin-top:40px;
 	border-radius:5px;
 	background-color:rgba(209, 209, 209, 0.8);
 }
