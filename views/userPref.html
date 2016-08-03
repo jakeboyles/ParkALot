@@ -1,0 +1,60 @@
+<div class="userPref col">
+
+	<h2>{{controller.user.firstName}} {{controller.user.lastName}}</h2>
+
+
+	<md-content>
+		<md-tabs md-dynamic-heigh md-border-bottom>
+			<md-tab label="User">
+				<md-content class="md-padding">
+					<h6 class="md-display-2">User Info</h6>
+					<ul>
+						<li><h3>Price Range</h3><p>: ${{controller.user.price}}</p></li>
+						<li><h3>Distance</h3><p>: {{controller.user.distance}}</p></li>
+						<li><h3>Favorite Location</h3><p>{{controller.user.favorite}}</p></li>
+					</ul>
+				</md-content>
+			</md-tab>
+			<md-tab label="Preferences">
+				<md-content class="md-padding">
+					<h6 class="md-display-2">Preferences</h6>
+					<form ng-submit="controller.submit()">
+						<table>
+							<tr>
+								<th><h3>Item</h3></th>
+								<th><h3>Preference</h3></th>
+							</tr>
+							<tr>
+								<td><h4>City</h4></td>
+								<td><input type="text" name="city" ng-model="controller.preference.city"></td>
+							</tr>
+							<tr>
+								<td><h4>Destination</h4></td>
+								<td><input type="text" name="destination" ng-model="controller.preference.destination"></td>
+							</tr>
+							<tr>
+								<td><h4>Email</h4></td>
+								<td><input type="text" name="email" ng-model="controller.preference.email"></td>
+							</tr>
+							<tr>
+								<td><h4>Price</h4></td>
+								<td><input type="text" name="price" ng-model="controller.preference.price"></td>
+							</tr>
+							<tr>
+								<td><h4>Distance</h4></td>
+								<td><input type="number" name="distance" ng-model="controller.preference.distance"></td>
+							</tr>
+							<tr>
+								<td><h4>Favorite</h4></td>
+								<td><input type="text" name="fav" ng-model="controller.preference.favorite"></td>
+							</tr>
+						</table>
+
+							<input class="btn btn-primary" type="submit" name="save" value="Save">
+					</form>
+				</md-content>
+			</md-tab>
+		</md-tabs>
+	</md-content>	
+
+</div>

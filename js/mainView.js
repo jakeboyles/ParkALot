@@ -103,6 +103,19 @@ angular.module('parkalot', ['ui.router', 'backand'])
 		        templateUrl: '../views/partials/mobileMenu.html',
 		      },
 		},
+	})
+	.state('userPref', {
+		url: '/userPref',
+		views: {
+			'main': {
+				templateUrl: '../views/userPref.html',
+				controller: 'userPrefController',
+				controllerAs: 'controller',
+			},
+			'mobileMenu': {
+		        templateUrl: '../views/partials/mobileMenu.html',
+		      },
+		},
 	});
 
 });
