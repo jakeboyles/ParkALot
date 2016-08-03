@@ -9,17 +9,6 @@
       //setting the map with the area being Cincinnati
       var mymap = L.map('mapid').setView([39.1031, -84.5120], 14);
 
-      vm.getHome = function(){
-        if (navigator.geolocation) 
-        {
-        navigator.geolocation.getCurrentPosition(showPosition);
-        } 
-        else 
-        {
-        alert("Geolocation is not supported by this browser.");
-        }
-      }
-
       //behemoth func for redrawing the map and creating nav points in search
       var createMap = function (address){
     	
@@ -60,13 +49,15 @@
            		var lat = results.data.lat;
            		var lng = results.data.lng;
               //backand call for API
-           		var backAdd = back.searchParking(lat,lng);
+        var backAdd = back.searchParking(lat,lng);
               //promise for API
            		backAdd.then(function(results){
-    
-           			var taco = results.data.data;
+               
+           			vm.taco = results.data.data;
+                var burrito = results.data;
+
            		 //setting nav points in map for each location that was searched
-           			taco.forEach(function(location){
+           			vm.taco.forEach(function(location){
            			
                  	L.marker([location.Location[0], location.Location[1]], {icon: carPin}).addTo(mymap)
            			.bindPopup('<h5>'+location.title+'</h5><br>'+'<a href="http://maps.google.com/?q='+location.address+'" target="_blank"><p>'+location.address+'</p></a>');
@@ -83,6 +74,8 @@
         	}
         	
     }
+
+
     //if we're coming from anther state with a search, run the search function here
       if ($stateParams.search !== ""){
       	createMap($stateParams);
@@ -90,11 +83,12 @@
 
       L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', 
        {
-    	//attribution: '<a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, <a href="http://mapbox.com">Mapbox</a>',
-   		maxZoom: 18,
-    	id: 'jcknueven.0pa4k9a3',
-    	accessToken: 'pk.eyJ1IjoiamNrbnVldmVuIiwiYSI6ImNpcjUxcXJ2eTAxbzNmbm5yMW1naGE3NWoifQ.YhmcfQV-iBNW-rj3XLNzaw#15/39.1025/-84.5197'
-		}).addTo(mymap);
+    	   //attribution: '<a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, <a href="http://mapbox.com">Mapbox</a>',
+   		   maxZoom: 18,
+    	   id: 'jcknueven.0pa4k9a3',
+    	   accessToken: 'pk.eyJ1IjoiamNrbnVldmVuIiwiYSI6ImNpcjUxcXJ2eTAxbzNmbm5yMW1naGE3NWoifQ.YhmcfQV-iBNW-rj3XLNzaw#15/39.1025/-84.5197'
+		    }).addTo(mymap);
+      
       //custom marker
       var carPin = L.icon({
                 iconUrl: 'images/mapCarPin.png',
@@ -102,15 +96,11 @@
                 iconSize: [48, 52],
               })
 
-     //  L.marker([39.104405,-84.50781]).addTo(mymap)
-    	// .bindPopup('351 E 7th St Cincinnati, OH 45202')
-    	// .openPopup();
-
       var popup = L.popup();
+
       //func for search on map state
       vm.go = function(){
       	createMap(vm.form);
-
     	} 
 
        
