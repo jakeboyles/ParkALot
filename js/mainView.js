@@ -20,6 +20,8 @@ angular.module('parkalot', ['ui.router', 'backand','ngMaterial'])
 			},
 			'mobileMenu': {
 		        templateUrl: '../views/partials/mobileMenu.html',
+		        controller: 'mobileMenuController',
+				controllerAs: 'controller',
 		      },
 		},
 	})
@@ -33,6 +35,8 @@ angular.module('parkalot', ['ui.router', 'backand','ngMaterial'])
 			},
 			'mobileMenu': {
 		        templateUrl: '../views/partials/mobileMenu.html',
+		        controller: 'mobileMenuController',
+				controllerAs: 'controller',
 		      },
 		},
 	})
@@ -46,6 +50,8 @@ angular.module('parkalot', ['ui.router', 'backand','ngMaterial'])
 			},
 			'mobileMenu': {
 		        templateUrl: '../views/partials/mobileMenu.html',
+		        controller: 'mobileMenuController',
+				controllerAs: 'controller',
 		      },
 		},
 	})
@@ -59,6 +65,8 @@ angular.module('parkalot', ['ui.router', 'backand','ngMaterial'])
 			},
 			'mobileMenu': {
 		        templateUrl: '../views/partials/mobileMenu.html',
+		        controller: 'mobileMenuController',
+				controllerAs: 'controller',
 		      },
 		},
 	})
@@ -72,6 +80,8 @@ angular.module('parkalot', ['ui.router', 'backand','ngMaterial'])
 			},
 			'mobileMenu': {
 		        templateUrl: '../views/partials/mobileMenu.html',
+		        controller: 'mobileMenuController',
+				controllerAs: 'controller',
 		      },
 		},
 	})
@@ -88,6 +98,8 @@ angular.module('parkalot', ['ui.router', 'backand','ngMaterial'])
 			},
 			'mobileMenu': {
 		        templateUrl: '../views/partials/mobileMenu.html',
+		        controller: 'mobileMenuController',
+				controllerAs: 'controller',
 		      },
 		},
 	})
@@ -101,6 +113,8 @@ angular.module('parkalot', ['ui.router', 'backand','ngMaterial'])
 			},
 			'mobileMenu': {
 		        templateUrl: '../views/partials/mobileMenu.html',
+		        controller: 'mobileMenuController',
+				controllerAs: 'controller',
 		      },
 		},
 	})
@@ -114,6 +128,8 @@ angular.module('parkalot', ['ui.router', 'backand','ngMaterial'])
 			},
 			'mobileMenu': {
 		        templateUrl: '../views/partials/mobileMenu.html',
+		        controller: 'mobileMenuController',
+				controllerAs: 'controller',
 		      },
 		},
 	});
