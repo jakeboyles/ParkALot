@@ -163,6 +163,9 @@ ul li.listItem {
     ul li.listItem .fa:hover {
       color: #768E98; }
 
+h6.out {
+  display: block; }
+
 h2 {
   font-size: 36px; }
 
