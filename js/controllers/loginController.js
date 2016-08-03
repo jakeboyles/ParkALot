@@ -9,7 +9,7 @@
 
        if(back.getToken() !== null)
        {
-        $state.go('user');
+        $state.go('userPref');
        }
 
        vm.submit = function(){
@@ -23,7 +23,7 @@
             back.saveToken(results.data.data[0].token);
             back.saveUserInfo(results.data.data[0].id);
             vm.showAlert = false;
-            $state.go('user');
+            $state.go('userPref');
           }
           else
           {

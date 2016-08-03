@@ -1,7 +1,7 @@
 (function(){
 'use strict';
 
-angular.module('parkalot', ['ui.router', 'backand'])
+angular.module('parkalot', ['ui.router', 'backand','ngMaterial'])
 .config(function($stateProvider, $urlRouterProvider, $locationProvider, BackandProvider){
 
 	BackandProvider.setAppName('parkalot1');
