@@ -17,22 +17,25 @@
 			<input class="btn btn-primary" value="FIND" type="submit" name="query">
 		</form>
 
+		<div class="container loop">
 		<h3 class="mapResults">Lot Locations</h3>
 		<div class="lotInfo" ng-repeat="info in controller.get_locations">
 			<h4 class="lotNameMap">Lot Name: {{info.location_name}}</h4>
-			<p class="lotAddressMap">Address: {{info.address}}{{info.state}}{{info.zip}}</p>
+			<p class="lotAddressMap">Address: <a href="http://maps.google.com/?q={{info.address}}{{info.state}}{{info.zip}}" target="_blank"> {{info.address}}{{info.state}}{{info.zip}}</a></p>
 			<p class="lotPrice">Price: {{info.price_formatted}}</p>
 			<p class="lotDistance">Distance: {{info.distance}}</p>
 			<p class="lotSpace">Available Spots: {{info.available_spots}}</p>
 		</div>	
-		
+
 		<div class="lotInfoDos" ng-repeat="data in controller.taco">
-			<h4 class="lotNameMapDos">Lot Name: {{data.title}}</h4>
-			<p class="lotAddressMapDos">Address: {{data.address}}</p>
-			<p class="lotPriceDos">Price: {{data.price}}</p>
-			<p class="lotDistanceDos">Distance: {{data.distance}}</p>
+			<h4>Lot Name: {{data.title}}</h4>
+			<p>Address: 
+			<a href="http://maps.google.com/?q={{data.address}}" target="_blank"> {{data.address}} </a>
+			</p>
+			<p>Price: {{data.price}}</p>
+			<p>Distance: {{data.distance}}</p>
 		</div>	
-		
+		</div>
 	
 
 	</div>
