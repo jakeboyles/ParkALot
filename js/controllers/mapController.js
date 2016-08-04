@@ -6,11 +6,14 @@
     .controller('mapController', function($state,back,API, $stateParams) {
       
       var vm = this;
+
+      vm.form = [];
+
       //setting the map with the area being Cincinnati
       var mymap = L.map('mapid').setView([39.1031, -84.5120], 14);
 
       //behemoth func for redrawing the map and creating nav points in search
-      var createMap = function (address){
+      var createMap = function (address, dist){
     	
     	mymap.eachLayer(function(layer){
       		mymap.removeLayer(layer);
@@ -25,14 +28,14 @@
 		      }).addTo(mymap);
 
         //external API call for search
-    		var search = API.postSearch(address);
+    		var search = API.postSearch(address,dist);
 
         //promise for API
         	search.then(function(results){
 
             //setting data JSON
            		vm.get_locations = results.data.parking_listings;
-
+              console.log(vm.get_locations);
            		
               //if we dont' get an address, do this.
            		if (typeof vm.get_locations !== "undefined")
@@ -49,11 +52,12 @@
             //data that will be passed through
            		var lat = results.data.lat;
            		var lng = results.data.lng;
+                           
               //backand call for API
-        var backAdd = back.searchParking(lat,lng, distance);
+        var backAdd = back.searchParking(lat,lng,dist);
               //promise for API
            		backAdd.then(function(results){
-               
+
            			vm.taco = results.data.data;
                 var burrito = results.data;
 
@@ -69,6 +73,7 @@
            		L.marker([lat, lng]).addTo(mymap)
     				.bindPopup('<p>' +vm.destination.search+'</p>')
         	})
+          
           //if we searched something, empty the search input
         	if (vm.form){
         		vm.form.search = "";
@@ -103,7 +108,9 @@
 
       //func for search on map state
       vm.go = function(){
-      	createMap(vm.form);
+        var dist = vm.form.distance;
+        console.log(dist);
+      	createMap(vm.form, dist);
     	} 
 
        

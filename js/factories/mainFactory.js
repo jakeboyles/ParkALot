@@ -4,12 +4,11 @@
 		.module('parkalot').factory('back', function($http,Backand) {
 
 			//search backand for parking with params on distance away from destination
-			function searchParking(lat,lng, distance)
+			function searchParking(lat,lng, dist)
 			{
-				console.log(distance);
-				if (typeof distance === "undefined")
+				if (dist === "")
 				{
-					distance = 1000;
+					dist = 1000;
 				}
 				return $http ({
   					method: 'GET',
@@ -17,11 +16,12 @@
   					params: {
   						filter: {
   							"q":{
-  								"Location": {"$withinFeet" : [[lat, lng], distance]}
+  								"Location": {"$withinFeet" : [[lat, lng], parseInt(dist)]}
   							}
   						}
   					}
 				});
+			
 			}
 
 			//login for user
