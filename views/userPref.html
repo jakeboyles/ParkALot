@@ -8,12 +8,14 @@
 			
 				<md-tab class="userTab" label="User Info">
 					<md-content class="md-padding">
-						
-						<ul>
-							<li><h3>Price Range</h3><p>: ${{controller.user.price}}</p></li>
-							<li><h3>Distance</h3><p>: {{controller.user.distance}}</p></li>
-							<li><h3>Favorite Location</h3><p>{{controller.user.favorite}}</p></li>
-						</ul>
+						<div class="userInfoSection">
+							<h3 class="userInfoTitle">Price Range:</h3>
+							<p class="userInfoDeats">${{controller.user.price}}</p>
+							<h3 class="userInfoTitle">Distance:</h3>
+							<p class="userInfoDeats">{{controller.user.distance}}</p>
+							<h3 class="userInfoTitle">Favorite Location:</h3>
+							<p class="userInfoDeats">{{controller.user.favorite}}</p>
+						</div>
 					</md-content>
 				</md-tab>
 			

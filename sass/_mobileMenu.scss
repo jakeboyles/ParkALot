@@ -1,5 +1,5 @@
-.col.mobilePage .navMenu{
-  background-color:transparent;
+.row.mobile{
+  background-color:$dark-blue;
 }
 
 .mobileIcon{ 
@@ -19,7 +19,7 @@ span.bar {
   width:40px;
   height:6px;
   display:block;
-  background-color:$dark-blue;
+  background-color:#ffffff;
   margin:4px;
 }
 
@@ -27,17 +27,17 @@ ul{
   
   li.listItem {
     text-decoration: none;
-    font-size: 30px;
+    font-size: 23px;
     display:inline; 
     .fa {
-      color:lighten($dark-blue,12);
+      color:lighten($dark-blue,20);
       background:none;
       padding:8px;
       border-radius: 50px;
-      border:2px solid lighten($dark-blue,12);
+      border:2px solid lighten($dark-blue,20);
       &:hover{
-        color:$dark-blue;
-        border:2px solid $dark-blue;
+        color:lighten($dark-blue,12);
+        border:2px solid lighten($dark-blue,12);
     
       }
     }
@@ -55,7 +55,7 @@ h6.iconTitle{
 h6.out {
   display:block;
   cursor:pointer;
-  color:$title;
+  color:#ffffff;
   text-decoration:none;
   //text-align:right;
   font-size:12px;

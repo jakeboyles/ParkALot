@@ -62,6 +62,14 @@ md-tabs.md-default-theme md-ink-bar, md-tabs md-ink-bar {
   background: #E66855 none repeat scroll 0 0 !important;
   color: #E66855 !important; }
 
+.userInfoSection {
+  text-align: center;
+  font-family: "Yantramanav"; }
+
+table {
+  margin: 0 auto;
+  display: block; }
+
 img.icon {
   width: 130px;
   margin: 0 auto;
@@ -120,8 +128,8 @@ img.icon {
   padding-top: 1px;
   border-radius: 5px; }
 
-.col.mobilePage .navMenu {
-  background-color: transparent; }
+.row.mobile {
+  background-color: #768E98; }
 
 .mobileIcon {
   outline: none; }
@@ -135,22 +143,22 @@ span.bar {
   width: 40px;
   height: 6px;
   display: block;
-  background-color: #768E98;
+  background-color: #ffffff;
   margin: 4px; }
 
 ul li.listItem {
   text-decoration: none;
-  font-size: 30px;
+  font-size: 23px;
   display: inline; }
   ul li.listItem .fa {
-    color: #99abb2;
+    color: #b0bec4;
     background: none;
     padding: 8px;
     border-radius: 50px;
-    border: 2px solid #99abb2; }
+    border: 2px solid #b0bec4; }
     ul li.listItem .fa:hover {
-      color: #768E98;
-      border: 2px solid #768E98; }
+      color: #99abb2;
+      border: 2px solid #99abb2; }
   ul li.listItem a:focus {
     outline: none; }
 
@@ -161,7 +169,7 @@ h6.iconTitle {
 h6.out {
   display: block;
   cursor: pointer;
-  color: #E66855;
+  color: #ffffff;
   text-decoration: none;
   font-size: 12px;
   font-family: "Yantramanav"; }

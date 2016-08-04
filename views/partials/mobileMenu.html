@@ -1,26 +1,26 @@
-<div class="col-sm-10 col-xs-10 col-md-hidden col-lg-hidden mobilePage">
-	<div class="mobileIcon" ng-click="openMobileNav = !openMobileNav">
-		<span class="bar"></span>
-		<span class="bar"></span>
-		<span class="bar"></span>
-	</div>
-
-		<div class="navMenu" ng-init="openMobileNav = false" ng-show="openMobileNav">
-			<ul class="menuList">
-				<li class="listItem"><a ui-sref='home'><i class="fa fa-home" aria-hidden="true"></i></a></li>
-					<!-- <h6 class="iconTitle">Home</h6> -->
-				<li class="listItem"><a ui-sref='login'><i class="fa fa-sign-in" aria-hidden="true"></i></a></li>
-					<!-- <h6 class="iconTitle">Login</h6> -->
-				<li class="listItem"><a ui-sref='map'><i class="fa fa-globe" aria-hidden="true"></i></a></li>
-					<!-- <h6 class="iconTitle">Map</h6> -->
-				<li class="listItem"><a ui-sref='signUp'><i class="fa fa-plus-circle" aria-hidden="true"></i></a></li>
-					<!-- <h6 class="iconTitle">New User</h6> -->
-				<li class="listItem"><a ui-sref='userPref'><i class="fa fa-user" aria-hidden="true"></i></a></li>
-					<!-- <h6 class="iconTitle">User</h6> -->
-			</ul>
+	<div class="col-sm-10 col-xs-10 col-md-hidden col-lg-hidden mobilePage">
+		<div class="mobileIcon" ng-click="openMobileNav = !openMobileNav">
+			<span class="bar"></span>
+			<span class="bar"></span>
+			<span class="bar"></span>
 		</div>
-</div>	
 
-<div class="col-sm-2 col-xs-2 logOutLink">
-	<a class="logOut" ng-click="controller.logout()"><h6 class="out">Log-Out</h6></a>
-</div>
+			<div class="navMenu" ng-init="openMobileNav = false" ng-show="openMobileNav">
+				<ul class="menuList">
+					<li class="listItem"><a ui-sref='home'><i class="fa fa-home" aria-hidden="true"></i></a></li>
+						<!-- <h6 class="iconTitle">Home</h6> -->
+					<li class="listItem"><a ui-sref='login'><i class="fa fa-sign-in" aria-hidden="true"></i></a></li>
+						<!-- <h6 class="iconTitle">Login</h6> -->
+					<li class="listItem"><a ui-sref='map'><i class="fa fa-globe" aria-hidden="true"></i></a></li>
+						<!-- <h6 class="iconTitle">Map</h6> -->
+					<li class="listItem"><a ui-sref='signUp'><i class="fa fa-plus-circle" aria-hidden="true"></i></a></li>
+						<!-- <h6 class="iconTitle">New User</h6> -->
+					<li class="listItem"><a ui-sref='userPref'><i class="fa fa-user" aria-hidden="true"></i></a></li>
+						<!-- <h6 class="iconTitle">User</h6> -->
+				</ul>
+			</div>
+	</div>	
+
+	<div class="col-sm-2 col-xs-2 logOutLink">
+		<a class="logOut" ng-click="controller.logout()"><h6 class="out">Log-Out</h6></a>
+	</div>
