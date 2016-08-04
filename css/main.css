@@ -45,10 +45,22 @@ h2.userPrefName {
   border-radius: 2px; }
 
 span.ng-scope {
-  font-size: 15px;
+  font-size: 20px;
   font-family: "Sahitya";
   text-transform: lowercase;
   color: #768E98; }
+
+md-pagination-wrapper {
+  display: block;
+  margin: 0 auto;
+  position: relative !important; }
+
+md-tab-item:active .md-ripple-container {
+  background-color: #E66855 !important; }
+
+md-tabs.md-default-theme md-ink-bar, md-tabs md-ink-bar {
+  background: #E66855 none repeat scroll 0 0 !important;
+  color: #E66855 !important; }
 
 img.icon {
   width: 130px;
@@ -107,6 +119,9 @@ img.icon {
   padding: 10px;
   padding-top: 1px;
   border-radius: 5px; }
+
+.col.mobilePage .navMenu {
+  background-color: transparent; }
 
 .mobileIcon {
   outline: none; }
