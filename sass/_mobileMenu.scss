@@ -27,7 +27,7 @@ ul{
     display:inline; 
     .fa {
       color:lighten($dark-blue,12);
-      //background-color:#ffffff;
+      background:none;
       padding:8px;
       border-radius: 50px;
       border:2px solid lighten($dark-blue,12);
@@ -41,6 +41,11 @@ ul{
         outline:none;
       }
   }
+}
+
+h6.iconTitle{
+  display:inline;
+  background:none;
 }
 
 h6.out {

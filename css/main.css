@@ -129,6 +129,7 @@ ul li.listItem {
   display: inline; }
   ul li.listItem .fa {
     color: #99abb2;
+    background: none;
     padding: 8px;
     border-radius: 50px;
     border: 2px solid #99abb2; }
@@ -137,6 +138,10 @@ ul li.listItem {
       border: 2px solid #768E98; }
   ul li.listItem a:focus {
     outline: none; }
+
+h6.iconTitle {
+  display: inline;
+  background: none; }
 
 h6.out {
   display: block;
