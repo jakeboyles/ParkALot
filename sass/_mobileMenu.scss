@@ -20,6 +20,7 @@ span.bar {
 }
 
 ul{
+  
   li.listItem {
     text-decoration: none;
     font-size: 30px;
@@ -29,7 +30,7 @@ ul{
       //background-color:#ffffff;
       padding:8px;
       border-radius: 50px;
-      border:2px solid ligthen($dark-blue,12);
+      border:2px solid lighten($dark-blue,12);
       &:hover{
         color:$dark-blue;
         border:2px solid $dark-blue;

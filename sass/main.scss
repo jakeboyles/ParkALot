@@ -16,8 +16,8 @@ body {
 	background: url('../images/mapIconTwo.png');
 	background-position:center;
 	background-size:800px 850px;
-
-	//background-repeat:no-repeat;
+	background-repeat:repeat;
+	height:auto !important;
 }
 
 .col{
