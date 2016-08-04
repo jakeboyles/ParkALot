@@ -71,6 +71,8 @@
           //if we searched something, empty the search input
         	if (vm.form){
         		vm.form.search = "";
+            vm.form.distance = "";
+            vm.form.price = "";
         	}
         	
     }
