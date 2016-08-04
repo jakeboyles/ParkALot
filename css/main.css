@@ -37,11 +37,21 @@ i.fa.homeIcon {
 
 h2.userPrefName {
   text-align: center;
-  font-size: 40px; }
+  font-size: 50px;
+  color: #E66855; }
 
 ._md {
   background: none;
   border-radius: 2px; }
+
+span.ng-scope {
+  font-size: 15px;
+  font-family: "Sahitya";
+  text-transform: lowercase;
+  color: #768E98; }
+
+.md-ink-ripple {
+  color: #E66855 !important; }
 
 img.icon {
   width: 130px;
