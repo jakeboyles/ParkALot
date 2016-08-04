@@ -24,7 +24,7 @@
     	   accessToken: 'pk.eyJ1IjoiamNrbnVldmVuIiwiYSI6ImNpcjUxcXJ2eTAxbzNmbm5yMW1naGE3NWoifQ.YhmcfQV-iBNW-rj3XLNzaw#15/39.1025/-84.5197'
 		      }).addTo(mymap);
 
-        //external API call
+        //external API call for search
     		var search = API.postSearch(address);
 
         //promise for API
@@ -43,6 +43,7 @@
            			.bindPopup('<p>'+location.location_name+'</p>');
            			});
            		}
+
         //native search data
 				vm.destination = results.config.data;
             //data that will be passed through
@@ -78,7 +79,7 @@
     }
 
 
-    //if we're coming from anther state with a search, run the search function here
+    //if we're coming from another state with a search, run the search function here
       if ($stateParams.search !== ""){
       	createMap($stateParams);
       }
