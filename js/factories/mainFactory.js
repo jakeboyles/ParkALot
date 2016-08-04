@@ -4,19 +4,24 @@
 		.module('parkalot').factory('back', function($http,Backand) {
 
 			//search backand for parking with params on distance away from destination
-			function searchParking(lat,lng)
+			function searchParking(lat,lng, dist)
 			{
+				if (dist === "")
+				{
+					dist = 1000;
+				}
 				return $http ({
   					method: 'GET',
   					url: 'https://api.backand.com:443/1/objects/Parking',
   					params: {
   						filter: {
   							"q":{
-  								"Location": {"$withinFeet" : [[lat, lng],10000]}
+  								"Location": {"$withinFeet" : [[lat, lng], parseInt(dist)]}
   							}
   						}
   					}
 				});
+			
 			}
 
 			//login for user
