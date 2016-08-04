@@ -4,6 +4,8 @@
 		.module('parkalot')
 		.factory('API', function($http) {
 
+			//call to API to recieve data
+
 			var postSearch = function(data){
 				console.log(data);
 
@@ -20,7 +22,7 @@
 				return search;
 			}
 
-
+			//returning call so we can use it in our controllers
 		return {
 		 	postSearch:postSearch,
 
