@@ -50,7 +50,7 @@
            		var lat = results.data.lat;
            		var lng = results.data.lng;
               //backand call for API
-        var backAdd = back.searchParking(lat,lng);
+        var backAdd = back.searchParking(lat,lng, distance);
               //promise for API
            		backAdd.then(function(results){
                
