@@ -11,7 +11,7 @@
   					params: {
   						filter: {
   							"q":{
-  								"Location": {"$withinFeet" : [[lat, lng],1000]}
+  								"Location": {"$withinFeet" : [[lat, lng],10000]}
   							}
   						}
   					}
