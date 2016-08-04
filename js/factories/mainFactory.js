@@ -3,6 +3,7 @@
 	angular
 		.module('parkalot').factory('back', function($http,Backand) {
 
+			//search backand for parking with params on distance away from destination
 			function searchParking(lat,lng)
 			{
 				return $http ({
@@ -18,6 +19,7 @@
 				});
 			}
 
+			//login for user
 		 	function postData(data)
 		 	{
 				data.token = randomString(64, '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ');
