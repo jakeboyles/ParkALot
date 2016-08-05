@@ -4,11 +4,13 @@
 		.module('parkalot').factory('back', function($http,Backand) {
 
 			//search backand for parking with params on distance away from destination
-			function searchParking(lat,lng, dist)
+			function searchParking(lat,lng, dist, price)
 			{
-				if (dist === "")
+				console.log(price);
+				if (dist === "" && price === "")
 				{
 					dist = 1000;
+					price = null;
 				}
 				return $http ({
   					method: 'GET',
@@ -16,15 +18,15 @@
   					params: {
   						filter: {
   							"q":{
-  								"Location": {"$withinFeet" : [[lat, lng], parseInt(dist)]}
+  								"Location": {"$withinFeet" : [[lat, lng], parseInt(dist), parseInt(price)]}
   							}
   						}
   					}
 				});
-			
+
 			}
 
-			//login for user
+			//signup for user
 		 	function postData(data)
 		 	{
 				data.token = randomString(64, '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ');
@@ -37,6 +39,7 @@
 		 		});
 		 	}
 
+		 	//login for user
 		 	var login = function(data){
 		 		var loginArray = [
 		 		{
@@ -61,6 +64,7 @@
 		 			}
 		 		});
 		 	}
+
 		 	//get user by id in localstorage
 		 	var userGet= function(data){
 		 		var tokenArray = [
@@ -127,7 +131,7 @@
 				return results;
 			} 	
 
-
+			//allow use outside of factory
 		 	return {
 		 		postData:postData,
 		 		saveUserInfo:saveUserInfo,
