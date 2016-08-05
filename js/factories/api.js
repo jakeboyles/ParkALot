@@ -5,10 +5,9 @@
 		.factory('API', function($http) {
 
 			//call to API to recieve data
-
 			var postSearch = function(data){
-				console.log(data);
 
+				//setting a constructor
 				var data = {
 					search: data.search,
 					distance: data.distance,
@@ -22,7 +21,7 @@
 				return search;
 			}
 
-			//returning call so we can use it in our controllers
+		//returning call so we can use it in our controllers
 		return {
 		 	postSearch:postSearch,
 

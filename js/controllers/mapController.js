@@ -13,8 +13,9 @@
       var mymap = L.map('mapid').setView([39.1031, -84.5120], 14);
 
       //behemoth func for redrawing the map and creating nav points in search
-      var createMap = function (address, dist){
+      var createMap = function (address, dist, price){
     	
+      //recreating the map by destroying the layers of a previous search
     	mymap.eachLayer(function(layer){
       		mymap.removeLayer(layer);
       	});
@@ -28,14 +29,13 @@
 		      }).addTo(mymap);
 
         //external API call for search
-    		var search = API.postSearch(address,dist);
+    		var search = API.postSearch(address,dist, price);
 
         //promise for API
         	search.then(function(results){
 
             //setting data JSON
            		vm.get_locations = results.data.parking_listings;
-              console.log(vm.get_locations);
            		
               //if we dont' get an address, do this.
            		if (typeof vm.get_locations !== "undefined")
@@ -53,8 +53,8 @@
            		var lat = results.data.lat;
            		var lng = results.data.lng;
                            
-              //backand call for API
-        var backAdd = back.searchParking(lat,lng,dist);
+        //backand call for API
+        var backAdd = back.searchParking(lat,lng,dist, price);
               //promise for API
            		backAdd.then(function(results){
 
@@ -84,7 +84,7 @@
     }
 
 
-    //if we're coming from another state with a search, run the search function here
+      //if we're coming from another state with a search, run the search function here
       if ($stateParams.search !== ""){
       	createMap($stateParams);
       }
@@ -97,7 +97,7 @@
     	   accessToken: 'pk.eyJ1IjoiamNrbnVldmVuIiwiYSI6ImNpcjUxcXJ2eTAxbzNmbm5yMW1naGE3NWoifQ.YhmcfQV-iBNW-rj3XLNzaw#15/39.1025/-84.5197'
 		    }).addTo(mymap);
       
-      //custom marker
+      //custom marker for parking lots
       var carPin = L.icon({
                 iconUrl: 'images/mapCarPin.png',
 
@@ -109,8 +109,9 @@
       //func for search on map state
       vm.go = function(){
         var dist = vm.form.distance;
-        console.log(dist);
-      	createMap(vm.form, dist);
+        var price = vm.form.price;
+        console.log(price);
+      	createMap(vm.form, dist, price);
     	} 
 
        
