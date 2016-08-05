@@ -37,20 +37,19 @@
             //setting data JSON
            	vm.get_locations = results.data.parking_listings;
 
-            var array = [vm.get_locations];
-            console.log(array);
-           		
               //if we dont' get an address, do this.
            		if (typeof vm.get_locations !== "undefined")
            			{
-
-           				vm.get_locations.forEach(function(location){
-
-                    var newArray = array.filter(function(price,dist){
-                      return dist < vm.form.distance;
-                      return price < vm.form.price;
+                  var newArray = vm.get_locations.filter(function(item){
+                      return dist > item.distance;
                     });
-                    console.log(newArray);
+                  newArray = newArray.filter(function(item){
+                    return price > item.price;
+                  });
+                  //this is dumb but works
+
+           				newArray.forEach(function(location){
+
            			    L.marker([location.lat, location.lng], {icon: carPin}).addTo(mymap)
            			    .bindPopup('<p>'+location.location_name+'</p>');
            			    });
