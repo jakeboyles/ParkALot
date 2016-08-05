@@ -91,7 +91,7 @@ p.slogan{
 			}	
 		}
 		.btn:hover{
-					background-color:lighten($dark-blue,10);
+					background-color:$title;
 					color:#ffffff;
 					h2{
 						color:white;
