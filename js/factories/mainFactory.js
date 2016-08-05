@@ -7,20 +7,29 @@
 			function searchParking(lat,lng, dist, price)
 			{
 				console.log(price);
-				if (dist === "" && price === "")
+				if (dist === "")
 				{
 					dist = 1000;
-					price = null;
+				}
+				if (typeof price == "undefined" || price === "")
+				{
+					price = 1000000;
+				}
+				else
+				{
+					price = parseInt(price);
 				}
 				return $http ({
   					method: 'GET',
   					url: 'https://api.backand.com:443/1/objects/Parking',
   					params: {
-  						filter: {
+  						filter:
+  						{
   							"q":{
-  								"Location": {"$withinFeet" : [[lat, lng], parseInt(dist), parseInt(price)]}
+  								"Location": {"$withinFeet" : [[lat, lng], parseInt(dist)]}, 
+  								"price": {"$lt" : price}
   							}
-  						}
+  						},
   					}
 				});
 

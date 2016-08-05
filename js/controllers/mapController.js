@@ -35,17 +35,25 @@
         	search.then(function(results){
 
             //setting data JSON
-           		vm.get_locations = results.data.parking_listings;
-           		
+           	vm.get_locations = results.data.parking_listings;
+
               //if we dont' get an address, do this.
            		if (typeof vm.get_locations !== "undefined")
            			{
-           				vm.get_locations.forEach(function(location){
+                  var newArray = vm.get_locations.filter(function(item){
+                      return dist > item.distance;
+                    });
+                  newArray = newArray.filter(function(item){
+                    return price > item.price;
+                  });
+                  //this is dumb but works
 
-           			L.marker([location.lat, location.lng], {icon: carPin}).addTo(mymap)
-           			.bindPopup('<p>'+location.location_name+'</p>');
-           			});
-           		}
+           				newArray.forEach(function(location){
+
+           			    L.marker([location.lat, location.lng], {icon: carPin}).addTo(mymap)
+           			    .bindPopup('<p>'+location.location_name+'</p>');
+           			    });
+           		  }
 
         //native search data
 				vm.destination = results.config.data;
