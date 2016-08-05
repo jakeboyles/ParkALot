@@ -190,6 +190,38 @@ body {
   display: block;
   margin: auto;
   background-color: rgba(209, 209, 209, 0.8); }
+  .col input {
+    border: none;
+    font-family: "Yantramanav";
+    font-size: 18px; }
+  .col .callSign {
+    text-align: center; }
+  .col a {
+    background-color: #768E98;
+    color: #ffffff;
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: 35px;
+    border: none;
+    margin-top: 10px; }
+    .col a:focus {
+      outline: none; }
+    .col a h2 {
+      display: inline-block;
+      margin: auto;
+      font-size: 21px;
+      font-family: "Sahitya";
+      color: #ffffff; }
+    .col a i {
+      font-size: 22px;
+      float: none;
+      margin-top: -1px; }
+  .col .btn:hover {
+    background-color: #E66855;
+    color: #ffffff; }
+    .col .btn:hover h2 {
+      color: white; }
 
 h1.mainTitle {
   color: #E66855;

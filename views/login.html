@@ -9,7 +9,10 @@
 	<form ng-submit="controller.submit()">
 		<input type="text" name="username" placeholder="Username" ng-model="controller.form.email">
 		<input type="text" name="password" placeholder="Password" ng-model="controller.form.password">
-		<input class="btn btn-primary" type="submit" name="login" placeholder="Login">
+		<input class="btn btn-primary" type="submit" name="login" value="Login">
 	</form>
+
+	<h2 class="callSign">Not Signed Up?</h2>
+	<a class="btn btn-primary" id="signUp" href="#/newuser"><h2>Sign Up</h2> <i class="fa fa-user-plus" aria-hidden="true"></i></a>
 
 </div>
