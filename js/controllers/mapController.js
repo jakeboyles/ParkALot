@@ -35,17 +35,26 @@
         	search.then(function(results){
 
             //setting data JSON
-           		vm.get_locations = results.data.parking_listings;
+           	vm.get_locations = results.data.parking_listings;
+
+            var array = [vm.get_locations];
+            console.log(array);
            		
               //if we dont' get an address, do this.
            		if (typeof vm.get_locations !== "undefined")
            			{
+
            				vm.get_locations.forEach(function(location){
 
-           			L.marker([location.lat, location.lng], {icon: carPin}).addTo(mymap)
-           			.bindPopup('<p>'+location.location_name+'</p>');
-           			});
-           		}
+                    var newArray = array.filter(function(price,dist){
+                      return dist < vm.form.distance;
+                      return price < vm.form.price;
+                    });
+                    console.log(newArray);
+           			    L.marker([location.lat, location.lng], {icon: carPin}).addTo(mymap)
+           			    .bindPopup('<p>'+location.location_name+'</p>');
+           			    });
+           		  }
 
         //native search data
 				vm.destination = results.config.data;
