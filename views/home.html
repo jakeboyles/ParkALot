@@ -2,22 +2,17 @@
 	<div class="nav">
 		<h1 class="mainTitle">Park-A-Lot</h1>
 		
-		
 			<p class="slogan">Search through all of the parking spaces downtown to find the best spot!</p>
 		
+				<img class="icon" src="images/iconTwo.png">
 		
-		<img class="icon" src="images/iconTwo.png">
+				  <form ng-submit="controller.go()">
+				  	<input type="search" name="start" placeholder="Search by Address" ng-model="controller.form.search">
+				  </form>
 		
+					<a class="btn btn-primary" id="signUp" href="#/newuser"><h2>Sign Up</h2> <i class="fa fa-user-plus" aria-hidden="true"></i></a>
 		
-		  <form ng-submit="controller.go()">
-		  	<input type="search" name="start" placeholder="Search by Address" ng-model="controller.form.search">
-		  </form>
-		
-			<a class="btn btn-primary" id="signUp" href="#/newuser"><h2>Sign Up</h2> <i class="fa fa-user-plus" aria-hidden="true"></i></a>
-		
-
-		
-			<a class="btn btn-primary" id="login" href="#/login"><h2>Login</h2> <i class="fa fa-sign-in" aria-hidden="true"></i></a>
+					<a class="btn btn-primary" id="login" href="#/login"><h2>Login</h2> <i class="fa fa-sign-in" aria-hidden="true"></i></a>
 		
  	</div>
 

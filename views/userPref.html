@@ -1,72 +1,74 @@
 <div class="userPref col">
 
-	<h2 class="userPrefName">{{controller.user.firstName}} {{controller.user.lastName}}</h2>
+		<img class="icon" src="images/iconTwo.png">
 
+			<h2 class="userPrefName">{{controller.user.firstName}} {{controller.user.lastName}}</h2>
 
-	<md-content>
-		<md-tabs md-dynamic-height md-border-bottom>
-			
-				<md-tab class="userTab" label="User Info">
-					<md-content class="md-padding">
-						<div class="userInfoSection">
-							<h3 class="userInfoTitle">Price Range:</h3>
-							<p class="userInfoDeats">${{controller.user.price}}</p>
-							<h3 class="userInfoTitle">Distance:</h3>
-							<p class="userInfoDeats">{{controller.user.distance}}</p>
-							<h3 class="userInfoTitle">Favorite Location:</h3>
-							<p class="userInfoDeats">{{controller.user.favorite}}</p>
-						</div>
-					</md-content>
-				</md-tab>
-			
-				
-				<md-tab class="prefTab" label="Preferences">
-					<md-content class="md-padding">
-						
-						<form ng-submit="controller.submit()">
-							<table>
-								<tr>
-									<th><h3>Item</h3></th>
-									<th><h3>Preference</h3></th>
-								</tr>
-								<tr>
-									<td><h4>City</h4></td>
-									<td><input type="text" name="city" ng-model="controller.preference.city"></td>
-								</tr>
-								<tr>
-									<td><h4>Destination</h4></td>
-									<td><input type="text" name="destination" ng-model="controller.preference.destination"></td>
-								</tr>
-								<tr>
-									<td><h4>Email</h4></td>
-									<td><input type="text" name="email" ng-model="controller.preference.email"></td>
-								</tr>
-								<tr>
-									<td><h4>Price</h4></td>
-									<td><input type="text" name="price" ng-model="controller.preference.price"></td>
-								</tr>
-								<tr>
-									<td><h4>Distance</h4></td>
-									<td><input type="number" name="distance" ng-model="controller.preference.distance"></td>
-								</tr>
-								<tr>
-									<td><h4>Favorite</h4></td>
-									<td><input type="text" name="fav" ng-model="controller.preference.favorite"></td>
-								</tr>
-							</table>
-
-								<input class="btn btn-primary" type="submit" name="save" value="Save">
-						</form>
-					</md-content>
-				</md-tab>
-		
-		</md-tabs>
-	</md-content>	
-
-	
-<form ng-submit="controller.go()">
-	<input type="search" name="start" placeholder="Start a New Search by Address" ng-model="controller.form.search">
-</form>
-
-
+			<form ng-submit="controller.go()">
+				<input type="search" name="start" placeholder="Start a New Search by Address" ng-model="controller.form.search">
+			</form>
 </div>
+
+	<div class="bottomHalf col">
+		<md-content>
+			<md-tabs md-dynamic-height md-border-bottom>
+				
+					<md-tab class="userTab" label="User Info">
+						<md-content class="md-padding">
+							<div class="userInfoSection">
+								<h3 class="userInfoTitle">Price Range:</h3>
+								<p class="userInfoDeats">${{controller.user.price}}</p>
+								<h3 class="userInfoTitle">Distance:</h3>
+								<p class="userInfoDeats">{{controller.user.distance}}</p>
+								<h3 class="userInfoTitle">Favorite Location:</h3>
+								<p class="userInfoDeats">{{controller.user.favorite}}</p>
+							</div>
+						</md-content>
+					</md-tab>
+				
+					
+					<md-tab class="prefTab" label="Preferences">
+						<md-content class="md-padding">
+							
+							<form ng-submit="controller.submit()">
+								<table>
+									<tr>
+										<th><h3>Item</h3></th>
+										<th><h3>Preference</h3></th>
+									</tr>
+									<tr>
+										<td><h4>City</h4></td>
+										<td><input type="text" name="city" ng-model="controller.preference.city"></td>
+									</tr>
+									<tr>
+										<td><h4>Destination</h4></td>
+										<td><input type="text" name="destination" ng-model="controller.preference.destination"></td>
+									</tr>
+									<tr>
+										<td><h4>Email</h4></td>
+										<td><input type="text" name="email" ng-model="controller.preference.email"></td>
+									</tr>
+									<tr>
+										<td><h4>Price</h4></td>
+										<td><input type="text" name="price" ng-model="controller.preference.price"></td>
+									</tr>
+									<tr>
+										<td><h4>Distance</h4></td>
+										<td><input type="number" name="distance" ng-model="controller.preference.distance"></td>
+									</tr>
+									<tr>
+										<td><h4>Favorite</h4></td>
+										<td><input type="text" name="fav" ng-model="controller.preference.favorite"></td>
+									</tr>
+								</table>
+
+									<input class="btn btn-primary" type="submit" name="save" value="Save">
+							</form>
+						</md-content>
+					</md-tab>
+			
+			</md-tabs>
+		</md-content>	
+
+	</div>	
+		

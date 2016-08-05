@@ -1,7 +1,13 @@
+.userPref.col {
+	background-color:rgba(230,104,85,0.8);
+
+}
+
 h2.userPrefName {
 	text-align:center;
-	font-size:50px;
-	color:$title;
+	font-size:35px;
+	color:#ffffff;
+	// #D1D1D1;
 
 }
 
@@ -15,7 +21,7 @@ h2.userPrefName {
 span.ng-scope{
 	font-size:20px;
 	font-family: "Sahitya";
-	text-transform:lowercase;
+	//text-transform:lowercase;
 	color:$dark-blue;
 }
 
@@ -41,7 +47,7 @@ md-tabs.md-default-theme md-ink-bar, md-tabs md-ink-bar {
 
 }
 
-table{
+form{
 	margin:0 auto;
 	display:block;
 }

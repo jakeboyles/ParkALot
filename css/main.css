@@ -35,10 +35,13 @@ i.fa.homeIcon {
     cursor: pointer;
     color: #768E98; }
 
+.userPref.col {
+  background-color: rgba(230, 104, 85, 0.8); }
+
 h2.userPrefName {
   text-align: center;
-  font-size: 50px;
-  color: #E66855; }
+  font-size: 35px;
+  color: #ffffff; }
 
 ._md {
   background: none;
@@ -47,7 +50,6 @@ h2.userPrefName {
 span.ng-scope {
   font-size: 20px;
   font-family: "Sahitya";
-  text-transform: lowercase;
   color: #768E98; }
 
 md-pagination-wrapper {
@@ -66,7 +68,7 @@ md-tabs.md-default-theme md-ink-bar, md-tabs md-ink-bar {
   text-align: center;
   font-family: "Yantramanav"; }
 
-table {
+form {
   margin: 0 auto;
   display: block; }
 
@@ -187,8 +189,6 @@ body {
   padding: 30px;
   display: block;
   margin: auto;
-  margin-top: 40px;
-  border-radius: 5px;
   background-color: rgba(209, 209, 209, 0.8); }
 
 h1.mainTitle {
