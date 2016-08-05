@@ -7,7 +7,7 @@ h2.userPrefName {
 	text-align:center;
 	font-size:35px;
 	color:#ffffff;
-	// #D1D1D1;
+	margin-top:10px;
 
 }
 
@@ -19,10 +19,11 @@ h2.userPrefName {
 }
 
 span.ng-scope{
-	font-size:20px;
+	font-size:12px;
 	font-family: "Sahitya";
 	//text-transform:lowercase;
-	color:$dark-blue;
+	color:#ffffff;
+	font-weight:bold;
 }
 
 
@@ -30,24 +31,64 @@ md-pagination-wrapper{
 	display:block;
 	margin:0 auto;
 	position:relative !important;
+	background-color:rgba(230,104,85,0.7);
+	padding:0;
 }
 
+
 md-tab-item:active .md-ripple-container {
-	background-color: $title !important;
+	background-color: #ffffff !important;
 }
 
 md-tabs.md-default-theme md-ink-bar, md-tabs md-ink-bar {
-    background: $title none repeat scroll 0 0 !important;
-    color: $title !important;
+    background: #ffffff none repeat scroll 0 0 !important;
+    color: #ffffff !important;
 }
 
 .userInfoSection{
 	text-align:center;
 	font-family: "Yantramanav";
+	color:$dark-blue;
+}
 
+button{
+	float:right;
+	display:inline-block;
 }
 
 form{
 	margin:0 auto;
 	display:block;
+}
+
+.userInfoTitle {
+	font-size:20px;
+	font-weight:bold;
+	
+}
+
+.titleRow{
+	border-bottom:1px solid #ffffff;
+
+}
+
+h3.tableTitle {
+	font-family: "Yantramanav";
+	color:$dark-blue;
+	font-size:20px;
+	text-align:center;
+	font-weight:bold;
+}
+
+h4.rowTitle{
+	font-family: "Yantramanav";
+	color:$dark-blue;
+	font-size:15px;
+	margin-right:10px;
+	margin-top:20px;
+	margin-bottom:20px;
+}
+
+table {
+	margin:0 auto;
 }
