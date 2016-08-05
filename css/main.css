@@ -142,30 +142,33 @@ img.icon {
       cursor: pointer; }
 
 span.bar {
-  width: 40px;
-  height: 6px;
+  position: relative;
+  z-index: 99999px;
+  width: 35px;
+  height: 5px;
   display: block;
   background-color: #ffffff;
-  margin: 4px; }
+  margin: 6px; }
 
-ul li.listItem {
-  text-decoration: none;
-  font-size: 23px;
-  display: inline; }
-  ul li.listItem .fa {
-    color: #b0bec4;
-    background: none;
-    padding: 8px;
-    border-radius: 50px;
-    border: 2px solid #b0bec4; }
-    ul li.listItem .fa:hover {
-      color: #99abb2;
-      border: 2px solid #99abb2; }
-  ul li.listItem a:focus {
-    outline: none; }
+ul {
+  margin-top: -36px;
+  margin-bottom: 0;
+  padding-left: 50px; }
+  ul li.listItem {
+    text-decoration: none;
+    font-size: 20px;
+    display: inline; }
+    ul li.listItem .fa {
+      color: #b0bec4;
+      background: none;
+      padding: 8px; }
+      ul li.listItem .fa:hover {
+        color: #99abb2; }
+    ul li.listItem a:focus {
+      outline: none; }
 
 h6.iconTitle {
-  display: inline;
+  display: inline-block;
   background: none; }
 
 h6.out {
