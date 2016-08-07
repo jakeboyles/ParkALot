@@ -96,12 +96,16 @@
 		 	var editUser = function(data, id){
 		 		
 		 		var edit = $http({
-		 			method: 'PUT',
+		 			method: 'POST',
 		 			data:data,
 		 			url: Backand.getApiUrl() + '/1/objects/user/' + id,
 		 		});
 		 		return edit;
 		 	}
+
+		 	// function addNewPref = function(data){
+		 	// 	var newPref = $http
+		 	// }
 		 
 		 	//save id to local storage
 			 	var saveUserInfo = function(userid)
@@ -139,6 +143,7 @@
 
 				return results;
 			} 	
+
 
 			//allow use outside of factory
 		 	return {

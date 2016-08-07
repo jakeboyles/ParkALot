@@ -38,10 +38,7 @@
 
        });
        
-       vm.logout = function(){
-        back.logout();
-        $state.go('home');
-       }
+    
 
       vm.go = function (){
 
