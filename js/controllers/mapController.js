@@ -7,10 +7,6 @@
       
       var vm = this;
 
-      if (L.Browser.touch) {
-          L.control.touchHover().addTo(map);
-        }
-
       //set to empty array to filter search
       vm.form = [];
 
@@ -58,6 +54,11 @@
            			    L.marker([location.lat, location.lng], {icon: carPin}).addTo(mymap)
            			    .bindPopup('<p>'+location.location_name+'</p>');
            			    });
+
+                    if (L.Browser.touch) {
+                       L.control.touchHover().addTo(map);
+                   }
+
            		  }
 
         //native search data
@@ -81,7 +82,12 @@
            			
                  	L.marker([location.Location[0], location.Location[1]], {icon: carPin}).addTo(mymap)
            			.bindPopup('<h5>'+location.title+'</h5><br>'+'<a href="http://maps.google.com/?q='+location.address+'" target="_blank"><p>'+location.address+'</p></a>');
-           			})
+           			});
+
+                if (L.Browser.touch) {
+                       L.control.touchHover().addTo(map);
+                   }
+
 
            		});
               //searched location marker
