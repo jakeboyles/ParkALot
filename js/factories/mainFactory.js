@@ -102,10 +102,6 @@
 		 		});
 		 		return edit;
 		 	}
-
-		 	// function addNewPref = function(data){
-		 	// 	var newPref = $http
-		 	// }
 		 
 		 	//save id to local storage
 			 	var saveUserInfo = function(userid)
