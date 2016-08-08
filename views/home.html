@@ -1,19 +1,21 @@
 <div class="homePg row">
 	<div ng-cloak class="home col">
-		<div class="nav">
+		<div class="col-lg-12 nav">
 			<h1 class="mainTitle">Park-A-Lot</h1>
 			
 				<p class="slogan">Search through all of the parking spaces downtown to find the best spot!</p>
 			
 					<img class="icon" src="images/iconTwo.png">
-			
+
+					<div class="col-col-lg-6 col-md-6 col-sm-12 col-xs-12 col-lg-offset-3 col-md-offset-3">
 					  <form ng-submit="controller.go()">
 					  	<input class="mainSearch" type="search" name="start" placeholder="Search by Address" ng-model="controller.form.search">
 					  	<input class="btn btn-primary" type="submit" name="find" value="Get Started">
 					  </form>
+
 			
 					<a class="btn btn-primary" id="login" href="#/login"><h2>Login</h2> <i class="fa fa-sign-in" aria-hidden="true"></i></a>
-			
+				  </div>
 	 	</div>
 
 	</div>

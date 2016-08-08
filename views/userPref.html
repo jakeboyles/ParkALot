@@ -6,8 +6,9 @@
 
 				<h2 class="userPrefName">{{controller.user.firstName}} {{controller.user.lastName}}</h2>
 
+				
 				<form ng-submit="controller.go()">
-					<input name="start" type="search" class="form-control" placeholder="Start a New Search by Address" ng-model="controller.form.search">
+					<input class="searchInput" name="start" type="search" class="form-control" placeholder="Start a New Search by Address" ng-model="controller.form.search">
 				</form>
 	</div>
 
