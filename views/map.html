@@ -1,4 +1,4 @@
-<form ng-submit="controller.go()">
+<form class="col-lg-4 col-md-4 col-sm-12 col-xs-12 col-lg-offset-4" ng-submit="controller.go()">
 			
 	<h3 class="mapDestination">New Search</h3>
 	<input type="text" name="search" placeholder="Enter Your Destination" ng-model="controller.form.search"> 
@@ -16,7 +16,7 @@
 
 		<div class="loop">
 			<h3 class="mapResults">Lot Locations</h3>
-			<div class="col-xs-12 lotInfo" ng-repeat="info in controller.get_locations">
+			<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 lotInfo" ng-repeat="info in controller.get_locations">
 				<h4 class="lotNameMap">Lot Name: {{info.location_name}}</h4>
 				<p class="lotAddressMap">Address: <a href="http://maps.google.com/?q={{info.address}}{{info.state}}{{info.zip}}" target="_blank"> {{info.address}}{{info.state}}{{info.zip}}</a></p>
 				<p class="lotPrice">Price: {{info.price_formatted}}</p>
@@ -24,7 +24,7 @@
 				<p class="lotSpace">Available Spots: {{info.available_spots}}</p>
 			</div>	
 
-			<div class="col-xs-12 lotInfoDos" ng-repeat="data in controller.taco">
+			<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 lotInfoDos" ng-repeat="data in controller.taco">
 				<h4>Lot Name: {{data.title}}</h4> 
 				<p>Address:
 					<a href="http://maps.google.com/?q={{data.address}}" target="_blank"> {{data.address}} </a>
