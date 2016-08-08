@@ -29,6 +29,10 @@
     	   accessToken: 'pk.eyJ1IjoiamNrbnVldmVuIiwiYSI6ImNpcjUxcXJ2eTAxbzNmbm5yMW1naGE3NWoifQ.YhmcfQV-iBNW-rj3XLNzaw#15/39.1025/-84.5197'
 		      }).addTo(mymap);
 
+        if (L.Browser.touch) {
+          L.control.touchHover().addTo(map);
+        }
+
         //external API call for search
     		var search = API.postSearch(address, dist, price);
 
@@ -50,10 +54,6 @@
 
                   //this is dumb but works, because it filters out not in
            				newArray.forEach(function(location){
-
-                    if (L.Browser.touch) {
-                       L.control.touchHover().addTo(map);
-                    }
 
            			    L.marker([location.lat, location.lng], {icon: carPin}).addTo(mymap)
            			    .bindPopup('<p>'+location.location_name+'</p>');
@@ -78,10 +78,6 @@
 
            		 //setting nav points in map for each location that was searched
            			vm.taco.forEach(function(location){
-                
-                if (L.Browser.touch) {
-                  L.control.touchHover().addTo(map);
-                }
            			
                  	L.marker([location.Location[0], location.Location[1]], {icon: carPin}).addTo(mymap)
            			.bindPopup('<h5>'+location.title+'</h5><br>'+'<a href="http://maps.google.com/?q='+location.address+'" target="_blank"><p>'+location.address+'</p></a>');
