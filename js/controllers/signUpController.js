@@ -12,7 +12,7 @@ angular.module("parkalot").controller("signUpController", function($state,back) 
 		 	back.saveUserInfo(response.data.__metadata.id);
 		 	back.saveToken(response.data.token);
 		 	// console.log(response);
-		 	 $state.go('user');
+		 	 $state.go('userPref');
 
 		})
        }

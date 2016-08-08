@@ -144,6 +144,19 @@
 				return results;
 			} 	
 
+			// //inputting favorite place
+			// function favorite(id,favorite){
+			// 	var data = {
+			// 		favorited: parseInt(favorite)+1,
+			// 	}
+
+			// 	var inputtingFav = $http({
+			// 		method: 'PUT',
+			// 		data: data,
+			// 		url: 'https://api.backand.com:443/1/objects/user/'+id,
+			// 	});
+			// 	return inputtingFav;
+			// }
 
 			//allow use outside of factory
 		 	return {
@@ -157,6 +170,7 @@
 		 		logout:logout,
 		 		editUser:editUser,
 		 		searchParking:searchParking,
+		 		// favorite:favorite,
 
 
 		 	}

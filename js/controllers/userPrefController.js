@@ -46,7 +46,13 @@
    
       }
 
+      // vm.showFav = function(destination){
+      //   var address = back.favorite(destination.id,destination.favorited);
 
+      //   address.then(function(response){
+      //     destination.favorited ++;
+      //   })
+      // }
       
     });
 })();

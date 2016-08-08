@@ -8,10 +8,6 @@
 
 				<form ng-submit="controller.go()">
 					<input name="start" type="search" class="form-control" placeholder="Start a New Search by Address" ng-model="controller.form.search">
-				     <!--  <span class="input-group-btn">
-				        <button class="btn btn-secondary" type="button">Go</button>
-				      </span> -->
-								<!-- <input class="form-control" type="search" name="start" placeholder="Start a New Search by Address" ng-model="controller.form.search"><span><button type="submit" class="btn btn-secondary">Go</button></span> -->
 				</form>
 	</div>
 
@@ -29,7 +25,9 @@
 									<p class="userInfoDeats">{{controller.user.distance}} ft</p>
 									<hr>
 									<h3 class="userInfoTitle">Favorite Location:</h3>
-									<p class="userInfoDeats">{{controller.user.favorite}}</p>
+									<div class="favoriteDestination" ng-repeat="user in controller.user">
+										<p class="userInfoDeats">{{user.favorite}}</p>
+									</div>
 								</div>
 							</md-content>
 						</md-tab>
