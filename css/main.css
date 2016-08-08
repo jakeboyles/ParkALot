@@ -111,6 +111,20 @@ img.icon {
   margin: 0 auto;
   display: block; }
 
+form {
+  background-color: #e97c6b;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+  padding-top: 1px;
+  border-radius: 5px; }
+  form h3 {
+    font-family: "Sahitya";
+    font-weight: bold;
+    color: white;
+    font-size: 28px;
+    text-align: center; }
+
 #mapid {
   height: 350px;
   width: 100%;
@@ -157,12 +171,6 @@ img.icon {
 
 .info .mapResults {
   color: #E66855; }
-
-.info form {
-  background-color: #e97c6b;
-  padding: 10px;
-  padding-top: 1px;
-  border-radius: 5px; }
 
 .row.mobile {
   background-color: #768E98; }

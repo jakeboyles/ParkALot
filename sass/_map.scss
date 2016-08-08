@@ -1,3 +1,19 @@
+form{
+	h3{
+		font-family: "Sahitya";
+		font-weight:bold;
+		color:white;
+		font-size: 28px;
+		text-align: center;
+	}
+		background-color:lighten($title,5);
+		margin-top: 20px;
+		margin-bottom:20px;
+		padding:10px;
+		padding-top:1px;
+		border-radius: 5px;
+	}
+
 #mapid { 
 	height: 350px;
 	width:100%;
@@ -58,11 +74,5 @@
 	}
 	.mapResults{
 		color:$title;
-	}
-	form{
-		background-color:lighten($title,5);
-		padding:10px;
-		padding-top:1px;
-		border-radius: 5px;
 	}
 }
