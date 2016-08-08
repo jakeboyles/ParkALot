@@ -7,6 +7,10 @@
       
       var vm = this;
 
+      if (L.Browser.touch) {
+          L.control.touchHover().addTo(map);
+        }
+
       //set to empty array to filter search
       vm.form = [];
 
@@ -28,10 +32,6 @@
     	   id: 'jcknueven.0pa4k9a3',
     	   accessToken: 'pk.eyJ1IjoiamNrbnVldmVuIiwiYSI6ImNpcjUxcXJ2eTAxbzNmbm5yMW1naGE3NWoifQ.YhmcfQV-iBNW-rj3XLNzaw#15/39.1025/-84.5197'
 		      }).addTo(mymap);
-
-        if (L.Browser.touch) {
-          L.control.touchHover().addTo(map);
-        }
 
         //external API call for search
     		var search = API.postSearch(address, dist, price);
