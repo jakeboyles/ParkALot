@@ -14,18 +14,18 @@
 			<input type="text" id="email" placeholder="Email" ng-model="controller.form.email" required>
 
 		  <label for="password"><h4>Password</h4></label>
-			<input type="password" id="password" placeholder="One Uppercase, One Alt Character" ng-model="controller.form.password" required>
+			<input type="password" id="password" required placeholder="One Uppercase, One Alt Character" ng-model="controller.form.password">
 
-			<input type="password" name="confirm" placeholder="Confirm" required>
+			<input type="password" id="passCheck" name="confirmPass" placeholder="Confirm" required>
 
 		  <label for="city"><h4>City</h4></label>
-			<input type="text" id="city" placeholder="e.g. Cincinnati" required ng-model="controller.form.city">
+			<input type="text" id="city" placeholder="e.g. Cincinnati" ng-required ng-model="controller.form.city">
 
 		  <label for="price"><h4>Price Range</h4></label>
-			<input type="text" id="price" placeholder="e.g. $2-$10">
+			<input type="text" id="price" placeholder="Max Price" ng-model="controller.form.price">
 
 		  <label for="distance"><h4>Distance from Location</h4></label>
-			<input type="text" id="distance" placeholder="e.g. 1-2 Blocks">
+			<input type="text" id="distance" placeholder="Distance in Feet" ng-model="controller.form.distance" >
 
 			<input class="btn btn-primary" type="submit" name="submit">
 		</form>
