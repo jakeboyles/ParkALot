@@ -36,9 +36,9 @@
 			}
 
 			//signup for user
-		 	function postData(data)
+		 	function postData(data,token)
 		 	{
-				data.token = randomString(64, '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ');
+				data.token = token;
 		 		
 		 		return $http ({
   					method: 'POST',
@@ -96,7 +96,7 @@
 		 	var editUser = function(data, id){
 		 		
 		 		var edit = $http({
-		 			method: 'POST',
+		 			method: 'PUT',
 		 			data:data,
 		 			url: Backand.getApiUrl() + '/1/objects/user/' + id,
 		 		});
@@ -135,14 +135,6 @@
 				return true;
 			} 	
 
-			//create random string for token to be returned
-			function randomString(length,charac) {
-				var results = '';
-
-				for(var i = length; i > 0; --i) results += charac[Math.floor(Math.random() * charac.length)];
-
-				return results;
-			} 	
 
 			// //inputting favorite place
 			// function favorite(id,favorite){
