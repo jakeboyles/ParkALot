@@ -1,18 +1,21 @@
-<div ng-cloak class="login col">
-	
-	<h2>Welcome Back!</h2>
+<div class="signIn row">
 
-	<div ng-show="controller.showAlert" class="alert alert-warning alert-dismissible" role="alert">
-	<p>Incorrect Information</p>
+	<div ng-cloak class="login col">
+		
+		<h2>Welcome Back!</h2>
+
+		<div ng-show="controller.showAlert" class="alert alert-warning alert-dismissible" role="alert">
+		<p>Incorrect Information</p>
+		</div>
+
+		<form ng-submit="controller.submit()">
+			<input type="text" name="username" placeholder="Username" ng-model="controller.form.email">
+			<input type="password" name="password" placeholder="Password" ng-model="controller.form.password">
+			<input class="btn btn-primary" type="submit" name="login" placeholder="Login">
+		</form>
+
+		<h2 class="callSign">Not Signed Up?</h2>
+		<a class="btn btn-primary" id="signUp" href="#/newuser"><h2>Sign Up</h2> <i class="fa fa-user-plus" aria-hidden="true"></i></a>
+
 	</div>
-
-	<form ng-submit="controller.submit()">
-		<input type="text" name="username" placeholder="Username" ng-model="controller.form.email">
-		<input type="password" name="password" placeholder="Password" ng-model="controller.form.password">
-		<input class="btn btn-primary" type="submit" name="login" placeholder="Login">
-	</form>
-
-	<h2 class="callSign">Not Signed Up?</h2>
-	<a class="btn btn-primary" id="signUp" href="#/newuser"><h2>Sign Up</h2> <i class="fa fa-user-plus" aria-hidden="true"></i></a>
-
-</div>
+</div>	

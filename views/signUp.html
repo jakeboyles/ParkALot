@@ -1,30 +1,33 @@
-<div ng-cloak class="signUp col">
-	
-	<h2>Sign-Up Here!</h2>
-	<form ng-submit="controller.submit()">
-		 <label for="firstName"><h4>First Name</h4></label>
-		<input type="text" id="firstName" placeholder="First Name" ng-model="controller.form.firstName" required>
+<div class="register row">
 
-		 <label for="lastName"><h4>Last Name</h4></label>
-		<input type="text" id="lastName" placeholder="Last Name" ng-model="controller.form.lastName" required>
+	<div ng-cloak class="signUp col">
+		
+		<h2>Sign-Up Here!</h2>
+		<form ng-submit="controller.submit()">
+			 <label for="firstName"><h4>First Name</h4></label>
+			<input type="text" id="firstName" placeholder="First Name" ng-model="controller.form.firstName" required>
 
-	  <label for="email"><h4>Email</h4></label>
-		<input type="text" id="email" placeholder="Email" ng-model="controller.form.email" required>
+			 <label for="lastName"><h4>Last Name</h4></label>
+			<input type="text" id="lastName" placeholder="Last Name" ng-model="controller.form.lastName" required>
 
-	  <label for="password"><h4>Password</h4></label>
-		<input type="text" id="password" placeholder="One Uppercase, One Alt Character" ng-model="controller.form.password" required>
+		  <label for="email"><h4>Email</h4></label>
+			<input type="text" id="email" placeholder="Email" ng-model="controller.form.email" required>
 
-		<input type="text" name="confirm" placeholder="Confirm" required>
+		  <label for="password"><h4>Password</h4></label>
+			<input type="text" id="password" placeholder="One Uppercase, One Alt Character" ng-model="controller.form.password" required>
 
-	  <label for="city"><h4>City</h4></label>
-		<input type="text" id="city" placeholder="e.g. Cincinnati" required ng-model="controller.form.city">
+			<input type="text" name="confirm" placeholder="Confirm" required>
 
-	  <label for="price"><h4>Price Range</h4></label>
-		<input type="text" id="price" placeholder="e.g. $2-$10">
+		  <label for="city"><h4>City</h4></label>
+			<input type="text" id="city" placeholder="e.g. Cincinnati" required ng-model="controller.form.city">
 
-	  <label for="distance"><h4>Distance from Location</h4></label>
-		<input type="text" id="distance" placeholder="e.g. 1-2 Blocks">
+		  <label for="price"><h4>Price Range</h4></label>
+			<input type="text" id="price" placeholder="e.g. $2-$10">
 
-		<input class="btn btn-primary" type="submit" name="submit">
-	</form>
-</div>
+		  <label for="distance"><h4>Distance from Location</h4></label>
+			<input type="text" id="distance" placeholder="e.g. 1-2 Blocks">
+
+			<input class="btn btn-primary" type="submit" name="submit">
+		</form>
+	</div>
+</div>	
