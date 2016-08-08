@@ -278,7 +278,7 @@ h1.mainTitle {
 
 p.slogan {
   color: #E66855;
-  font-size: 14px;
+  font-size: 16px;
   font-family: "Yantramanav";
   text-align: center; }
 
@@ -294,8 +294,8 @@ p.slogan {
     margin-top: 50px; }
   .nav form input {
     margin: auto;
-    margin-top: 20px; }
-  .nav a {
+    margin-top: 10px; }
+  .nav a, .nav .btn-primary {
     background-color: #768E98;
     color: #ffffff;
     display: block;
@@ -304,15 +304,15 @@ p.slogan {
     height: 45px;
     border: none;
     margin-top: 10px; }
-    .nav a:focus {
+    .nav a:focus, .nav .btn-primary:focus {
       outline: none; }
-    .nav a h2 {
+    .nav a h2, .nav .btn-primary h2 {
       display: inline-block;
       margin: auto;
       font-size: 23px;
       font-family: "Sahitya";
       color: #ffffff; }
-    .nav a i {
+    .nav a i, .nav .btn-primary i {
       font-size: 25px;
       float: none; }
   .nav .btn:hover {
@@ -320,3 +320,6 @@ p.slogan {
     color: #ffffff; }
     .nav .btn:hover h2 {
       color: white; }
+  .nav .btn-primary.btn:hover {
+    background-color: #8AB6B7;
+    color: #ffffff; }

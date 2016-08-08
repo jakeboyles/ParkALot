@@ -81,7 +81,7 @@ h1.mainTitle {
 
 p.slogan{
 	color:$title;
-	font-size:14px;
+	font-size:16px;
 	font-family: "Yantramanav";
 	text-align:center;
 
@@ -104,10 +104,10 @@ p.slogan{
 		form{
 			input{
 				margin:auto;
-				margin-top: 20px;
+				margin-top: 10px;
 			}
 		}
-		a{
+		a, .btn-primary{
 			background-color:$dark-blue;
 			color:#ffffff;
 			display: block;
@@ -138,6 +138,10 @@ p.slogan{
 						color:white;
 					}
 					
+		}
+		.btn-primary.btn:hover{
+			background-color:$teal;
+			color:#ffffff;
 		}
 	
 }
