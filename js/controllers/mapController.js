@@ -7,6 +7,7 @@
       
       var vm = this;
 
+      //set to empty array to filter search
       vm.form = [];
 
       //setting the map with the area being Cincinnati
@@ -29,7 +30,7 @@
 		      }).addTo(mymap);
 
         //external API call for search
-    		var search = API.postSearch(address,dist, price);
+    		var search = API.postSearch(address, dist, price);
 
         //promise for API
         	search.then(function(results){
@@ -37,7 +38,7 @@
             //setting data JSON
            	vm.get_locations = results.data.parking_listings;
 
-              //if we dont' get an address, do this.
+              //if we get an address, filter based on user input.
            		if (typeof vm.get_locations !== "undefined")
            			{
                   var newArray = vm.get_locations.filter(function(item){
@@ -46,7 +47,7 @@
                   newArray = newArray.filter(function(item){
                     return price > item.price;
                   });
-                  //this is dumb but works
+                  //this is dumb but works, because it filters out not in
 
            				newArray.forEach(function(location){
 
@@ -57,12 +58,14 @@
 
         //native search data
 				vm.destination = results.config.data;
+            
             //data that will be passed through
            		var lat = results.data.lat;
            		var lng = results.data.lng;
                            
         //backand call for API
         var backAdd = back.searchParking(lat,lng,dist, price);
+              
               //promise for API
            		backAdd.then(function(results){
 
@@ -94,7 +97,10 @@
 
       //if we're coming from another state with a search, run the search function here
       if ($stateParams.search !== ""){
-      	createMap($stateParams);
+        var dist = "1000";
+        var price = "";
+        
+      	createMap($stateParams,dist,price);
       }
 
       L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', 
@@ -118,7 +124,6 @@
       vm.go = function(){
         var dist = vm.form.distance;
         var price = vm.form.price;
-        console.log(price);
       	createMap(vm.form, dist, price);
     	} 
 
