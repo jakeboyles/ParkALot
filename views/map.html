@@ -1,3 +1,8 @@
+<form ng-submit="controller.go()">
+	<input type="text" name="search" placeholder="Enter Your Destination" ng-model="controller.form.search">
+	<input class="btn btn-primary" ng-click="reset(form)" value="FIND" type="submit" name="query">
+</form>
+
 <div id="mapid"></div>
 
 <div class="map col">
@@ -5,8 +10,8 @@
 	<div class="col-xs-12 info col">
 		<form ng-submit="controller.go()">
 			
-			<h3 class="mapDestination">Your Destination</h3>
-			<input type="text" name="search" placeholder="Address" ng-model="controller.form.search">
+			<h3 class="mapDestination">Filter Your Search</h3>
+			<!-- <input type="text" name="search" placeholder="Enter Your Destination" ng-model="controller.form.search"> -->
 			<input type="text" name="distance" placeholder="Distance in Feet" ng-model="controller.form.distance">
 			<input type="text" name="price" placeholder="Price(Hourly)" ng-model="controller.form.price">
 			<input class="btn btn-primary" ng-click="reset(form)" value="FIND" type="submit" name="query">

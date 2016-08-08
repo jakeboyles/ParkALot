@@ -47,8 +47,8 @@
                   newArray = newArray.filter(function(item){
                     return price > item.price;
                   });
-                  //this is dumb but works, because it filters out not in
 
+                  //this is dumb but works, because it filters out not in
            				newArray.forEach(function(location){
 
            			    L.marker([location.lat, location.lng], {icon: carPin}).addTo(mymap)
