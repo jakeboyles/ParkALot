@@ -25,10 +25,9 @@
         var edit = back.editUser(vm.preference, vm.preference.id);
 
         edit.then(function(response){
-          console.log(response);
-          $state.go('userPref');
+          $state.reload();
         })
-      }
+      };
 
        var call = back.userGet(back.getToken());
 
@@ -45,14 +44,6 @@
         $state.go('mapAddress', vm.form);
    
       }
-
-      // vm.showFav = function(destination){
-      //   var address = back.favorite(destination.id,destination.favorited);
-
-      //   address.then(function(response){
-      //     destination.favorited ++;
-      //   })
-      // }
       
     });
 })();
