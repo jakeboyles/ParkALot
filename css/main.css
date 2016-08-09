@@ -106,6 +106,22 @@ h4.rowTitle {
 table {
   margin: 0 auto; }
 
+@media only screen and (min-width: 990px) {
+  .userPref form .searchInput {
+    width: 40%;
+    margin: auto;
+    text-align: center; }
+  md-tabs-canvas md-pagination-wrapper {
+    width: 50% !important; }
+  md-tabs-canvas .md-tab {
+    margin: auto;
+    width: 50% !important; }
+  md-content form .save {
+    width: 25%;
+    margin: auto;
+    margin-top: 20px;
+    background-color: #8AB6B7; } }
+
 img.icon {
   width: 130px;
   margin: 0 auto;
