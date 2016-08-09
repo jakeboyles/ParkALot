@@ -6,8 +6,7 @@
 			//search backand for parking with params on distance away from destination
 			function searchParking(lat,lng, dist, price)
 			{
-				console.log(price);
-				if (dist === "")
+				if (typeof dist == "undefined" || dist === "")
 				{
 					dist = 1000;
 				}

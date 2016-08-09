@@ -106,6 +106,14 @@ h2.mapDestination {
   margin-bottom: 20px;
   text-align: center; }
 
+
+.fa-spinner {
+  color: #768E98;
+  position: absolute;
+  z-index: 99999;
+  left: 45%;
+  top: 550px; }
+
 #mapid {
   height: 350px;
   width: 100%;
@@ -204,6 +212,11 @@ a, h6 {
   font-family: "Yantramanav"; }
   a:hover, h6:hover {
     text-decoration: none; }
+
+.logOut h6 {
+  font-size: 16px;
+  float: right;
+  margin-top: 13px; }
 
 body {
   background: url("../images/mapIconTwo.png");
