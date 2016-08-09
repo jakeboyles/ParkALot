@@ -106,6 +106,13 @@ h2.mapDestination {
   margin-bottom: 20px;
   text-align: center; }
 
+form h2 {
+  font-family: "Sahitya";
+  color: white;
+  font-size: 35px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  text-align: center; }
 
 .fa-spinner {
   color: #768E98;

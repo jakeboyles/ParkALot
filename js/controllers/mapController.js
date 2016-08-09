@@ -3,7 +3,7 @@
     
     angular
     .module('parkalot')
-    .controller('mapController', function($state,back,API, $stateParams) {
+    .controller('mapController', function($state,back,API, $stateParams, $scope) {
       
       var vm = this;
 
@@ -135,7 +135,24 @@
       	createMap(vm.form, dist, price);
     	} 
 
-       
+      //function to find geoLocation on map
+
+         function showPosition(position){
+
+          vm.form.search = position.coords.latitude + "," + position.coords.longitude;
+          //tells DOM to "reload"
+          $scope.$digest();
+        }
+
+           vm.getLocation = function(){
+
+           if (navigator.geolocation) {
+
+            navigator.geolocation.getCurrentPosition(showPosition);
+            } else {
+            x.innerHTML = "Geolocation is not supported by this browser.";
+            }
+          }
 
     });
 })();

@@ -21,10 +21,12 @@
 				return search;
 			}
 
+
+
 		//returning call so we can use it in our controllers
 		return {
 		 	postSearch:postSearch,
-
+		 	
 		 	}
 	});
 })();
