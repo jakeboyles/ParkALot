@@ -1,6 +1,6 @@
-<form class="col-lg-4 col-md-4 col-sm-12 col-xs-12 col-lg-offset-4" ng-submit="controller.go()">
+<form class="col-lg-12 col-md-12 col-sm-12 col-xs-12 col-lg-offset-4 newSearch col" ng-submit="controller.go()">
 			
-	<h3 class="mapDestination">New Search</h3>
+	<h2 class="mapDestination">New Search</h2>
 	<input type="text" name="search" placeholder="Enter Your Destination" ng-model="controller.form.search"> 
 	<input type="text" name="distance" placeholder="Distance in Feet" ng-model="controller.form.distance">
 	<input type="text" name="price" placeholder="Price(Hourly)" ng-model="controller.form.price">
@@ -10,10 +10,8 @@
 
 <div id="mapid"></div>
 
-<div class="map col">
+<div class="col-xs-12 map col">
 
-<div class="row">
-	<div class="col-xs-12 info col">
 
 		<div class="loop">
 			<h3 class="mapResults">Lot Locations</h3>
@@ -33,10 +31,5 @@
 				<p>Price: {{data.price}}</p>
 				<p>Distance: {{data.distance}}</p>
 			</div>	
-		</div>
-	
-
-	</div>
-</div>	
-
+		</div>	
 </div>
