@@ -51,15 +51,6 @@ md-tabs.md-default-theme md-ink-bar, md-tabs md-ink-bar {
 	color:$dark-blue;
 }
 
-button{
-	float:right;
-	display:inline-block;
-}
-
-form{
-	margin:0 auto;
-	display:block;
-}
 
 .userInfoTitle {
 	font-size:20px;
@@ -67,23 +58,20 @@ form{
 	
 }
 
+.userInfoDeats {
+	font-size:17px;
+}
 .titleRow{
 	border-bottom:1px solid #ffffff;
 
 }
 
-h3.tableTitle {
-	font-family: "Yantramanav";
-	color:$dark-blue;
-	font-size:20px;
-	text-align:center;
-	font-weight:bold;
-}
 
 h4.rowTitle{
 	font-family: "Yantramanav";
-	color:#ffffff;
+	color:$dark-blue;
 	font-size:15px;
+	font-weight:bold;
 	margin-right:10px;
 	margin-top:20px;
 	margin-bottom:20px;
@@ -91,18 +79,10 @@ h4.rowTitle{
 
 table {
 	margin:0 auto;
+	input.prefInput{
+		width:100% !important;
+	}	
 }
-
-@media only screen and (min-width: 990px){
-	.userPref{
-		form{
-		.searchInput{
-			width:40%;
-			margin:auto;
-			text-align: center;
-		} 
-		}
-	}
 
 	md-tabs-canvas{
 		md-pagination-wrapper{
@@ -124,17 +104,5 @@ table {
 			}
 		}
 	}
-}
 
-@media only screen and (min-width:500px) {
-	.userPref{
-		form{
-		.searchInput{
-			width:40%;
-			margin:auto;
-			text-align: center;
-			value:"Start a New Search";
-			} 
-		}
-	}
-}
+

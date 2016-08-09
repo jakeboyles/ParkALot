@@ -20,6 +20,39 @@ body {
 	height:auto !important;
 }
 
+form {
+	font-size: 17px;
+	box-sizing:unset;
+}	
+	input {
+		margin:0 auto;
+		display:block;
+		border:none;
+		border-radius:2px;
+		font-family: "Yantramanav";
+		margin-top:5px;
+		margin-bottom: 5px;
+		padding:5px;
+		text-align: center;
+		width:100%;
+		color:$dark-blue;
+		}
+		.btn-primary{
+			margin:0 auto;
+			display:block;
+			margin-top: 10px;
+			background-color:$dark-blue;
+			color:#ffffff;
+			border:none;
+			&:hover {
+				background-color:$title;
+			}
+
+			a:focus {
+				outline:none;
+			}
+		}
+
 .col{
 
 	padding:30px;
@@ -27,24 +60,20 @@ body {
 	margin:auto;
 	border-radius:0;
 	background-color:rgba(209, 209, 209, 0.8);
-	input{
-		border:none;
-		font-family: "Yantramanav";
-		font-size: 18px;
-	}
+	
 	.callSign{
 		text-align: center;
 	}
 	a{
-			background-color:$dark-blue;
-			color:#ffffff;
-			display: block;
-			margin:auto;
-			width:100%;
-			height: 35px;
-			border:none;
-			margin-top: 10px;
-			  &:focus{
+		background-color:$dark-blue;
+		color:#ffffff;
+		display: block;
+		margin:auto;
+		width:100%;
+		height: 35px;
+		border:none;
+		margin-top: 10px;
+		  	&:focus{
        			outline:none;
       			}
 			h2{
@@ -59,15 +88,13 @@ body {
 				float:none;
 				margin-top: -1px;
 			}	
-		}
-		.btn:hover{
-					background-color:$title;
-					color:#ffffff;
-					h2{
-						color:white;
-					}
+	}
+
+			h2{
+				color:white;
+			}
 					
-		}
+	
 }
 
 h1.mainTitle {
@@ -87,38 +114,10 @@ p.slogan{
 
 }
 
+
 .nav {
 	list-style:none;
-	
-		img {
 
-		}
-		input {
-			width:90%;
-			height:30px;
-			color:$title;
-			text-align: center;
-			border-radius:5px;
-			margin-top: 50px;
-		}
-		form{
-			input{
-				margin:auto;
-				margin-top: 10px;
-			}
-		}
-		a, .btn-primary{
-			background-color:$dark-blue;
-			color:#ffffff;
-			margin:auto;
-			display: block;
-			width:90%;
-			height: 45px;
-			border:none;
-			margin-top: 10px;
-			  &:focus{
-       			outline:none;
-      			}
 			h2{
 				display: inline-block;
 				margin:auto;
@@ -130,31 +129,45 @@ p.slogan{
 				font-size: 25px;
 				float:none;
 			}	
-		}
-		.btn:hover{
-					background-color:$title;
-					color:#ffffff;
-					h2{
-						color:white;
-					}
-					
-		}
-		.btn-primary.btn:hover{
-			background-color:$teal;
-			color:#ffffff;
-		}
+	}	
+
+
+
+@media screen and (min-width:500px) {
 	
-}
+		input{
+		width:50%;
+		margin:auto;
+		text-align: center;
+		margin-top:5px;
+		margin-bottom: 5px;
 
-@media only screen and (min-width: 990px){
-	// body{
-	// 	background-repeat:none;
-	// }
-
-	nav{
-		.btn-primary {
-		width: 10px;
+		a,.btn-primary{
+			width:40%;
+			margin:auto;
+			text-align: center;
 		}
-	}
+	} 
 }
+
+@media screen and (min-width: 990px){
+
+	input{
+		width:50%;
+		margin:auto;
+		text-align: center;
+		margin-top:5px;
+		margin-bottom: 5px;
+ 
+		a,.btn-primary {
+			width:40%;
+			margin:auto;
+			text-align: center;
+		}
+	}	
+}
+
+
+
+
 

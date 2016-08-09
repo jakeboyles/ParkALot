@@ -1,33 +1,12 @@
-.newSearch.col {
-	background-color:rgba(230,104,85,0.8);
-
+h2.mapDestination{
+	font-family: "Sahitya";
+	color:$title !important;
+	font-size: 35px;
+	margin-top:0;
+	margin-bottom: 20px;
+	text-align: center;
 }
-
-form{
-	h2{
-		font-family: "Sahitya";
-		color:white;
-		font-size: 35px;
-		margin-top:0;
-		margin-bottom: 20px;
-		text-align: center;
-	}
-		input{
-			//background-color:lighten($title,5);
-			//margin-top: 20px;
-			//margin-bottom:20px;
-			padding:10px;
-			//padding-top:1px;
-			border-radius: 5px;
-			max-width:600px;
-			margin:0 auto;
-			margin-bottom: 5px;
-			.btn-primary{
-				margin:0 auto;
-				display: block;
-			}
-		}
-}		
+	
 
 #mapid { 
 	height: 350px;
@@ -51,43 +30,54 @@ form{
 	}
 }
 
-.lotInfo {
-	background-color:$teal;
-	border-radius: 5px;
-	margin-top: 8px;
-	padding-left:7px;
-	padding-top:1px;
-	padding-bottom:3px;
-	h4{
-		color:$title;
-	}
-	p{
-		color:white;
-	}
+// .loop {
+// 	margin:8px;
+// 	padding:2px;
+	
+
+// }
+
+.lotInfo, .lotInfoDos {
+	// border:2px solid white;
+	// padding:0;
+	margin-top:5px;
+	margin-bottom:5px;
 }
 
-.lotInfoDos {
-	background-color:$teal;
-	border-radius: 5px;
-	margin-top: 8px;
-	padding-left:7px;
-	padding-top:1px;
-	padding-bottom:3px;
-	h4{
-		color:$title;
-	}
-	p{
-		color:white;
-	}
-}
+h4.lotNameMap{
+	font-family: "Yantramanav";
+	color:$dark-blue;
+	font-size: 20px;
+	font-weight: bold;
 
-.info {
-	h3{
-		color:white;
-		font-size: 23px;
+	}
+
+p.lotAddressMap, .lotPrice, .lotDistance, .lotSpace {
+	font-family: "Yantramanav";
+	color:$dark-blue;
+	font-size: 16px;
+	a {
+		background-color:transparent;
+		font-family: "Yantramanav";
+		font-size: 18px;
 		text-align: center;
+		color: $dark-blue;
+		&:hover {
+			color:$title !important;
+		}
 	}
-	.mapResults{
-		color:$title;
-	}
+	
 }
+
+.lotSpace {
+	border-bottom: 2px solid white;
+}
+
+h3.mapResults{
+		color:$title;
+		font-size: 35px;
+		text-align: center;
+		font-family: "Sahitya";
+	}
+
+

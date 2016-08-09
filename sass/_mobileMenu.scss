@@ -38,14 +38,9 @@ ul{
       background:none;
       padding:8px;
       font-size: 20px;
-      // border-radius: 20px;
-      // border-top:2px solid lighten($dark-blue,20);
-      // border-left:1px solid lighten($dark-blue,20);
-      // border-right:1px solid lighten($dark-blue,20);
+      
       &:hover{
-        color:lighten($dark-blue,12);
-        // border:2px solid lighten($dark-blue,12);
-    
+        color:lighten($dark-blue,12);  
       }
     }
     a:focus{

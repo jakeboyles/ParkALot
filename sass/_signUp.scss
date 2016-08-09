@@ -4,8 +4,6 @@ h2{
 }
 
 form{
-	display:block;
-	margin:auto;
 	label{
 		h4{
 			font-family: "Yantramanav";
@@ -15,22 +13,6 @@ form{
 			font-size:20px;
 			margin-bottom: 0px;
 		}
-	}
-	input{
-		display: block;
-		margin:auto;
-		margin-left:0px;
-		margin-top: 5px;
-		width:100%;
-		background-color: white;
-		color:$dark-blue;
-		border:none;
-		border-radius:2px;
-	}
-	.btn-primary {
-		margin-top: 20px;
-		margin-bottom: 20px;
-		background-color:$dark-blue;
 	}
 }
 

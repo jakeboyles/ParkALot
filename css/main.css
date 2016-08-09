@@ -2,30 +2,13 @@ h2 {
   font-family: "Sahitya";
   color: #768E98; }
 
-form {
-  display: block;
-  margin: auto; }
-  form label h4 {
-    font-family: "Yantramanav";
-    font-style: italic;
-    font-weight: bold;
-    color: #ffffff;
-    font-size: 20px;
-    margin-bottom: 0px; }
-  form input {
-    display: block;
-    margin: auto;
-    margin-left: 0px;
-    margin-top: 5px;
-    width: 100%;
-    background-color: white;
-    color: #768E98;
-    border: none;
-    border-radius: 2px; }
-  form .btn-primary {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    background-color: #768E98; }
+form label h4 {
+  font-family: "Yantramanav";
+  font-style: italic;
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 20px;
+  margin-bottom: 0px; }
 
 i.fa.homeIcon {
   color: white;
@@ -73,87 +56,55 @@ md-tabs.md-default-theme md-ink-bar, md-tabs md-ink-bar {
   font-family: "Yantramanav";
   color: #768E98; }
 
-button {
-  float: right;
-  display: inline-block; }
-
-form {
-  margin: 0 auto;
-  display: block; }
-
 .userInfoTitle {
   font-size: 20px;
   font-weight: bold; }
 
+.userInfoDeats {
+  font-size: 17px; }
+
 .titleRow {
   border-bottom: 1px solid #ffffff; }
 
-h3.tableTitle {
-  font-family: "Yantramanav";
-  color: #768E98;
-  font-size: 20px;
-  text-align: center;
-  font-weight: bold; }
-
 h4.rowTitle {
   font-family: "Yantramanav";
-  color: #ffffff;
+  color: #768E98;
   font-size: 15px;
+  font-weight: bold;
   margin-right: 10px;
   margin-top: 20px;
   margin-bottom: 20px; }
 
 table {
   margin: 0 auto; }
+  table input.prefInput {
+    width: 100% !important; }
 
-@media only screen and (min-width: 990px) {
-  .userPref form .searchInput {
-    width: 40%;
-    margin: auto;
-    text-align: center; }
-  md-tabs-canvas md-pagination-wrapper {
-    width: 50% !important; }
-  md-tabs-canvas .md-tab {
-    margin: auto;
-    width: 50% !important; }
-  md-content form .save {
-    width: 25%;
-    margin: auto;
-    margin-top: 20px;
-    background-color: #8AB6B7; } }
+md-tabs-canvas md-pagination-wrapper {
+  width: 50% !important; }
 
-@media only screen and (min-width: 500px) {
-  .userPref form .searchInput {
-    width: 40%;
-    margin: auto;
-    text-align: center;
-    value: "Start a New Search"; } }
+md-tabs-canvas .md-tab {
+  margin: auto;
+  width: 50% !important; }
+
+md-content form .save {
+  width: 25%;
+  margin: auto;
+  margin-top: 20px;
+  background-color: #8AB6B7; }
 
 img.icon {
   width: 130px;
   margin: 0 auto;
   display: block; }
 
-.newSearch.col {
-  background-color: rgba(230, 104, 85, 0.8); }
-
-form h2 {
+h2.mapDestination {
   font-family: "Sahitya";
-  color: white;
+  color: #E66855 !important;
   font-size: 35px;
   margin-top: 0;
   margin-bottom: 20px;
   text-align: center; }
-
-form input {
-  padding: 10px;
-  border-radius: 5px;
-  max-width: 600px;
-  margin: 0 auto;
-  margin-bottom: 5px; }
-  form input .btn-primary {
-    margin: 0 auto;
-    display: block; }
 
 #mapid {
   height: 350px;
@@ -170,37 +121,37 @@ form input {
     list-style: none;
     padding: 0px; }
 
-.lotInfo {
-  background-color: #8AB6B7;
-  border-radius: 5px;
-  margin-top: 8px;
-  padding-left: 7px;
-  padding-top: 1px;
-  padding-bottom: 3px; }
-  .lotInfo h4 {
-    color: #E66855; }
-  .lotInfo p {
-    color: white; }
+.lotInfo, .lotInfoDos {
+  margin-top: 5px;
+  margin-bottom: 5px; }
 
-.lotInfoDos {
-  background-color: #8AB6B7;
-  border-radius: 5px;
-  margin-top: 8px;
-  padding-left: 7px;
-  padding-top: 1px;
-  padding-bottom: 3px; }
-  .lotInfoDos h4 {
-    color: #E66855; }
-  .lotInfoDos p {
-    color: white; }
+h4.lotNameMap {
+  font-family: "Yantramanav";
+  color: #768E98;
+  font-size: 20px;
+  font-weight: bold; }
 
-.info h3 {
-  color: white;
-  font-size: 23px;
-  text-align: center; }
+p.lotAddressMap, .lotPrice, .lotDistance, .lotSpace {
+  font-family: "Yantramanav";
+  color: #768E98;
+  font-size: 16px; }
+  p.lotAddressMap a, .lotPrice a, .lotDistance a, .lotSpace a {
+    background-color: transparent;
+    font-family: "Yantramanav";
+    font-size: 18px;
+    text-align: center;
+    color: #768E98; }
+    p.lotAddressMap a:hover, .lotPrice a:hover, .lotDistance a:hover, .lotSpace a:hover {
+      color: #E66855 !important; }
 
-.info .mapResults {
-  color: #E66855; }
+.lotSpace {
+  border-bottom: 2px solid white; }
+
+h3.mapResults {
+  color: #E66855;
+  font-size: 35px;
+  text-align: center;
+  font-family: "Sahitya"; }
 
 .row.mobile {
   background-color: #768E98; }
@@ -261,16 +212,41 @@ body {
   background-repeat: repeat;
   height: auto !important; }
 
+form {
+  font-size: 17px;
+  box-sizing: unset; }
+
+input {
+  margin: 0 auto;
+  display: block;
+  border: none;
+  border-radius: 2px;
+  font-family: "Yantramanav";
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 5px;
+  text-align: center;
+  width: 100%;
+  color: #768E98; }
+
+.btn-primary {
+  margin: 0 auto;
+  display: block;
+  margin-top: 10px;
+  background-color: #768E98;
+  color: #ffffff;
+  border: none; }
+  .btn-primary:hover {
+    background-color: #E66855; }
+  .btn-primary a:focus {
+    outline: none; }
+
 .col {
   padding: 30px;
   display: block;
   margin: auto;
   border-radius: 0;
   background-color: rgba(209, 209, 209, 0.8); }
-  .col input {
-    border: none;
-    font-family: "Yantramanav";
-    font-size: 18px; }
   .col .callSign {
     text-align: center; }
   .col a {
@@ -294,11 +270,8 @@ body {
       font-size: 22px;
       float: none;
       margin-top: -1px; }
-  .col .btn:hover {
-    background-color: #E66855;
-    color: #ffffff; }
-    .col .btn:hover h2 {
-      color: white; }
+  .col h2 {
+    color: white; }
 
 h1.mainTitle {
   color: #E66855;
@@ -316,45 +289,36 @@ p.slogan {
 
 .nav {
   list-style: none; }
-  .nav input {
-    width: 90%;
-    height: 30px;
-    color: #E66855;
-    text-align: center;
-    border-radius: 5px;
-    margin-top: 50px; }
-  .nav form input {
+  .nav h2 {
+    display: inline-block;
     margin: auto;
-    margin-top: 10px; }
-  .nav a, .nav .btn-primary {
-    background-color: #768E98;
-    color: #ffffff;
-    margin: auto;
-    display: block;
-    width: 90%;
-    height: 45px;
-    border: none;
-    margin-top: 10px; }
-    .nav a:focus, .nav .btn-primary:focus {
-      outline: none; }
-    .nav a h2, .nav .btn-primary h2 {
-      display: inline-block;
-      margin: auto;
-      font-size: 23px;
-      font-family: "Sahitya";
-      color: #ffffff; }
-    .nav a i, .nav .btn-primary i {
-      font-size: 25px;
-      float: none; }
-  .nav .btn:hover {
-    background-color: #E66855;
+    font-size: 23px;
+    font-family: "Sahitya";
     color: #ffffff; }
-    .nav .btn:hover h2 {
-      color: white; }
-  .nav .btn-primary.btn:hover {
-    background-color: #8AB6B7;
-    color: #ffffff; }
+  .nav i {
+    font-size: 25px;
+    float: none; }
 
-@media only screen and (min-width: 990px) {
-  nav .btn-primary {
-    width: 10px; } }
+@media screen and (min-width: 500px) {
+  input {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px; }
+    input a, input .btn-primary {
+      width: 40%;
+      margin: auto;
+      text-align: center; } }
+
+@media screen and (min-width: 990px) {
+  input {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px; }
+    input a, input .btn-primary {
+      width: 40%;
+      margin: auto;
+      text-align: center; } }

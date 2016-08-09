@@ -24,11 +24,8 @@
 									<hr>
 									<h3 class="userInfoTitle">Distance:</h3>
 									<p class="userInfoDeats">{{controller.user.distance}} ft</p>
-									<hr>
-									<h3 class="userInfoTitle">Favorite Location:</h3>
-									<div class="favoriteDestination">
-										<p class="userInfoDeats">{{controller.user.favorite}}</p>
-									</div>
+									
+								
 								</div>
 							</md-content>
 						</md-tab>
@@ -43,31 +40,28 @@
 
 										<tr>
 											<td><h4 class="rowTitle">City</h4></td>
-											<td><input class="form-control" type="text" name="city" ng-model="controller.preference.city"></td>
+											<td><input class="prefInput" type="text" name="city" ng-model="controller.preference.city"></td>
 										</tr>
 										<tr>
 											<td><h4 class="rowTitle">Destination</h4></td>
-											<td><input class="form-control" type="text" name="destination" ng-model="controller.preference.destination"></td>
+											<td><input class="prefInput" type="text" name="destination" ng-model="controller.preference.destination"></td>
 										</tr>
 										<tr>
 											<td><h4 class="rowTitle">Email</h4></td>
-											<td><input class="form-control" type="text" name="email" ng-model="controller.preference.email"></td>
+											<td><input class="prefInput" type="text" name="email" ng-model="controller.preference.email"></td>
 										</tr>
 										<tr>
 											<td><h4 class="rowTitle">Price</h4></td>
-											<td><input class="form-control" type="text" name="price" ng-model="controller.preference.price"></td>
+											<td><input class="prefInput" type="text" name="price" ng-model="controller.preference.price"></td>
 										</tr>
 										<tr>
 											<td><h4 class="rowTitle">Distance</h4></td>
-											<td><input class="form-control" type="number" name="distance" ng-model="controller.preference.distance"></td>
+											<td><input class="prefInput" type="number" name="distance" ng-model="controller.preference.distance"></td>
 										</tr>
-										<tr>
-											<td><h4 class="rowTitle">Favorite</h4></td>
-											<td><input class="form-control" type="text" name="fav" ng-model="controller.preference.favorite"></td>
-										</tr>
+					
 									</table>
 
-										<input class="save form-control" class="btn btn-primary" type="submit" name="save" value="Save">
+										<input class="btn btn-primary" type="submit" name="save" value="Save">
 								</form>
 							</md-content>
 						</md-tab>
