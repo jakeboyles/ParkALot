@@ -32,12 +32,12 @@ ul{
 
   li.listItem {
     text-decoration: none;
-    font-size: 20px;
-    display:inline; 
+    display:inline-block; 
     .fa {
       color:lighten($dark-blue,20);
       background:none;
       padding:8px;
+      font-size: 20px;
       // border-radius: 20px;
       // border-top:2px solid lighten($dark-blue,20);
       // border-left:1px solid lighten($dark-blue,20);
@@ -49,6 +49,7 @@ ul{
       }
     }
     a:focus{
+
         outline:none;
       }
   }
@@ -58,8 +59,8 @@ h6.iconTitle{
   display:inline-block;
   background:none;
 }
-
-h6.out {
+ 
+a,h6 {
   display:block;
   cursor:pointer;
   color:#ffffff;

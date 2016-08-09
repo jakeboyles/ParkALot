@@ -198,12 +198,12 @@ ul {
   padding-left: 50px; }
   ul li.listItem {
     text-decoration: none;
-    font-size: 20px;
-    display: inline; }
+    display: inline-block; }
     ul li.listItem .fa {
       color: #b0bec4;
       background: none;
-      padding: 8px; }
+      padding: 8px;
+      font-size: 20px; }
       ul li.listItem .fa:hover {
         color: #99abb2; }
     ul li.listItem a:focus {
@@ -213,14 +213,14 @@ h6.iconTitle {
   display: inline-block;
   background: none; }
 
-h6.out {
+a, h6 {
   display: block;
   cursor: pointer;
   color: #ffffff;
   text-decoration: none;
   font-size: 12px;
   font-family: "Yantramanav"; }
-  h6.out:hover {
+  a:hover, h6:hover {
     text-decoration: none; }
 
 body {
