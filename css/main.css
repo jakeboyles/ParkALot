@@ -126,8 +126,7 @@ table {
   .userPref form .searchInput {
     width: 40%;
     margin: auto;
-    text-align: center;
-    value: "Start a New Search"; } }
+    text-align: center; } }
 
 img.icon {
   width: 130px;
@@ -245,6 +244,11 @@ a, h6 {
   font-family: "Yantramanav"; }
   a:hover, h6:hover {
     text-decoration: none; }
+
+.logOut h6 {
+  font-size: 16px;
+  float: right;
+  margin-top: 13px; }
 
 body {
   background: url("../images/mapIconTwo.png");
