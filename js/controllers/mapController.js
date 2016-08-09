@@ -7,15 +7,19 @@
       
       var vm = this;
 
+     
+
       //set to empty array to filter search
       vm.form = [];
+      vm.load = false;
 
       //setting the map with the area being Cincinnati
       var mymap = L.map('mapid').setView([39.1031, -84.5120], 14);
 
       //behemoth func for redrawing the map and creating nav points in search
       var createMap = function (address, dist, price){
-    	
+
+        vm.load = true;
       //recreating the map by destroying the layers of a previous search
     	mymap.eachLayer(function(layer){
       		mymap.removeLayer(layer);
@@ -80,6 +84,8 @@
            			.bindPopup('<h5>'+location.title+'</h5><br>'+'<a href="http://maps.google.com/?q='+location.address+'" target="_blank"><p>'+location.address+'</p></a>');
            			});
 
+                vm.load = false;
+
            		});
               //searched location marker
            		L.marker([lat, lng]).addTo(mymap)
@@ -95,9 +101,8 @@
         	
     }
 
-
       //if we're coming from another state with a search, run the search function here
-      if ($stateParams.search !== ""){
+      if (typeof $stateParams.search !== 'undefined' && $stateParams.search !== ""){
         var dist = "1000";
         var price = "";
         
@@ -125,6 +130,8 @@
       vm.go = function(){
         var dist = vm.form.distance;
         var price = vm.form.price;
+        //loading icon toggle
+
       	createMap(vm.form, dist, price);
     	} 
 

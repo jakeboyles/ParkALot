@@ -27,6 +27,14 @@ form{
 				display: block;
 			}
 		}
+}
+
+.fa-spinner {
+	color:$dark-blue;
+	position:absolute;
+	z-index:99999;
+	left:45%;
+	top: 550px;
 }		
 
 #mapid { 

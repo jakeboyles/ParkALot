@@ -154,6 +154,13 @@ form input {
     margin: 0 auto;
     display: block; }
 
+.fa-spinner {
+  color: #768E98;
+  position: absolute;
+  z-index: 99999;
+  left: 45%;
+  top: 550px; }
+
 #mapid {
   height: 350px;
   width: 100%;
