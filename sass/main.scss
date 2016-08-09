@@ -25,7 +25,7 @@ body {
 	padding:30px;
 	display:block;
 	margin:auto;
-	//border-radius:5px;
+	border-radius:0;
 	background-color:rgba(209, 209, 209, 0.8);
 	input{
 		border:none;
@@ -89,7 +89,7 @@ p.slogan{
 
 .nav {
 	list-style:none;
-	margin-top: 10px;
+	
 		img {
 
 		}
@@ -110,8 +110,8 @@ p.slogan{
 		a, .btn-primary{
 			background-color:$dark-blue;
 			color:#ffffff;
-			display: block;
 			margin:auto;
+			display: block;
 			width:90%;
 			height: 45px;
 			border:none;
@@ -147,9 +147,9 @@ p.slogan{
 }
 
 @media only screen and (min-width: 990px){
-	body{
-		background-repeat:none;
-	}
+	// body{
+	// 	background-repeat:none;
+	// }
 
 	nav{
 		.btn-primary {

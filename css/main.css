@@ -111,19 +111,26 @@ img.icon {
   margin: 0 auto;
   display: block; }
 
-form {
-  background-color: #e97c6b;
-  margin-top: 20px;
+.newSearch.col {
+  background-color: rgba(230, 104, 85, 0.8); }
+
+form h2 {
+  font-family: "Sahitya";
+  color: white;
+  font-size: 35px;
+  margin-top: 0;
   margin-bottom: 20px;
+  text-align: center; }
+
+form input {
   padding: 10px;
-  padding-top: 1px;
-  border-radius: 5px; }
-  form h3 {
-    font-family: "Sahitya";
-    font-weight: bold;
-    color: white;
-    font-size: 28px;
-    text-align: center; }
+  border-radius: 5px;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-bottom: 5px; }
+  form input .btn-primary {
+    margin: 0 auto;
+    display: block; }
 
 #mapid {
   height: 350px;
@@ -218,6 +225,7 @@ a, h6 {
   cursor: pointer;
   color: #ffffff;
   text-decoration: none;
+  text-align: center;
   font-size: 12px;
   font-family: "Yantramanav"; }
   a:hover, h6:hover {
@@ -234,6 +242,7 @@ body {
   padding: 30px;
   display: block;
   margin: auto;
+  border-radius: 0;
   background-color: rgba(209, 209, 209, 0.8); }
   .col input {
     border: none;
@@ -283,8 +292,7 @@ p.slogan {
   text-align: center; }
 
 .nav {
-  list-style: none;
-  margin-top: 10px; }
+  list-style: none; }
   .nav input {
     width: 90%;
     height: 30px;
@@ -298,8 +306,8 @@ p.slogan {
   .nav a, .nav .btn-primary {
     background-color: #768E98;
     color: #ffffff;
-    display: block;
     margin: auto;
+    display: block;
     width: 90%;
     height: 45px;
     border: none;
@@ -325,7 +333,5 @@ p.slogan {
     color: #ffffff; }
 
 @media only screen and (min-width: 990px) {
-  body {
-    background-repeat: none; }
   nav .btn-primary {
     width: 10px; } }

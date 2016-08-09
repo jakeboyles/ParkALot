@@ -1,18 +1,33 @@
+.newSearch.col {
+	background-color:rgba(230,104,85,0.8);
+
+}
+
 form{
-	h3{
+	h2{
 		font-family: "Sahitya";
-		font-weight:bold;
 		color:white;
-		font-size: 28px;
+		font-size: 35px;
+		margin-top:0;
+		margin-bottom: 20px;
 		text-align: center;
 	}
-		background-color:lighten($title,5);
-		margin-top: 20px;
-		margin-bottom:20px;
-		padding:10px;
-		padding-top:1px;
-		border-radius: 5px;
-	}
+		input{
+			//background-color:lighten($title,5);
+			//margin-top: 20px;
+			//margin-bottom:20px;
+			padding:10px;
+			//padding-top:1px;
+			border-radius: 5px;
+			max-width:600px;
+			margin:0 auto;
+			margin-bottom: 5px;
+			.btn-primary{
+				margin:0 auto;
+				display: block;
+			}
+		}
+}		
 
 #mapid { 
 	height: 350px;
