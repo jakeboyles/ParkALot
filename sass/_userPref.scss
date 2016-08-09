@@ -92,3 +92,49 @@ h4.rowTitle{
 table {
 	margin:0 auto;
 }
+
+@media only screen and (min-width: 990px){
+	.userPref{
+		form{
+		.searchInput{
+			width:40%;
+			margin:auto;
+			text-align: center;
+		} 
+		}
+	}
+
+	md-tabs-canvas{
+		md-pagination-wrapper{
+			width: 50% !important;
+		}
+		.md-tab{
+			margin:auto;
+			width:50% !important;
+		}
+	}
+
+	md-content{
+		form{
+			.save {
+			width: 25%;
+			margin:auto;
+			margin-top: 20px;
+			background-color:$teal;
+			}
+		}
+	}
+}
+
+@media only screen and (min-width:500px) {
+	.userPref{
+		form{
+		.searchInput{
+			width:40%;
+			margin:auto;
+			text-align: center;
+			value:"Start a New Search";
+			} 
+		}
+	}
+}
