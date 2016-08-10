@@ -1,12 +1,13 @@
 h2 {
   font-family: "Sahitya";
-  color: #768E98; }
+  color: #768E98;
+  text-align: center; }
 
 form label h4 {
   font-family: "Yantramanav";
   font-style: italic;
   font-weight: bold;
-  color: #ffffff;
+  color: #768E98;
   font-size: 20px;
   margin-bottom: 0px; }
 
@@ -330,7 +331,7 @@ input {
       float: none;
       margin-top: -1px; }
   .col h2 {
-    color: white; }
+    color: #E66855; }
 
 h1.mainTitle {
   color: #E66855;
