@@ -241,13 +241,17 @@ input {
   display: block;
   border: none;
   border-radius: 2px;
-  font-family: "Yantramanav";
+  font-family: "Sahitya" !important;
+  font-size: 21px !important;
   margin-top: 5px;
   margin-bottom: 5px;
   padding: 5px;
   text-align: center;
   width: 100%;
   color: #768E98; }
+
+.mainSearch {
+  width: 96%; }
 
 .btn-primary {
   margin: 0 auto;
@@ -275,7 +279,7 @@ input {
     display: block;
     margin: auto;
     width: 100%;
-    height: 35px;
+    height: 40px;
     border: none;
     margin-top: 10px; }
     .col a:focus {
