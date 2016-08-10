@@ -127,7 +127,7 @@ button {
     color: #E66855; }
 
 .input-group {
-  vertical-align: center; }
+  margin: 0 auto; }
 
 input.geoInput {
   display: inline !important;
