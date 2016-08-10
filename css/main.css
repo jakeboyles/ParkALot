@@ -116,7 +116,6 @@ form {
   margin: auto; }
   form .input-group {
     margin: auto;
-    margin-left: 287px;
     width: 100%; }
   form h2 {
     font-family: "Sahitya";
@@ -145,7 +144,7 @@ input.geoInput {
   position: absolute;
   z-index: 99999;
   left: 45%;
-  top: 550px; }
+  top: 210px; }
 
 #mapid {
   height: 350px;
