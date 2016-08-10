@@ -151,12 +151,17 @@ p.slogan{
 		margin-top:5px;
 		margin-bottom: 5px;
 
-		a,.btn-primary{
-			width:40%;
+		.btn-primary{
+			width:40% !important;
 			margin:auto;
 			text-align: center;
 		}
-	} 
+	}
+	a {
+			width:40% !important;
+			margin:auto;
+			text-align: center;
+		}	 
 }
 
 @media screen and (min-width: 990px){
@@ -168,12 +173,17 @@ p.slogan{
 		margin-top:5px;
 		margin-bottom: 5px;
  
-		a,.btn-primary {
-			width:40%;
+		.btn-primary {
+			width:40% !important;
 			margin:auto;
 			text-align: center;
 		}
-	}	
+	}
+	a {
+			width:50% !important;
+			margin:auto;
+			text-align: center;
+		}	
 }
 
 
