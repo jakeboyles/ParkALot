@@ -18,6 +18,7 @@ form{
 	}
 }
 
+//specific stylings for geolocation input
 button {
 	height:38px;
 		.fa {
@@ -29,7 +30,7 @@ button {
 }
 
 .input-group{
-	margin:0 auto !important;
+	vertical-align:center;
 	
 }
 
@@ -37,6 +38,7 @@ input.geoInput{
 	display:inline !important;
 	font-size: 18px !important;
 }
+//
 
 .fa-spinner {
 	color:$dark-blue;
@@ -111,4 +113,48 @@ h3.mapResults{
 		font-family: "Sahitya";
 	}
 
+//styling for leaflet popup
+.leaflet-popup-content {
+	margin:10px !important;
+}
 
+//styling for popups on map for destination
+h2.destMarkerTitle{
+	font-size:18px;
+	color:$dark-blue;
+	text-align:center;
+	font-weight:bold;
+}
+
+p.destMarkerAdd {
+	font-family:"Yantramanav";
+	font-size:15px;
+	color:$title;
+	text-align:center;
+}
+
+
+//styling for popups for garages
+h2.lotMarkerTitle {
+	font-size:18px;
+	text-align:center;
+	margin:2px;
+	color:$dark-blue;
+	font-weight:bold;
+}
+
+p.lotMarkerAdd {
+	text-decoration:underline;
+	&:hover {
+		color:$dark-blue;
+		text-decoration:underline;
+	}
+}
+
+p.lotMarkerAdd, .lotMarkerPrice {
+	font-family:"Yantramanav";
+	font-size:15px;
+	color:$title;
+	text-align:center;
+	margin:2px !important;
+}

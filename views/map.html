@@ -37,7 +37,7 @@
 				<h4 class="lotNameMap">Lot Name: {{info.location_name}}</h4>
 				<p class="lotAddressMap">Address (link): <a href="http://maps.google.com/?q={{info.address}}{{info.state}}{{info.zip}}" target="_blank"> {{info.address}}{{info.state}}{{info.zip}}</a></p>
 				<p class="lotPrice">Price: {{info.price_formatted}}</p>
-				<p class="lotDistance">Distance: {{info.distance}}</p>
+				<p class="lotDistance">Distance: {{info.distance}} ft</p>
 				<p class="lotSpace">Available Spots: {{info.available_spots}}</p>
 
 			</div>	
@@ -47,8 +47,8 @@
 				<p class="lotAddressMap">Address (link):
 					<a href="http://maps.google.com/?q={{data.address}}" target="_blank"> {{data.address}} </a>
 				</p> 
-				<p class="lotPrice">Price: {{data.price}}</p>
-				<p class="lotDistance">Distance: {{data.distance}}</p>
+				<p class="lotPrice">Price: $ {{data.price}}</p>
+				<p class="lotDistance">Distance: {{data.distance}} ft</p>
 				<p class="lotSpace">Available Spots: N/A</p>
 			</div>	
 		</div>	
