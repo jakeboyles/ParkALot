@@ -1,9 +1,7 @@
 (function() {
     'use strict';
     
-    angular
-    .module('parkalot')
-    .controller('mapController', function($state,back,API, $stateParams, $scope) {
+    angular.module('parkalot').controller('mapController', function($state,back,API, $stateParams, $scope) {
       
       var vm = this;
 

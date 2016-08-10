@@ -15,23 +15,24 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
-    '/node_modules/angular/angular.min.js',
-    '/node_modules/angular-ui-router/release/angular-ui-router.min.js',
-    '//cdn.backand.net/backand/dist/1.8.2/backand.min.js',
+    './node_modules/angular/angular.min.js',
+    './node_modules/angular-mocks/angular-mocks.js',
+    './node_modules/angular-ui-router/release/angular-ui-router.min.js',
+    'https://cdn.backand.net/backand/dist/1.8.2/backand.min.js',
     'https://npmcdn.com/leaflet@1.0.0-rc.2/dist/leaflet.js',
-    '/node_modules/angular-aria/angular-aria.js',                             // angular
-    '/node_modules/angular-animate/angular-animate.js', // ui-router
-    '/node_modules/angular-material/angular-material.js',                 // loads our modules for tests                                 // our Users factory
-    'js/mainView.js',
-    'js/factories/mainFactory.js',   
-    'js/factories/api.js',
-    'js/controllers/homeController.js',
-    'js/controllers/signUpController.js',
-    'js/controllers/loginController.js',
-    'js/controllers/mapController.js',
-    'js/controllers/mobileMenuController.js',
-    'js/controllers/userPrefController.js',
-    'js/controllers/test/parkalot.spec.js'
+    './node_modules/angular-aria/angular-aria.js',                            
+    './node_modules/angular-animate/angular-animate.js',                     
+    './node_modules/angular-material/angular-material.js',                                
+    './js/mainView.js',
+    './js/factories/mainFactory.js',   
+    './js/factories/api.js',
+    './js/controllers/homeController.js',
+    './js/controllers/signUpController.js',
+    './js/controllers/loginController.js',
+    './js/controllers/mapController.js',
+    './js/controllers/mobileMenuController.js',
+    './js/controllers/userPrefController.js',
+    './js/controllers/test/parkALot.spec.js'
     ],
 
     // list of files to exclude

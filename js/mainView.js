@@ -1,7 +1,8 @@
 (function(){
 'use strict';
 
-angular.module('parkalot', ['ui.router', 'backand','ngMaterial'])
+angular
+.module('parkalot', ['ui.router', 'backand','ngMaterial'])
 .config(function($stateProvider, $urlRouterProvider, $locationProvider, BackandProvider, $mdGestureProvider){
 	
 	$mdGestureProvider.skipClickHijack();
