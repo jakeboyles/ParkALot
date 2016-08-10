@@ -45,12 +45,7 @@
               //if we get an address, filter based on user input.
            		if (typeof vm.get_locations !== "undefined")
            			{
-                  var newArray = vm.get_locations.filter(function(item){
-                      return dist > item.distance;
-                    });
-                  newArray = newArray.filter(function(item){
-                    return price > item.price;
-                  });
+                  var newArray = vm.filterResults(vm.get_locations, dist, price);
 
                   //this is dumb but works, because it filters out not in
            				newArray.forEach(function(location){
@@ -136,13 +131,31 @@
     	} 
 
       //function to find geoLocation on map
-
-         function showPosition(position){
+      function showPosition(position){
 
           vm.form.search = position.coords.latitude + "," + position.coords.longitude;
           //tells DOM to "reload"
           $scope.$digest();
         }
+
+      vm.filterResults = function(locations, dist, price){
+        console.log("ARRAY:",JSON.stringify(locations));
+        console.log(dist);
+
+        var newArray = locations.filter(function(item){
+            return dist > item.distance;
+        });
+
+        //console.log("NEW ARRAY:",newArray);
+        
+        newArray = newArray.filter(function(item){
+            
+            return price > item.price;
+
+        });
+        console.log("NEW ARRAY:",JSON.stringify(newArray));
+        return newArray;
+      }
 
            vm.getLocation = function(){
 
