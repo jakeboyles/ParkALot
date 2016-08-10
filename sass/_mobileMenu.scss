@@ -3,6 +3,7 @@
 }
 
 .mobileIcon{ 
+  padding-top:5px;
   outline:none;
     &:hover {
       cursor:pointer;
@@ -22,11 +23,12 @@ span.bar {
   height:5px;
   display:block;
   background-color:#ffffff;
-  margin:6px;
+  margin:4px;
 }
 
-ul{
-  margin-top:-36px;
+ul.menuList{
+  padding-top: 2px;
+  margin-top:-44px;
   margin-bottom:0;
   padding-left:50px;
 
@@ -37,7 +39,7 @@ ul{
       color:lighten($dark-blue,20);
       background:none;
       padding:8px;
-      font-size: 20px;
+      font-size: 25px;
       
       &:hover{
         color:lighten($dark-blue,12);  
@@ -47,6 +49,35 @@ ul{
 
         outline:none;
       }
+  }
+}
+
+ul.menuText{
+  margin-top:-12px;
+  margin-bottom:-32px;
+  padding-left:50px;
+
+  li.textItem {
+    text-decoration: none;
+    display:inline-block; 
+
+    p.homeText,.mapText,.loginText,.usePrefText {
+      color:lighten($dark-blue,20);
+      background:none;
+      padding:5px;
+      font-weight: bold;
+      font-size: 11px;
+      font-family: "Yantramanav";
+      text-align: center;
+    }
+    //   &:hover{
+    //     color:lighten($dark-blue,12);  
+    //   }
+    // }
+    // a:focus{
+
+    //     outline:none;
+    //   }
   }
 }
 

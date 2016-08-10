@@ -177,6 +177,7 @@ h3.mapResults {
   background-color: #768E98; }
 
 .mobileIcon {
+  padding-top: 5px;
   outline: none; }
   .mobileIcon:hover {
     cursor: pointer; }
@@ -191,24 +192,41 @@ span.bar {
   height: 5px;
   display: block;
   background-color: #ffffff;
-  margin: 6px; }
+  margin: 4px; }
 
-ul {
-  margin-top: -36px;
+ul.menuList {
+  padding-top: 2px;
+  margin-top: -44px;
   margin-bottom: 0;
   padding-left: 50px; }
-  ul li.listItem {
+  ul.menuList li.listItem {
     text-decoration: none;
     display: inline-block; }
-    ul li.listItem .fa {
+    ul.menuList li.listItem .fa {
       color: #b0bec4;
       background: none;
       padding: 8px;
-      font-size: 20px; }
-      ul li.listItem .fa:hover {
+      font-size: 25px; }
+      ul.menuList li.listItem .fa:hover {
         color: #99abb2; }
-    ul li.listItem a:focus {
+    ul.menuList li.listItem a:focus {
       outline: none; }
+
+ul.menuText {
+  margin-top: -12px;
+  margin-bottom: -32px;
+  padding-left: 50px; }
+  ul.menuText li.textItem {
+    text-decoration: none;
+    display: inline-block; }
+    ul.menuText li.textItem p.homeText, ul.menuText li.textItem .mapText, ul.menuText li.textItem .loginText, ul.menuText li.textItem .usePrefText {
+      color: #b0bec4;
+      background: none;
+      padding: 5px;
+      font-weight: bold;
+      font-size: 11px;
+      font-family: "Yantramanav";
+      text-align: center; }
 
 h6.iconTitle {
   display: inline-block;
@@ -269,6 +287,12 @@ input {
     background-color: #E66855; }
   .btn-primary a:focus {
     outline: none; }
+
+button .fa {
+  font-size: 20px; }
+
+button i {
+  color: #E66855; }
 
 .col {
   padding: 30px;

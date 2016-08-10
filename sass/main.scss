@@ -58,9 +58,16 @@ form {
 			}
 		}
 
-// button {
-// 	float:center;
-// }	
+button {
+		.fa {
+			font-size: 20px;
+		}
+	i {
+		color:$title;
+	}
+}
+
+
 
 .col{
 	padding:30px;
