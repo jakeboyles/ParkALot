@@ -120,7 +120,7 @@ form h2 {
   text-align: center; }
 
 button {
-  height: 42px; }
+  height: 38px; }
   button .fa {
     font-size: 20px; }
   button i {
@@ -130,7 +130,8 @@ button {
   margin: 0 auto !important; }
 
 input.geoInput {
-  display: inline !important; }
+  display: inline !important;
+  font-size: 18px !important; }
 
 .fa-spinner {
   color: #768E98;
@@ -278,7 +279,7 @@ input {
   border: none;
   border-radius: 2px;
   font-family: "Sahitya" !important;
-  font-size: 21px !important;
+  font-size: 20px !important;
   margin-top: 5px;
   margin-bottom: 5px;
   padding: 5px;
@@ -402,5 +403,19 @@ p.slogan {
     padding: 5px; }
     .mobile .navMenu ul.menuList {
       padding-left: 0; }
+      .mobile .navMenu ul.menuList li.listItem .fa {
+        color: white; }
+        .mobile .navMenu ul.menuList li.listItem .fa:hover {
+          color: #b0bec4; }
     .mobile .navMenu ul.menuText {
-      padding-left: 10px; } }
+      padding-left: 10px; }
+      .mobile .navMenu ul.menuText li.textItem p {
+        color: white; } }
+
+@media screen and (min-width: 500px) {
+  ul.menuList {
+    padding-left: 35px; } }
+
+@media screen and (max-width: 768px) {
+  body {
+    background: none; } }

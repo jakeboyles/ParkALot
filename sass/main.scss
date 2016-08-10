@@ -30,7 +30,7 @@ form {
 		border:none;
 		border-radius:2px;
 		font-family: "Sahitya" !important;
-		font-size: 21px !important;
+		font-size: 20px !important;
 		margin-top:5px;
 		margin-bottom: 5px;
 		padding:5px;
@@ -191,11 +191,32 @@ p.slogan{
 	display:block !important;
 	margin-top: 30px;
 	padding:5px;
-	ul.menuList {
-		padding-left:0;
+		ul.menuList {
+			padding-left:0;
+			li.listItem .fa {
+				color:white;
+				&:hover{
+					color:lighten($dark-blue,20);
+				}
+			}
+		}
+		ul.menuText {
+			padding-left:10px;
+			li.textItem p {
+				color:white;
+			}
+		}
 	}
-	ul.menuText {
-		padding-left:10px;
+}
+
+@media screen and (min-width:500px) {
+	ul.menuList{
+		padding-left:35px;
 	}
+}
+
+@media screen and (max-width:768px) {
+	body {
+		background:none;
 	}
 }
