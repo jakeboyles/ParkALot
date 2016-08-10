@@ -104,4 +104,12 @@ table {
 			}
 		}
 	}
+@media only screen and (max-width: 400px) {
+
+	md-tabs-canvas{
+			md-pagination-wrapper {
+				width: 100% !important;
+			}
+		}
+	}
 
