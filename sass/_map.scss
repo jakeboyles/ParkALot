@@ -165,3 +165,11 @@ p.lotMarkerAdd, .lotMarkerPrice {
 	text-align:center;
 	margin:2px !important;
 }
+
+@media only screen and (min-width: 500px) {
+	form{
+		.input-group{
+		
+		}
+	}
+}
