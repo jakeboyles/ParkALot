@@ -25,6 +25,7 @@ form {
 	box-sizing:unset;
 }	
 	input {
+		// position:relative;
 		margin:0 auto;
 		display:block;
 		border:none;
@@ -56,6 +57,10 @@ form {
 				outline:none;
 			}
 		}
+
+// button {
+// 	float:center;
+// }	
 
 .col{
 

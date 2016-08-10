@@ -1,7 +1,7 @@
 <i class="fa fa-spinner fa-pulse fa-3x fa-fw" ng-show="controller.load" ></i>
 <span class="sr-only">Loading...</span>
 
-<p class="geoLoc">Click for Current Location <i class="fa fa-location-arrow" aria-hidden="true" ng-click="controller.getLocation()"></i></p>
+<!-- <p class="geoLoc">Click for Current Location <i class="fa fa-location-arrow" aria-hidden="true" ng-click="controller.getLocation()"></i></p> -->
 
 <div id="mapid"></div>
 
@@ -10,7 +10,20 @@
 	<form class="newSearch" ng-submit="controller.go()">
 				
 		<h2 class="mapDestination">New Search</h2>
-		<input type="text" name="search" placeholder="Enter Your Destination" ng-model="controller.form.search"> 
+		
+		<div class="input-group">
+			<span class="input-group-btn">
+	       		<button class="btn btn-default" type="button" ng-click="controller.getLocation()"><i class="fa fa-location-arrow" aria-hidden="true"></i></button>
+	        </span>
+	     		<input type="text" name="search" placeholder="Enter Destination or Click for Current Location" ng-model="controller.form.search">
+	     </div>	
+
+
+      	<!-- <span class="input-group-btn">
+        <button class="btn btn-default" type="button" ng-click="controller.getLocation()"><i class="fa fa-location-arrow" aria-hidden="true"></i></button>
+     	</span>
+      	<input type="text" placeholder="Get your Current Location"> -->
+
 		<input type="text" name="distance" placeholder="Distance in Feet" ng-model="controller.form.distance">
 		<input type="text" name="price" placeholder="Price(Hourly)" ng-model="controller.form.price">
 		<input class="btn btn-primary" ng-click="reset(form)" value="FIND" type="submit" name="query">
