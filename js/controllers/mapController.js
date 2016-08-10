@@ -76,7 +76,7 @@
            			vm.taco.forEach(function(location){
            			
                  	L.marker([location.Location[0], location.Location[1]], {icon: carPin}).addTo(mymap)
-           			.bindPopup('<h5 class="lotMarkerTitle">'+location.title+'</h5><br>'+'<a href="http://maps.google.com/?q='+location.address+'" target="_blank"><p class="lotMarkerAdd">'+location.address+'</p></a>'+'<p class="lotMarkerPrice">$'+location.price+'</p>');
+           			.bindPopup('<h2 class="lotMarkerTitle">'+location.title+'</h2><br>'+'<a href="http://maps.google.com/?q='+location.address+'" target="_blank"><p class="lotMarkerAdd">'+location.address+'</p></a>'+'<p class="lotMarkerPrice">Price: $'+location.price+'</p>');
            			});
 
                 vm.load = false;

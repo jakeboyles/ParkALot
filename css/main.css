@@ -187,6 +187,39 @@ h3.mapResults {
   text-align: center;
   font-family: "Sahitya"; }
 
+.leaflet-popup-content {
+  margin: 10px !important; }
+
+h2.destMarkerTitle {
+  font-size: 18px;
+  text-align: center;
+  font-weight: bold; }
+
+p.destMarkerAdd {
+  font-family: "Yantramanav";
+  font-size: 15px;
+  color: #E66855;
+  text-align: center; }
+
+h2.lotMarkerTitle {
+  font-size: 18px;
+  text-align: center;
+  margin: 2px;
+  font-weight: bold; }
+
+p.lotMarkerAdd {
+  text-decoration: underline; }
+  p.lotMarkerAdd:hover {
+    color: #768E98;
+    text-decoration: underline; }
+
+p.lotMarkerAdd, .lotMarkerPrice {
+  font-family: "Yantramanav";
+  font-size: 15px;
+  color: #E66855;
+  text-align: center;
+  margin: 2px !important; }
+
 .row.mobile {
   background-color: #768E98; }
 
