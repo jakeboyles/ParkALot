@@ -18,6 +18,7 @@ form{
 	}
 }
 
+//specific stylings for geolocation input
 button {
 	height:38px;
 		.fa {
@@ -29,7 +30,7 @@ button {
 }
 
 .input-group{
-	margin:0 auto !important;
+	vertical-align:center;
 	
 }
 
@@ -37,6 +38,7 @@ input.geoInput{
 	display:inline !important;
 	font-size: 18px !important;
 }
+//
 
 .fa-spinner {
 	color:$dark-blue;
@@ -119,6 +121,7 @@ h3.mapResults{
 //styling for popups on map for destination
 h2.destMarkerTitle{
 	font-size:18px;
+	color:$dark-blue;
 	text-align:center;
 	font-weight:bold;
 }
@@ -136,6 +139,7 @@ h2.lotMarkerTitle {
 	font-size:18px;
 	text-align:center;
 	margin:2px;
+	color:$dark-blue;
 	font-weight:bold;
 }
 

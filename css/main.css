@@ -1,6 +1,6 @@
 h2 {
   font-family: "Sahitya";
-  color: #768E98;
+  color: #E66855;
   text-align: center; }
 
 form label h4 {
@@ -127,7 +127,7 @@ button {
     color: #E66855; }
 
 .input-group {
-  margin: 0 auto !important; }
+  vertical-align: center; }
 
 input.geoInput {
   display: inline !important;
@@ -192,6 +192,7 @@ h3.mapResults {
 
 h2.destMarkerTitle {
   font-size: 18px;
+  color: #768E98;
   text-align: center;
   font-weight: bold; }
 
@@ -205,6 +206,7 @@ h2.lotMarkerTitle {
   font-size: 18px;
   text-align: center;
   margin: 2px;
+  color: #768E98;
   font-weight: bold; }
 
 p.lotMarkerAdd {
@@ -364,8 +366,6 @@ input {
       font-size: 22px;
       float: none;
       margin-top: -1px; }
-  .col h2 {
-    color: #E66855; }
 
 h1.mainTitle {
   color: #E66855;
