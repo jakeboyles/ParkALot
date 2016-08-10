@@ -137,7 +137,8 @@ button {
 
 input.geoInput {
   display: inline !important;
-  font-size: 18px !important; }
+  font-size: 13px !important;
+  height: 36px; }
 
 .fa-spinner {
   color: #768E98;
