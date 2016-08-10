@@ -25,7 +25,6 @@ form {
 	box-sizing:unset;
 }	
 	input {
-		// position:relative;
 		margin:0 auto;
 		display:block;
 		border:none;
@@ -57,17 +56,6 @@ form {
 				outline:none;
 			}
 		}
-
-button {
-		.fa {
-			font-size: 20px;
-		}
-	i {
-		color:$title;
-	}
-}
-
-
 
 .col{
 
@@ -193,7 +181,22 @@ p.slogan{
 		}	
 }
 
+@media screen and (min-width: 800px) {
+	.mobileIcon {
+	display: none;
+	}
+}
 
-
-
-
+@media screen and (min-width: 800px) {
+	.mobile .navMenu {
+	display:block !important;
+	margin-top: 30px;
+	padding:5px;
+	ul.menuList {
+		padding-left:0;
+	}
+	ul.menuText {
+		padding-left:10px;
+	}
+	}
+}

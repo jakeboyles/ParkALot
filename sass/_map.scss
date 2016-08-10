@@ -18,6 +18,25 @@ form{
 	}
 }
 
+button {
+	height:42px;
+		.fa {
+			font-size: 20px;
+		}
+	i {
+		color:$title;
+	}
+}
+
+.input-group{
+	margin:0 auto !important;
+	
+}
+
+input.geoInput{
+	display:inline !important;
+}
+
 .fa-spinner {
 	color:$dark-blue;
 	position:absolute;
@@ -48,16 +67,9 @@ form{
 	}
 }
 
-// .loop {
-// 	margin:8px;
-// 	padding:2px;
-	
-
-// }
 
 .lotInfo, .lotInfoDos {
-	// border:2px solid white;
-	// padding:0;
+	
 	margin-top:5px;
 	margin-bottom:5px;
 }

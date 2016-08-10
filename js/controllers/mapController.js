@@ -81,7 +81,7 @@
            			vm.taco.forEach(function(location){
            			
                  	L.marker([location.Location[0], location.Location[1]], {icon: carPin}).addTo(mymap)
-           			.bindPopup('<h5>'+location.title+'</h5><br>'+'<a href="http://maps.google.com/?q='+location.address+'" target="_blank"><p>'+location.address+'</p></a>');
+           			.bindPopup('<h5 class="lotMarkerTitle">'+location.title+'</h5><br>'+'<a href="http://maps.google.com/?q='+location.address+'" target="_blank"><p class="lotMarkerAdd">'+location.address+'</p></a>'+'<p class="lotMarkerPrice">$'+location.price+'</p>');
            			});
 
                 vm.load = false;
@@ -89,7 +89,7 @@
            		});
               //searched location marker
            		L.marker([lat, lng]).addTo(mymap)
-    				.bindPopup('<p>' +vm.destination.search+'</p>')
+    				.bindPopup('<h2 class="destMarkerTitle">Destination</h2> <p class="destMarkerAdd">'+vm.destination.search+'</p>')
         	})
           
           //if we searched something, empty the search input

@@ -118,6 +118,19 @@ form h2 {
   margin-bottom: 20px;
   text-align: center; }
 
+button {
+  height: 42px; }
+  button .fa {
+    font-size: 20px; }
+  button i {
+    color: #E66855; }
+
+.input-group {
+  margin: 0 auto !important; }
+
+input.geoInput {
+  display: inline !important; }
+
 .fa-spinner {
   color: #768E98;
   position: absolute;
@@ -197,7 +210,7 @@ ul.menuList {
   padding-top: 2px;
   margin-top: -44px;
   margin-bottom: 0;
-  padding-left: 50px; }
+  padding-left: 45px; }
   ul.menuList li.listItem {
     text-decoration: none;
     display: inline-block; }
@@ -214,7 +227,7 @@ ul.menuList {
 ul.menuText {
   margin-top: -12px;
   margin-bottom: -32px;
-  padding-left: 50px; }
+  padding-left: 45px; }
   ul.menuText li.textItem {
     text-decoration: none;
     display: inline-block; }
@@ -286,12 +299,6 @@ input {
     background-color: #E66855; }
   .btn-primary a:focus {
     outline: none; }
-
-button .fa {
-  font-size: 20px; }
-
-button i {
-  color: #E66855; }
 
 .col {
   padding: 30px;
@@ -382,3 +389,17 @@ p.slogan {
     width: 50% !important;
     margin: auto;
     text-align: center; } }
+
+@media screen and (min-width: 800px) {
+  .mobileIcon {
+    display: none; } }
+
+@media screen and (min-width: 800px) {
+  .mobile .navMenu {
+    display: block !important;
+    margin-top: 30px;
+    padding: 5px; }
+    .mobile .navMenu ul.menuList {
+      padding-left: 0; }
+    .mobile .navMenu ul.menuText {
+      padding-left: 10px; } }
