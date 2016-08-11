@@ -133,11 +133,13 @@ button {
     color: #E66855; }
 
 .input-group {
-  margin: 0 auto; }
+  padding: 0px; }
 
 input.geoInput {
   display: inline !important;
-  font-size: 18px !important; }
+  font-size: 15px !important;
+  height: 36px;
+  width: 100%; }
 
 .fa-spinner {
   color: #768E98;
@@ -383,7 +385,7 @@ h1.mainTitle {
 
 p.slogan {
   color: #E66855;
-  font-size: 16px;
+  font-size: 21px;
   font-family: "Yantramanav";
   text-align: center; }
 
@@ -450,6 +452,10 @@ p.slogan {
       padding-left: 10px; }
       .mobile .navMenu ul.menuText li.textItem p {
         color: white; } }
+
+@media screen and (min-width: 500px) {
+  ul.menuList {
+    padding-left: 35px; } }
 
 @media screen and (max-width: 640px) {
   body {
