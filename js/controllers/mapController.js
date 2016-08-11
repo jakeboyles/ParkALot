@@ -5,12 +5,6 @@
       
       var vm = this;
 
-       // if(back.getToken() !== null)
-       // {
-        
-       // }
-     
-
       //set to empty array to filter search
       vm.form = [];
       vm.load = false;

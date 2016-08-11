@@ -12,7 +12,7 @@
 	        $state.go('home');
 	    }
 
-	    //show log-out button if user has token
+	    //show logout button if user has token
 	   	vm.isLoggedIn = false;
 
 	    	if(back.getToken() !== null)
