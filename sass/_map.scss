@@ -37,14 +37,15 @@ button {
 }
 
 .input-group{
-	margin:0 auto;
-	
+	//margin: auto;
+	padding:0px;
 }
 
 input.geoInput{
 	display:inline !important;
-	font-size: 13px !important;
+	font-size: 15px !important;
 	height: 36px;
+	width:100%;
 }
 //
 
@@ -168,9 +169,5 @@ p.lotMarkerAdd, .lotMarkerPrice {
 }
 
 @media only screen and (min-width: 500px) {
-	form{
-		.input-group{
-		
-		}
-	}
+	
 }
