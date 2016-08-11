@@ -243,7 +243,8 @@ p.lotMarkerAdd, .lotMarkerPrice {
   background-color: #768E98; }
 
 .mobileIcon {
-  padding-top: 5px;
+  padding-top: 8px;
+  padding-bottom: 8px;
   outline: none; }
   .mobileIcon:hover {
     cursor: pointer; }
@@ -262,7 +263,7 @@ span.bar {
 
 ul.menuList {
   padding-top: 2px;
-  margin-top: -44px;
+  margin-top: -52px;
   margin-bottom: 0;
   padding-left: 45px; }
   ul.menuList li.listItem {
@@ -292,7 +293,8 @@ ul.menuText {
       font-weight: bold;
       font-size: 11px;
       font-family: "Yantramanav";
-      text-align: center; }
+      text-align: center;
+      margin-bottom: 27px; }
 
 h6.iconTitle {
   display: inline-block;

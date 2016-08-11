@@ -5,6 +5,21 @@
       
       var vm = this;
 
+      
+
+      if(back.getToken() !== null){
+        var preFill = back.userGet(back.getToken());
+
+       preFill.then(function(data){
+        console.log(data);
+       vm.form.distance = data.data.data[0].distance;
+       vm.form.price = data.data.data[0].price;
+
+       });
+
+      }
+     
+
       //set to empty array to filter search
       vm.form = [];
       vm.load = false;
