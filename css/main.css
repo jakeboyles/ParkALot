@@ -462,10 +462,6 @@ p.slogan {
       .mobile .navMenu ul.menuText li.textItem p {
         color: white; } }
 
-@media screen and (min-width: 500px) {
-  ul.menuList {
-    padding-left: 35px; } }
-
 @media screen and (max-width: 640px) {
   body {
     background: none; } }
