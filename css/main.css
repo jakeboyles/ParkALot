@@ -137,7 +137,7 @@ button {
 
 input.geoInput {
   display: inline !important;
-  font-size: 15px !important;
+  font-size: 12px !important;
   height: 36px;
   width: 100%; }
 
@@ -146,7 +146,7 @@ input.geoInput {
   position: absolute;
   z-index: 99999;
   left: 45%;
-  top: 210px; }
+  top: 190px; }
 
 #mapid {
   height: 350px;
@@ -229,6 +229,15 @@ p.lotMarkerAdd, .lotMarkerPrice {
   color: #E66855;
   text-align: center;
   margin: 2px !important; }
+
+@media only screen and (min-width: 500px) {
+  form.input-group {
+    margin: auto;
+    width: auto; }
+  input.geoInput {
+    display: inline !important;
+    font-size: 20px !important;
+    height: 36px; } }
 
 .row.mobile {
   background-color: #768E98; }

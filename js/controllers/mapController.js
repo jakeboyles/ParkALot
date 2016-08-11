@@ -1,7 +1,7 @@
 (function() {
     'use strict';
     
-    angular.module('parkalot').controller('mapController', function($state,back,API, $stateParams, $scope) {
+    angular.module('parkalot').controller('mapController', function($state,back,API, $stateParams, $scope, $anchorScroll) {
       
       var vm = this;
 
@@ -123,6 +123,8 @@
         var price = vm.form.price;
         //loading icon toggle
 
+        $anchorScroll(mapid);
+
       	createMap(vm.form, dist, price);
     	} 
 
@@ -134,37 +136,29 @@
           $scope.$digest();
         }
 
-        vm.getLocation = function(){
+      vm.getLocation = function(){
 
-           if (navigator.geolocation) {
-
-            navigator.geolocation.getCurrentPosition(showPosition);
-            } else {
-            x.innerHTML = "Geolocation is not supported by this browser.";
-            }
-          }
+        if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(showPosition);
+        } 
+        else {
+          x.innerHTML = "Geolocation is not supported by this browser.";
+        }
+      }
 
 
       vm.filterResults = function(locations, dist, price){
-        console.log("ARRAY:",JSON.stringify(locations));
-        console.log(dist);
 
         var newArray = locations.filter(function(item){
-            return dist > item.distance;
-        });
 
-        //console.log("NEW ARRAY:",newArray);
-        
-        newArray = newArray.filter(function(item){
-            
-            return price > item.price;
 
+          if(dist>=item.distance && price>=item.price) {
+            return true;
+          }
         });
-        console.log("NEW ARRAY:",JSON.stringify(newArray));
         return newArray;
       }
 
-        
     });
 })();
 

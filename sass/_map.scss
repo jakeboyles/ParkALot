@@ -12,7 +12,6 @@ form{
 	margin:auto;
 	.input-group{
 		margin:auto;
-		//margin-left: 287px;
 		width:100%;
 	}
 	h2{
@@ -43,18 +42,18 @@ button {
 
 input.geoInput{
 	display:inline !important;
-	font-size: 15px !important;
+	font-size: 12px !important;
 	height: 36px;
 	width:100%;
 }
-//
 
 .fa-spinner {
 	color:$dark-blue;
 	position:absolute;
 	z-index:99999;
 	left:45%;
-	top: 210px;
+	top: 190px;
+	//background-color:white;
 }		
 
 #mapid { 
@@ -169,5 +168,16 @@ p.lotMarkerAdd, .lotMarkerPrice {
 }
 
 @media only screen and (min-width: 500px) {
-	
+
+	form.input-group{
+		margin:auto;
+		width:auto;
+	}
+
+	input.geoInput{
+	display:inline !important;
+	font-size: 20px !important;
+	height: 36px;
+	//width:50%;
+	}
 }
