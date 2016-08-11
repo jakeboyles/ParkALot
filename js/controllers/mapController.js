@@ -5,6 +5,10 @@
       
       var vm = this;
 
+       // if(back.getToken() !== null)
+       // {
+        
+       // }
      
 
       //set to empty array to filter search
@@ -136,6 +140,17 @@
           $scope.$digest();
         }
 
+        vm.getLocation = function(){
+
+           if (navigator.geolocation) {
+
+            navigator.geolocation.getCurrentPosition(showPosition);
+            } else {
+            x.innerHTML = "Geolocation is not supported by this browser.";
+            }
+          }
+
+
       vm.filterResults = function(locations, dist, price){
         console.log("ARRAY:",JSON.stringify(locations));
         console.log(dist);
@@ -155,16 +170,7 @@
         return newArray;
       }
 
-           vm.getLocation = function(){
-
-           if (navigator.geolocation) {
-
-            navigator.geolocation.getCurrentPosition(showPosition);
-            } else {
-            x.innerHTML = "Geolocation is not supported by this browser.";
-            }
-          }
-
+        
     });
 })();
 
