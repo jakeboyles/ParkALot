@@ -1,7 +1,7 @@
 (function() {
     'use strict';
     
-    angular.module('parkalot').controller('mapController', function($state,back,API, $stateParams, $scope) {
+    angular.module('parkalot').controller('mapController', function($state,back,API, $stateParams, $scope, $anchorScroll) {
       
       var vm = this;
 
@@ -128,6 +128,8 @@
         var dist = vm.form.distance;
         var price = vm.form.price;
         //loading icon toggle
+
+        $anchorScroll(mapid);
 
       	createMap(vm.form, dist, price);
     	} 
