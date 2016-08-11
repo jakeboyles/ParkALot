@@ -240,11 +240,11 @@ p.lotMarkerAdd, .lotMarkerPrice {
     height: 36px; } }
 
 .row.mobile {
-  background-color: #768E98; }
+  background-color: #768E98;
+  height: 48px; }
 
 .mobileIcon {
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding-top: 5px;
   outline: none; }
   .mobileIcon:hover {
     cursor: pointer; }
@@ -260,10 +260,12 @@ span.bar {
   display: block;
   background-color: #ffffff;
   margin: 4px; }
+  span.bar:nth-child(1) {
+    margin-top: 8px; }
 
 ul.menuList {
   padding-top: 2px;
-  margin-top: -52px;
+  margin-top: -44px;
   margin-bottom: 0;
   padding-left: 45px; }
   ul.menuList li.listItem {

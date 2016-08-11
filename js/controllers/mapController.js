@@ -6,17 +6,16 @@
       var vm = this;
 
       
-
+      //function to check that user has token and token prefill map form w/prefs
       if(back.getToken() !== null){
+        
         var preFill = back.userGet(back.getToken());
 
-       preFill.then(function(data){
-        console.log(data);
-       vm.form.distance = data.data.data[0].distance;
-       vm.form.price = data.data.data[0].price;
-
-       });
-
+         preFill.then(function(data){
+          console.log(data);
+         vm.form.distance = data.data.data[0].distance;
+         vm.form.price = data.data.data[0].price;
+         });
       }
      
 
