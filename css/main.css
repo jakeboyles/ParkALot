@@ -19,6 +19,11 @@ i.fa.homeIcon {
     cursor: pointer;
     color: #768E98; }
 
+@media only screen and (min-width: 500px) {
+  form label {
+    width: 100%;
+    text-align: center; } }
+
 .userPref.col {
   background-color: rgba(230, 104, 85, 0.8); }
 
