@@ -50,7 +50,10 @@
         	search.then(function(results){
 
             //setting data JSON
-           	vm.get_locations = results.data.parking_listings;
+           	var get_locations_data = results.data.parking_listings;
+
+            vm.get_locations = vm.filterResults(get_locations_data);
+            console.log(vm.get_locations);
 
               //if we get an address, filter based on user input.
            		if (typeof vm.get_locations !== "undefined")
@@ -61,7 +64,7 @@
            				newArray.forEach(function(location){
 
            			    L.marker([location.lat, location.lng], {icon: carPin}).addTo(mymap)
-           			    .bindPopup('<p>'+location.location_name+'</p>');
+           			    .bindPopup('<p class="apiLotTitle">'+location.location_name+'</p>');
            			    });
 
            		  }
