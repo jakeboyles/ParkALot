@@ -129,7 +129,22 @@ p.slogan{
 				float:none;
 			}	
 	}	
-
+.Foot {
+	height: 70px;
+	text-align:center;
+	margin-top:30px;
+	background-color:rgba(209, 209, 209, 0.8);
+	h4{
+		color:$title;
+		font-family: "Sahitya";
+		font-size: 23px;
+	}
+	p{
+		color: $dark-blue;
+		font-family: "Yantramanav";
+		font-size: 14px;
+	}
+}
 
 
 @media screen and (min-width:500px) {

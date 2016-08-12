@@ -26,3 +26,12 @@ i.fa.homeIcon {
 		color:$dark-blue;
 	}
 }
+
+@media only screen and (min-width: 500px) {
+	form {
+		label{
+			width:100%;
+			text-align: center;
+		}
+	}
+}

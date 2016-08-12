@@ -3,6 +3,8 @@ describe('parkalot', function() {
 
 		beforeEach (function(){
 			module('parkalot');
+			$document=angular.element(document);
+			$document.find('body').append('<div id="mapid"></div>');
 		});
 
 
