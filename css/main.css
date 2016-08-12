@@ -108,6 +108,9 @@ img.icon {
   margin: 0 auto;
   display: block; }
 
+img.teamLogo {
+  width: 60px; }
+
 h2.mapDestination {
   font-family: "Sahitya";
   color: #E66855 !important;
@@ -325,9 +328,7 @@ a, h6 {
 
 body {
   background: url("../images/mapIconTwo.png");
-  background-position: center;
   background-size: 800px 850px;
-  background-repeat: repeat;
   height: auto !important; }
 
 form {
@@ -420,14 +421,13 @@ p.slogan {
     float: none; }
 
 .Foot {
-  height: 70px;
   text-align: center;
   margin-top: 30px;
   background-color: rgba(209, 209, 209, 0.8); }
   .Foot h4 {
     color: #E66855;
     font-family: "Sahitya";
-    font-size: 23px; }
+    font-size: 17px; }
   .Foot p {
     color: #768E98;
     font-family: "Yantramanav";
