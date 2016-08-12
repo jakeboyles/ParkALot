@@ -18,7 +18,7 @@ module.exports = function(config) {
     './node_modules/angular/angular.min.js',
     './node_modules/angular-mocks/angular-mocks.js',
     './node_modules/angular-ui-router/release/angular-ui-router.min.js',
-    'https://cdn.backand.net/backand/dist/1.8.2/backand.min.js',
+    './js/libraries/backand.js',
     'https://npmcdn.com/leaflet@1.0.0-rc.2/dist/leaflet.js',
     './node_modules/angular-aria/angular-aria.js',                            
     './node_modules/angular-animate/angular-animate.js',                     
