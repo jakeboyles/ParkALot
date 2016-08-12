@@ -415,6 +415,20 @@ p.slogan {
     font-size: 25px;
     float: none; }
 
+.Foot {
+  height: 80px;
+  text-align: center;
+  margin-top: 40px;
+  background-color: rgba(209, 209, 209, 0.8); }
+  .Foot h4 {
+    color: #E66855;
+    font-family: "Sahitya";
+    font-size: 23px; }
+  .Foot p {
+    color: #768E98;
+    font-family: "Yantramanav";
+    font-size: 14px; }
+
 @media screen and (min-width: 500px) {
   ul.menuList {
     padding-left: 35px; }
