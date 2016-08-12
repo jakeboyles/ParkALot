@@ -90,12 +90,18 @@
            			});
 
                 vm.load = false;
+                
+                if(typeof vm.get_locations==="undefined" && typeof taco === "undefined"){
+                alert("Error: Search Failed. Please try another Location");
+                };
 
            		});
               //searched location marker
            		L.marker([lat, lng]).addTo(mymap)
     				.bindPopup('<h2 class="destMarkerTitle">Destination</h2> <p class="destMarkerAdd">'+vm.destination.search+'</p>')
         	})
+
+          
           
           //if we searched something, empty the search input
         	if (vm.form){
