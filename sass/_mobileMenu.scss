@@ -1,5 +1,7 @@
 .row.mobile{
   background-color:$dark-blue;
+  height:48px;
+  
 }
 
 .mobileIcon{ 
@@ -24,6 +26,9 @@ span.bar {
   display:block;
   background-color:#ffffff;
   margin:4px;
+  &:nth-child(1){
+    margin-top: 8px;
+  }
 }
 
 ul.menuList{
@@ -59,7 +64,7 @@ ul.menuText{
 
   li.textItem {
     text-decoration: none;
-    display:inline-block; 
+    display:inline-block;
 
     p.homeText,.mapText,.loginText,.usePrefText {
       color:lighten($dark-blue,20);
@@ -69,17 +74,15 @@ ul.menuText{
       font-size: 11px;
       font-family: "Yantramanav";
       text-align: center;
+      margin-bottom: 27px;
+    
     }
-    //   &:hover{
-    //     color:lighten($dark-blue,12);  
-    //   }
-    // }
-    // a:focus{
-
-    //     outline:none;
-    //   }
   }
 }
+
+// p:nth-child(4){
+//         padding:2px 5px 5px 5px;
+//       }
 
 h6.iconTitle{
   display:inline-block;
