@@ -119,6 +119,10 @@ h2.mapDestination {
   margin-bottom: 20px;
   text-align: center; }
 
+.wrapForm {
+  margin: 0 auto;
+  display: block; }
+
 form {
   display: block;
   margin: auto; }
@@ -238,10 +242,9 @@ p.lotMarkerAdd, .lotMarkerPrice {
   text-align: center;
   margin: 2px !important; }
 
-@media only screen and (min-width: 500px) {
+@media screen and (min-width: 500px) {
   form.input-group {
-    margin: auto;
-    width: auto; }
+    margin: auto; }
   input.geoInput {
     display: inline !important;
     font-size: 20px !important;
@@ -252,7 +255,7 @@ p.lotMarkerAdd, .lotMarkerPrice {
   height: 48px; }
 
 .mobileIcon {
-  padding-top: 5px;
+  padding-top: 4px;
   outline: none; }
   .mobileIcon:hover {
     cursor: pointer; }
@@ -274,8 +277,7 @@ span.bar {
 ul.menuList {
   padding-top: 2px;
   margin-top: -44px;
-  margin-bottom: 0;
-  padding-left: 45px; }
+  margin-bottom: 0; }
   ul.menuList li.listItem {
     text-decoration: none;
     display: inline-block; }
@@ -299,7 +301,7 @@ ul.menuText {
     ul.menuText li.textItem p.homeText, ul.menuText li.textItem .mapText, ul.menuText li.textItem .loginText, ul.menuText li.textItem .usePrefText {
       color: #b0bec4;
       background: none;
-      padding: 5px;
+      padding-right: 9px;
       font-weight: bold;
       font-size: 11px;
       font-family: "Yantramanav";
@@ -323,12 +325,12 @@ a, h6 {
 
 .logOut h6 {
   font-size: 16px;
-  float: right;
   margin-top: 13px; }
 
 body {
   background: url("../images/mapIconTwo.png");
   background-size: 800px 850px;
+  background-repeat: repeat;
   height: auto !important; }
 
 form {
@@ -435,7 +437,7 @@ p.slogan {
 
 @media screen and (min-width: 500px) {
   ul.menuList {
-    padding-left: 35px; }
+    padding-left: 26px; }
   input {
     width: 50%;
     margin: auto;
@@ -472,18 +474,14 @@ p.slogan {
     display: none; }
   .mobile .navMenu {
     display: block !important;
-    margin-top: 30px;
+    margin-top: 33px;
     padding: 5px; }
-    .mobile .navMenu ul.menuList {
-      padding-left: 0; }
-      .mobile .navMenu ul.menuList li.listItem .fa {
-        color: white; }
-        .mobile .navMenu ul.menuList li.listItem .fa:hover {
-          color: #b0bec4; }
-    .mobile .navMenu ul.menuText {
-      padding-left: 10px; }
-      .mobile .navMenu ul.menuText li.textItem p {
-        color: white; } }
+    .mobile .navMenu ul.menuList li.listItem .fa {
+      color: white; }
+      .mobile .navMenu ul.menuList li.listItem .fa:hover {
+        color: #b0bec4; }
+    .mobile .navMenu ul.menuText li.textItem p {
+      color: white; } }
 
 @media screen and (max-width: 640px) {
   body {

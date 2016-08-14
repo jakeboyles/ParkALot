@@ -16,7 +16,7 @@ body {
 	background: url('../images/mapIconTwo.png');
 	//background-position:center;
 	background-size:800px 850px;
-	//background-repeat:repeat;
+	background-repeat:repeat;
 	height:auto !important;
 }
 
@@ -150,7 +150,7 @@ p.slogan{
 
 @media screen and (min-width:500px) {
 	ul.menuList{
-		padding-left:35px;
+		padding-left:26px;
 	}
 		input{
 		width:50%;
@@ -201,10 +201,10 @@ p.slogan{
 	}
 	.mobile .navMenu {
 	display:block !important;
-	margin-top: 30px;
+	margin-top: 33px;
 	padding:5px;
 		ul.menuList {
-			padding-left:0;
+			//padding-left:0;
 			li.listItem .fa {
 				color:white;
 				&:hover{
@@ -213,7 +213,7 @@ p.slogan{
 			}
 		}
 		ul.menuText {
-			padding-left:10px;
+			//padding-left:10px;
 			li.textItem p {
 				color:white;
 			}

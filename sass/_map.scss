@@ -7,6 +7,12 @@ h2.mapDestination{
 	text-align: center;
 }
 
+.wrapForm{
+	margin:0 auto;
+	display:block;
+	// width:55%;
+}
+
 form{
 	display:block;
 	margin:auto;
@@ -167,17 +173,17 @@ p.lotMarkerAdd, .lotMarkerPrice {
 	margin:2px !important;
 }
 
-@media only screen and (min-width: 500px) {
+@media screen and (min-width: 500px) {
 
 	form.input-group{
 		margin:auto;
-		width:auto;
+		// width:auto;
 	}
 
 	input.geoInput{
 	display:inline !important;
 	font-size: 20px !important;
 	height: 36px;
-	//width:50%;
+	// width:100%;
 	}
 }
