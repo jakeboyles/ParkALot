@@ -14,7 +14,7 @@ $orangred:#ED926B;
 
 body {
 	background: url('../images/mapIconTwo.png');
-	background-position:center;
+	//background-position:center;
 	background-size:800px 850px;
 	background-repeat:repeat;
 	height:auto !important;
@@ -130,14 +130,17 @@ p.slogan{
 			}	
 	}	
 .Foot {
-	height: 70px;
+	
+	// height: 70px;
 	text-align:center;
 	margin-top:30px;
 	background-color:rgba(209, 209, 209, 0.8);
-	h4{
+	border-bottom:6px solid $dark-blue;
+	h4.footerTitle{
 		color:$title;
 		font-family: "Sahitya";
-		font-size: 23px;
+		font-size: 17px;
+		margin-bottom:0;
 	}
 	p{
 		color: $dark-blue;
@@ -149,7 +152,7 @@ p.slogan{
 
 @media screen and (min-width:500px) {
 	ul.menuList{
-		padding-left:35px;
+		padding-left:26px;
 	}
 		input{
 		width:50%;
@@ -200,10 +203,10 @@ p.slogan{
 	}
 	.mobile .navMenu {
 	display:block !important;
-	margin-top: 30px;
+	margin-top: 33px;
 	padding:5px;
 		ul.menuList {
-			padding-left:0;
+			//padding-left:0;
 			li.listItem .fa {
 				color:white;
 				&:hover{
@@ -212,7 +215,7 @@ p.slogan{
 			}
 		}
 		ul.menuText {
-			padding-left:10px;
+			//padding-left:10px;
 			li.textItem p {
 				color:white;
 			}

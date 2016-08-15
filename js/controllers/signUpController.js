@@ -29,6 +29,8 @@ angular.module("parkalot").controller("signUpController", function($state,back) 
 
 				return results;
 			} 	
+
+			//  regex for checking password "^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$" 
       
     });
 })();
