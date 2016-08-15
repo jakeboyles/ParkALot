@@ -9,18 +9,17 @@
 				
 		<h2 class="mapDestination">New Search</h2>
 		
-		<div class="wrapForm">
-			<div class="col-md-6 col-md-offset-3 input-group">
-				<div class="input-group-btn">
-		       		<button class="btn btn-default" type="button" ng-click="controller.getLocation()"><i class="fa fa-location-arrow" aria-hidden="true"></i></button>
-		        </div>
-		     		<input class="geoInput" type="text" name="search" placeholder="Destination or Click Your Location" ng-model="controller.form.search">
-		     </div>
-		</div>	     
+		<div class="col-md-6 col-md-offset-3 input-group">
+			<div class="input-group-btn">
+	       		<button class="btn btn-default" type="button" ng-click="controller.getLocation()"><i class="fa fa-location-arrow" aria-hidden="true"></i></button>
+	        </div>
+	     		<input class="geoInput" type="text" name="search" placeholder="Destination or Click Your Location" ng-model="controller.form.search" required>
+	     </div>
 
-			<input type="text" name="distance" placeholder="Distance in Feet" ng-model="controller.form.distance">
-			<input type="text" name="price" placeholder="Price(Hourly)" ng-model="controller.form.price">
-			<input class="btn btn-primary" ng-click="reset(form)" value="FIND" type="submit" name="query">
+		<input type="text" name="distance" placeholder="Distance in Feet" ng-model="controller.form.distance">
+		<input type="text" name="price" placeholder="Price(Hourly)" ng-model="controller.form.price">
+		<input class="btn btn-primary" ng-click="reset(form)" value="FIND" type="submit" name="query">
+
 	</form>
 
 	<hr>

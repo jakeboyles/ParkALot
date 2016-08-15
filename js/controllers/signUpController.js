@@ -10,6 +10,7 @@ angular.module("parkalot").controller("signUpController", function($state,back) 
 	//create new user information and token
 	vm.submit = function(){
 		var token = randomString(64, '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ');
+
 		var createData = back.postData(vm.form,token);
 		
 		 createData.then(function(response){

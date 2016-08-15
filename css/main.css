@@ -3,6 +3,10 @@ h2 {
   color: #E66855;
   text-align: center; }
 
+.alert p {
+  text-align: center;
+  font-style: italic; }
+
 form label h4 {
   font-family: "Yantramanav";
   font-style: italic;
