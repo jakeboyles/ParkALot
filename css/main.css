@@ -267,6 +267,9 @@ p.lotMarkerAdd, .lotMarkerPrice {
       transform: translateX(-10px);
       cursor: pointer; }
 
+.no-touch .bar:nth-child(2):hover {
+  cursor: pointer; }
+
 span.bar {
   position: relative;
   z-index: 99999px;

@@ -20,10 +20,6 @@
 	    		vm.isLoggedIn = true;
 	    	}
 
-	    //no touch for mobile devices
-	    if (!("ontouchstart" in document.documentElement)) {
-   			document.documentElement.mobileIcon += "no-touch";
-		}
-	});
+	   	});
 })();
 			
