@@ -303,7 +303,7 @@ ul.menuText {
       background: none;
       padding-right: 9px;
       font-weight: bold;
-      font-size: 11px;
+      font-size: 10px;
       font-family: "Yantramanav";
       text-align: center;
       margin-bottom: 27px; }
@@ -436,6 +436,10 @@ p.slogan {
     color: #768E98;
     font-family: "Yantramanav";
     font-size: 14px; }
+
+@media screen and (max-width: 500px) {
+  ul.menuList li.listItem .fa {
+    font-size: 24px; } }
 
 @media screen and (min-width: 500px) {
   ul.menuList {
