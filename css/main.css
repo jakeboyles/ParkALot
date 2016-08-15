@@ -109,7 +109,7 @@ img.icon {
   display: block; }
 
 img.teamLogo {
-  width: 60px; }
+  width: 45px; }
 
 h2.mapDestination {
   font-family: "Sahitya";
@@ -425,11 +425,13 @@ p.slogan {
 .Foot {
   text-align: center;
   margin-top: 30px;
-  background-color: rgba(209, 209, 209, 0.8); }
-  .Foot h4 {
+  background-color: rgba(209, 209, 209, 0.8);
+  border-bottom: 6px solid #768E98; }
+  .Foot h4.footerTitle {
     color: #E66855;
     font-family: "Sahitya";
-    font-size: 17px; }
+    font-size: 17px;
+    margin-bottom: 0; }
   .Foot p {
     color: #768E98;
     font-family: "Yantramanav";
