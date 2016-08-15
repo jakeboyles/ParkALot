@@ -11,10 +11,10 @@
         
         var preFill = back.userGet(back.getToken());
 
+        //promise
          preFill.then(function(data){
-          console.log(data);
-         vm.form.distance = data.data.data[0].distance;
-         vm.form.price = data.data.data[0].price;
+          vm.form.distance = data.data.data[0].distance;
+          vm.form.price = data.data.data[0].price;
          });
       }
      
@@ -52,6 +52,7 @@
             //setting data JSON
            	var get_locations_data = results.data.parking_listings;
 
+            //filter
             vm.get_locations = vm.filterResults(get_locations_data);
             console.log(vm.get_locations);
 
@@ -94,6 +95,7 @@
 
                 vm.load = false;
                 
+                //alert for failed search or no locations found
                 if(typeof vm.get_locations==="undefined" && typeof taco === "undefined"){
                 alert("Error: Search Failed. Please try another Location");
                 };
@@ -117,6 +119,7 @@
 
       //if we're coming from another state with a search, run the search function here
       if (typeof $stateParams.search !== 'undefined' && $stateParams.search !== ""){
+        //set default
         var dist = "1000";
         var price = "";
         
@@ -144,8 +147,7 @@
       vm.go = function(){
         var dist = vm.form.distance;
         var price = vm.form.price;
-        //loading icon toggle
-
+        //scrolls back to map on search
         $anchorScroll(mapid);
 
       	createMap(vm.form, dist, price);
@@ -160,7 +162,7 @@
         }
 
       vm.getLocation = function(){
-
+        //if we are allowed the user geo, then
         if (navigator.geolocation) {
           navigator.geolocation.getCurrentPosition(showPosition);
         } 
@@ -171,10 +173,10 @@
 
 
       vm.filterResults = function(locations, dist, price){
-
+        //passing in price and dist
         var newArray = locations.filter(function(item){
 
-
+          //if they are less than put them in
           if(dist>=item.distance && price>=item.price) {
             return true;
           }
