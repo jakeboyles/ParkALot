@@ -296,8 +296,8 @@ ul.menuList {
     ul.menuList li.listItem a:focus {
       outline: none; }
 
-.menuList li:nth-child(4) .fa {
-  padding: 7px 7px 7px 9px !important; }
+.no-touchevents .menuList li:nth-child(4) .fa {
+  padding: 7px 7px 7px 12px; }
 
 ul.menuText {
   margin-top: -12px;
@@ -500,7 +500,3 @@ p.slogan {
 @media screen and (max-width: 640px) {
   body {
     background: none; } }
-
-@media screen and (min-width: 800px) {
-  .menuList li:nth-child(4) .fa {
-    padding: 7px 7px 7px 7px !important; } }
