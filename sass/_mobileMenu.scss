@@ -41,26 +41,30 @@ ul.menuList{
   padding-top: 2px;
   margin-top:-44px;
   margin-bottom:0;
-  //padding-left:37px;
+
 
   li.listItem {
     text-decoration: none;
-    display:inline-block; 
+    display:inline-block;
     .fa {
       color:lighten($dark-blue,20);
       background:none;
-      padding:7px;
-      font-size: 25px;
-      
+      padding:7px 7px 7px 7px;
+      font-size: 25px;  
+       
       &:hover{
         color:lighten($dark-blue,12);  
       }
     }
     a:focus{
-
         outline:none;
       }
   }
+}
+
+.menuList li:nth-child(4) .fa {
+    padding:7px 7px 7px 5px !important;
+
 }
 
 ul.menuText{
@@ -71,6 +75,7 @@ ul.menuText{
   li.textItem {
     text-decoration: none;
     display:inline-block;
+   
 
     p.homeText,.mapText,.loginText,.usePrefText {
       color:lighten($dark-blue,20);
@@ -81,14 +86,11 @@ ul.menuText{
       font-family: "Yantramanav";
       text-align: center;
       margin-bottom: 27px;
-    
+      
+
     }
   }
 }
-
-// p:nth-child(4){
-//         padding:2px 5px 5px 5px;
-//       }
 
 h6.iconTitle{
   display:inline-block;
