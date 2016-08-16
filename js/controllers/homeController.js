@@ -24,20 +24,18 @@
        		vm.form.search = position.coords.latitude + "," + position.coords.longitude;
        		//tells DOM to "reload"
        		$scope.$digest();
-       }
-
-
-       if (navigator.geolocation) {
-
-        navigator.geolocation.getCurrentPosition(showPosition);
-        } else {
-        x.innerHTML = "Geolocation is not supported by this browser.";
         }
 
-       // function showPosition(position){
 
-       // 		vm.form.search = position.coords.latitude + "," + position.coords.longitude;
-       // }
+        vm.getLocation = function(){
+        //if we are allowed the user geo, then
+        if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(showPosition);
+        } 
+        else {
+          x.innerHTML = "Geolocation is not supported by this browser.";
+        }
+      }
 
 
     });

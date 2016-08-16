@@ -148,14 +148,12 @@ button {
   button i {
     color: #E66855; }
 
-.input-group {
-  padding: 0px; }
-
-input.geoInput {
-  display: inline !important;
-  font-size: 12px !important;
-  height: 36px;
-  width: 100%; }
+p.mapOr {
+  color: #E66855;
+  font-family: "Yantramanav";
+  font-size: 16px;
+  text-align: center;
+  font-weight: bold; }
 
 .fa-spinner {
   color: #768E98;
@@ -250,7 +248,6 @@ p.lotMarkerAdd, .lotMarkerPrice {
   form.input-group {
     margin: auto; }
   input.geoInput {
-    display: inline !important;
     font-size: 20px !important;
     height: 36px; } }
 
@@ -292,8 +289,10 @@ ul.menuList {
     ul.menuList li.listItem .fa {
       color: #b0bec4;
       background: none;
-      padding: 7px;
+      padding: 7px 7px 7px 7px;
       font-size: 25px; }
+      ul.menuList li.listItem .fa:nth-child(4) {
+        padding: 7px 7px 7px 4px; }
       ul.menuList li.listItem .fa:hover {
         color: #99abb2; }
     ul.menuList li.listItem a:focus {
@@ -306,8 +305,6 @@ ul.menuText {
   ul.menuText li.textItem {
     text-decoration: none;
     display: inline-block; }
-    ul.menuText li.textItem:nth-child(4) {
-      padding: 2px 5px 5px 5px; }
     ul.menuText li.textItem p.homeText, ul.menuText li.textItem .mapText, ul.menuText li.textItem .loginText, ul.menuText li.textItem .usePrefText {
       color: #b0bec4;
       background: none;

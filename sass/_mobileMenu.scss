@@ -45,19 +45,20 @@ ul.menuList{
 
   li.listItem {
     text-decoration: none;
-    display:inline-block; 
+    display:inline-block;
     .fa {
       color:lighten($dark-blue,20);
       background:none;
-      padding:7px;
-      font-size: 25px;
-      
+      padding:7px 7px 7px 7px;
+      font-size: 25px;  
+      &:nth-child(4){
+        padding:7px 7px 7px 4px;
+      }  
       &:hover{
         color:lighten($dark-blue,12);  
       }
     }
     a:focus{
-
         outline:none;
       }
   }
@@ -71,9 +72,7 @@ ul.menuText{
   li.textItem {
     text-decoration: none;
     display:inline-block;
-    &:nth-child(4){
-        padding:2px 5px 5px 5px;
-      }
+   
 
     p.homeText,.mapText,.loginText,.usePrefText {
       color:lighten($dark-blue,20);

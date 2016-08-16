@@ -41,16 +41,12 @@ button {
 	}
 }
 
-.input-group{
-	//margin: auto;
-	padding:0px;
-}
-
-input.geoInput{
-	display:inline !important;
-	font-size: 12px !important;
-	height: 36px;
-	width:100%;
+p.mapOr {
+	color: $title;
+	font-family: "Yantramanav";
+	font-size: 16px;
+	text-align:center;
+	font-weight:bold;
 }
 
 .fa-spinner {
@@ -177,13 +173,12 @@ p.lotMarkerAdd, .lotMarkerPrice {
 
 	form.input-group{
 		margin:auto;
-		// width:auto;
+		
 	}
 
 	input.geoInput{
-	display:inline !important;
 	font-size: 20px !important;
 	height: 36px;
-	// width:100%;
+	
 	}
 }
