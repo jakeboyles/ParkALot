@@ -235,3 +235,9 @@ p.slogan{
 		background:none;
 	}
 }
+
+@media screen and (max-width:800px) {
+	.menuList li:nth-child(4) .fa {
+    	padding:7px 7px 7px 7px !important;
+	}
+}
