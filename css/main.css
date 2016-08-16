@@ -261,14 +261,15 @@ p.lotMarkerAdd, .lotMarkerPrice {
 .mobileIcon {
   padding-top: 4px;
   outline: none; }
-  .mobileIcon:hover {
+
+.no-touchevents .mobileIcon {
+  padding-top: 4px;
+  outline: none; }
+  .no-touchevents .mobileIcon:hover {
     cursor: pointer; }
-    .mobileIcon:hover .bar:nth-child(2) {
+    .no-touchevents .mobileIcon:hover .bar:nth-child(2) {
       transform: translateX(-10px);
       cursor: pointer; }
-
-.no-touch .bar:nth-child(2):hover {
-  cursor: pointer; }
 
 span.bar {
   position: relative;

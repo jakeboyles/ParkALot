@@ -4,7 +4,12 @@
   
 }
 
-.mobileIcon{ 
+.mobileIcon{
+  padding-top:4px;
+  outline:none;
+}
+
+.no-touchevents .mobileIcon{ 
   padding-top:4px;
   outline:none;
     &:hover {
@@ -18,11 +23,6 @@
     }  
 }
 
-.no-touch .bar:nth-child(2){
-  &:hover{
-    cursor:pointer;
-  }
-}
 
 span.bar {
   position:relative;
