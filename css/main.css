@@ -306,6 +306,8 @@ ul.menuText {
   ul.menuText li.textItem {
     text-decoration: none;
     display: inline-block; }
+    ul.menuText li.textItem:nth-child(4) {
+      padding: 2px 5px 5px 5px; }
     ul.menuText li.textItem p.homeText, ul.menuText li.textItem .mapText, ul.menuText li.textItem .loginText, ul.menuText li.textItem .usePrefText {
       color: #b0bec4;
       background: none;
