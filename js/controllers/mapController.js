@@ -118,12 +118,17 @@
     }
 
       //if we're coming from another state with a search, run the search function here
-      if (typeof $stateParams.search !== 'undefined' && $stateParams.search !== ""){
+      if (typeof $stateParams.search !== 'undefined' && $stateParams.search !== "")
+      {
         //set default
         var dist = "1000";
         var price = "";
         
       	createMap($stateParams,dist,price);
+      }
+      else 
+      {
+        vm.form = "";
       }
 
       L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', 
@@ -186,5 +191,3 @@
 
     });
 })();
-
-
