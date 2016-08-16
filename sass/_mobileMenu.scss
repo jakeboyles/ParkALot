@@ -51,9 +51,7 @@ ul.menuList{
       background:none;
       padding:7px 7px 7px 7px;
       font-size: 25px;  
-      &:nth-child(4){
-        padding:7px 7px 7px 4px;
-      }  
+       
       &:hover{
         color:lighten($dark-blue,12);  
       }
@@ -62,6 +60,11 @@ ul.menuList{
         outline:none;
       }
   }
+}
+
+.menuList li:nth-child(4) .fa {
+    padding:7px 7px 7px 5px !important;
+
 }
 
 ul.menuText{

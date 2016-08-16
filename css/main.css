@@ -291,12 +291,13 @@ ul.menuList {
       background: none;
       padding: 7px 7px 7px 7px;
       font-size: 25px; }
-      ul.menuList li.listItem .fa:nth-child(4) {
-        padding: 7px 7px 7px 4px; }
       ul.menuList li.listItem .fa:hover {
         color: #99abb2; }
     ul.menuList li.listItem a:focus {
       outline: none; }
+
+.menuList li:nth-child(4) .fa {
+  padding: 7px 7px 7px 5px !important; }
 
 ul.menuText {
   margin-top: -12px;
