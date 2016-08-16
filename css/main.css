@@ -297,7 +297,7 @@ ul.menuList {
       outline: none; }
 
 .menuList li:nth-child(4) .fa {
-  padding: 7px 7px 7px 6px !important; }
+  padding: 7px 7px 7px 8px !important; }
 
 ul.menuText {
   margin-top: -12px;
