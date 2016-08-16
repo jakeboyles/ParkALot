@@ -12,9 +12,8 @@
 					  <form ng-submit="controller.go()">
 					  	 <input class="geoInput" type="text" name="search" placeholder="Destination Address" ng-model="controller.form.search" required>
 
-	   					 <p class="mapOr">OR</p>
+						<input class="btn btn-primary" ng-click="controller.getLocation()" value="Already Downtown?" type="button">
 
-						<input class="btn btn-primary" ng-click="controller.getLocation()" value="Already Downtown" type="button">
 					  	<input class="btn btn-primary" type="submit" name="find" value="Create Search">
 					  </form>
 
