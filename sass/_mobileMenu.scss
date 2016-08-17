@@ -62,11 +62,11 @@ ul.menuList{
   }
 }
 
-li:nth-child(4) .fa{
-  padding:7px 7px 7px 6px !important;
-}
-
 .no-touchevents ul.menuList li:nth-child(4) .fa{
+  padding:7px 7px 7px 6px;
+} 
+
+.touchevents ul.menuList li:nth-child(4) .fa{
   padding:7px 7px 7px 12px;
 } 
 
