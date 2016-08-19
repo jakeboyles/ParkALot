@@ -3,8 +3,7 @@
     
     angular.module('parkalot').controller('mapController', function($state,back,API, $stateParams, $scope, $anchorScroll) {
       
-      var vm = this;
-
+      var vm = this; 
       
       //function to check that user has token and token prefill map form w/prefs
       if(back.getToken() !== null){

@@ -21,7 +21,7 @@
 
 	<hr>
 		<div class="loop">
-			<h3 class="mapResults">Lot Locations</h3>
+			<h3 ng-show="controller.get_locations" class="mapResults">Lot Locations</h3>
 			<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 lotInfo" ng-repeat="info in controller.get_locations">
 				<h4 class="lotNameMap">Lot Name: {{info.location_name}}</h4>
 				<p class="lotAddressMap">Address (link): <a href="http://maps.google.com/?q={{info.address}}{{info.state}}{{info.zip}}" target="_blank"> {{info.address}}{{info.state}}{{info.zip}}</a></p>
